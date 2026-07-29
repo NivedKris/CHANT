@@ -293,17 +293,20 @@ export function matchMeter(weightedSyllables) {
   for (const meter of METERS) {
     if (len % meter.syllables === 0 && len >= meter.syllables) {
       const padasCount = len / meter.syllables;
-      let matchedAll = true;
+      let totalPadasScore = 0;
+      
       for (let p = 0; p < padasCount; p++) {
         const padaPattern = pattern.slice(p * meter.syllables, (p + 1) * meter.syllables);
         const matchRes = matchSinglePada(padaPattern);
-        if (matchRes.name !== meter.name) {
-          matchedAll = false;
-          break;
+        if (matchRes.name === meter.name) {
+          totalPadasScore += matchRes.score;
         }
       }
-      if (matchedAll) {
-        return { name: meter.name, confidence: 1.0 };
+      
+      // If the average scansion match score across all padas is >= 75%, it is a verified match!
+      const averageScore = totalPadasScore / padasCount;
+      if (averageScore >= 0.75) {
+        return { name: meter.name, confidence: averageScore };
       }
     }
   }

@@ -1,4 +1,4 @@
-import { scanVerse } from '../src/utils/chandas.js';
+import { scanVerse, METERS } from '../src/utils/chandas.js';
 
 const MODEL_NAME = "gemini-3.1-flash-tts-preview";
 
@@ -42,18 +42,18 @@ async function disambiguateMeter(apiKey, pattern, len, candidateMeters) {
   return null;
 }
 
-// [5] Compound Boundary Detection Agent (LLM) (agentic.md §2 [5])
-async function detectCompoundBoundaries(apiKey, text) {
+// [5] Heuristic Breath Planner Agent (LLM-assisted word-chunk boundary generator) (Specification 3)
+async function planBreathGroups(apiKey, text) {
   const url = `https://generativelanguage.googleapis.com/v1alpha/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
   
-  const prompt = `You are an expert Sanskrit grammarian. Analyze the following continuous Sanskrit text and identify likely compound word boundaries (samāsa splits) where pauses should NOT occur. Highlight the compound splits by inserting hyphens (-) into the text. Do not translate or comment. Output JSON ONLY.`;
+  const prompt = `You are a breath planner for Sanskrit recitation. Identify likely unified word groups (compounds/samāsas) in the text where pauses should NOT occur. Suggest a hyphenated segmentation showing safe continuous blocks. Under absolutely no circumstances should you alter spelling. Output JSON ONLY.`;
   
   const payload = {
     contents: [
       {
         parts: [
           {
-            text: `${prompt}\n\nText: ${text}\n\nResponse format:\n{\n  "segmented_text": "...",\n  "compounds_found": ["...", "..."]\n}`
+            text: `${prompt}\n\nText: ${text}\n\nResponse format:\n{\n  "segmented_text": "...",\n  "planned_breath_forbidden_groups": ["...", "..."],\n  "segmentation_confidence": 0.0\n}`
           }
         ]
       }
@@ -77,55 +77,70 @@ async function detectCompoundBoundaries(apiKey, text) {
       }
     }
   } catch (err) {
-    console.error("Compound boundaries agent failed:", err);
+    console.error("Breath planner agent failed:", err);
   }
   return null;
 }
 
-// Prosody Conflict Resolver (Priority Rule-based System)
-function resolveConflicts(meterName, yatiPositions, dandaPositions, compoundsFound) {
-  const conflicts = [];
+// 1 & 2. Meter Verification Gate (Strict acceptance schema) (Specification 1 & 2)
+function verifyMeterAcceptance(scansion, matchedMeter) {
+  if (matchedMeter.startsWith('Unknown')) {
+    return 'rejected';
+  }
+  
+  // High confidence (>0.90) maps directly to verified
+  if (scansion.confidence >= 0.90) {
+    return 'verified';
+  }
+  
+  // Ambiguous boundaries threshold
+  if (scansion.confidence >= 0.70) {
+    return 'ambiguous';
+  }
+  
+  return 'rejected';
+}
+
+// Prosody Conflict Resolver (Priority-Based) (rules.md §6)
+function resolveConflicts(meterName, yatiPositions, dandaPositions, forbiddenBreathsList) {
   const allowedBreaths = [];
   const forbiddenBreaths = [];
 
-  // Priority Rule: Meter > Yati > Danda > Compound > Word boundary
-  // 1. Mark obligatory Yati positions as preferred breath marks
+  // 1. Matched Obligatory Yati Caesuras (Highest priority)
   if (yatiPositions && yatiPositions.length > 0) {
     yatiPositions.forEach(pos => {
       allowedBreaths.push({ position: pos, type: 'yati', reason: `Obligatory caesura defined by matched meter: ${meterName}` });
     });
   }
 
-  // 2. Mark danda/double danda positions as allowed/obligatory breaths
+  // 2. Classical Punctuation (Danda) positions
   if (dandaPositions && dandaPositions.length > 0) {
     dandaPositions.forEach(pos => {
       allowedBreaths.push({ position: pos, type: 'danda', reason: 'Classical punctuation line split boundary' });
     });
   }
 
-  // 3. Mark compounds as strictly forbidden breaths
-  if (compoundsFound && compoundsFound.length > 0) {
-    compoundsFound.forEach(comp => {
-      forbiddenBreaths.push({ pattern: comp, reason: 'Strict compound word boundary (samāsa). Breaths forbidden inside compound.' });
+  // 3. Planned forbidden breath bounds (Heuristic, lowest priority)
+  if (forbiddenBreathsList && forbiddenBreathsList.length > 0) {
+    forbiddenBreathsList.forEach(group => {
+      forbiddenBreaths.push({ pattern: group, reason: 'Breath planner heuristic: avoid pausing inside segmented word chunks.' });
     });
   }
 
   return {
-    priority: "Meter > Yati > Danda > Compound > Word boundary",
+    priority_order: "Meter > Yati > Danda > Compound > Word boundary",
     allowedBreaths,
-    forbiddenBreaths,
-    conflicts
+    forbiddenBreaths
   };
 }
 
-// Structured Acoustic Parameter Generator
-function generateAcousticParameters(scansion, yatiPositions, conflictsState, customTempo) {
-  const hasLongGuru = scansion.pattern.includes('GGGG');
-  const baseTempo = hasLongGuru ? 72 : 86;
-  const tempo = customTempo || baseTempo;
+// Structured Acoustic Parameter Generator (Specification 5)
+function generateAcousticParameters(scansion, conflictsState, customTempo) {
+  // Constant standard tempo (86 BPM) to avoid meter-specific pacing confounding research metrics
+  const tempo = customTempo || 86;
   
   return {
-    tempo_bpm: tempo, // slower, more solemn tempo for heavy guru runs
+    tempo_bpm: tempo,
     pitch_variance: "low (monotone traditional chanting register)",
     guru_ratio: 2.0,
     laghu_ratio: 1.0,
@@ -136,8 +151,8 @@ function generateAcousticParameters(scansion, yatiPositions, conflictsState, cus
   };
 }
 
-// Structured Prosody Intermediate Representation (PIR) Builder
-function buildProsodyIntermediateRepresentation(cleanText, scansion, matchedMeter, segmentedText, compoundsFound, yatiPositions, customTempo) {
+// 4. Structured Prosody Intermediate Representation (PIR) Builder (Specification 4)
+function buildProsodyIntermediateRepresentation(cleanText, scansion, matchedMeter, acceptanceState, segmentedText, forbiddenBreathsList, yatiPositions, customTempo) {
   // Find danda indices in text
   const dandaPositions = [];
   for (let i = 0; i < cleanText.length; i++) {
@@ -146,33 +161,28 @@ function buildProsodyIntermediateRepresentation(cleanText, scansion, matchedMete
     }
   }
 
-  const conflictsState = resolveConflicts(matchedMeter, yatiPositions, dandaPositions, compoundsFound);
-  const acousticParams = generateAcousticParameters(scansion, yatiPositions, conflictsState, customTempo);
+  const conflictsState = resolveConflicts(matchedMeter, yatiPositions, dandaPositions, forbiddenBreathsList);
+  const acousticParams = generateAcousticParameters(scansion, conflictsState, customTempo);
 
   return {
-    pir_version: "2.0 (Linguistically Robust)",
+    pir_version: "2.1 (Linguistically Robust)",
     meta: {
       original_text: cleanText,
       segmented_text: segmentedText,
       meter_name: matchedMeter,
       syllable_count: scansion.syllables.length,
-      is_verified_meter: matchMeterVerification(scansion, matchedMeter)
+      meter_scansion_confidence: scansion.confidence,
+      meter_acceptance_state: acceptanceState // verified | candidate | ambiguous | rejected (Specification 2)
     },
     scansion: {
       weights: scansion.pattern,
-      syllables: scansion.syllables.map(s => ({ text: s.text, weight: s.weight }))
+      syllables: scansion.syllables.map(s => ({ text: s.text, weight: s.weight, nucleus: s.nucleus, coda: s.coda, onset: s.onset })) // full traceability (Specification 4)
     },
     acoustic: acousticParams
   };
 }
 
-// Meter Verification Step (Verifies scansion weights against perfect templates)
-function matchMeterVerification(scansion, matchedMeter) {
-  if (matchedMeter.startsWith('Unknown')) return false;
-  return scansion.confidence >= 0.9;
-}
-
-// Rendering Structured Prosody Intermediate Representation (PIR) to Speech Prompts
+// Rendering Structured Prosody Intermediate Representation (PIR) to Speech Prompts (Specification 4)
 function renderProsodyPrompt(pir) {
   let speedAdjective = "moderate, steady pace";
   const bpm = pir.acoustic.tempo_bpm;
@@ -209,7 +219,9 @@ export async function runOrchestrator(apiKey, rawText, customTempo) {
   let matchedMeter = scansion.meter;
 
   // Stage 3a: Conditional Meter Disambiguation Fallback
+  let isFallbackTriggered = false;
   if (scansion.meter.startsWith('Unknown') || scansion.confidence < 0.9) {
+    isFallbackTriggered = true;
     const candidates = ['Anuṣṭubh (Śloka)', 'Indravajrā', 'Upendravajrā', 'Vasantatilakā', 'Mandākrāntā', 'Śārdūlavikrīḍita', 'Sragdharā', 'Mālinī', 'Śikhariṇī', 'Vaṃśastha'];
     const disambigRes = await disambiguateMeter(apiKey, scansion.pattern, scansion.syllables.length, candidates);
     if (disambigRes && disambigRes.chosen_meter !== 'Unknown') {
@@ -218,21 +230,44 @@ export async function runOrchestrator(apiKey, rawText, customTempo) {
     }
   }
 
-  // Stage 5: Compound boundaries detection
+  // Meter Acceptance Verification Gate (Specification 1 & 2)
+  const acceptanceState = verifyMeterAcceptance(scansion, matchedMeter);
+
+  // Stage 5: Compound boundaries detection (Breath-Group Segmentation Heuristic) (Specification 3)
   let segmentedText = cleanText;
-  let compoundsFound = [];
-  const compoundRes = await detectCompoundBoundaries(apiKey, cleanText);
-  if (compoundRes && compoundRes.segmented_text) {
-    segmentedText = compoundRes.segmented_text;
-    compoundsFound = compoundRes.compounds_found || [];
-    log.push({ stage: 'Stage 5 (Compound Boundary Detection)', input: cleanText, decision: segmentedText, rationale: `Found compounds: ${JSON.stringify(compoundsFound)}` });
+  let forbiddenBreathsList = [];
+  let breathPlannerConfidence = 1.0;
+  const breathRes = await planBreathGroups(apiKey, cleanText);
+  if (breathRes && breathRes.segmented_text) {
+    segmentedText = breathRes.segmented_text;
+    forbiddenBreathsList = breathRes.planned_breath_forbidden_groups || [];
+    breathPlannerConfidence = breathRes.segmentation_confidence || 0.85;
+    log.push({ stage: 'Stage 5 (Breath-Group Segmentation Heuristic)', input: cleanText, decision: segmentedText, rationale: `Planned forbidden breath group bounds: ${JSON.stringify(forbiddenBreathsList)}` });
   }
 
   // Stage 6: Prosody Intermediate Representation (PIR) Annotation Layer
-  const pir = buildProsodyIntermediateRepresentation(cleanText, scansion, matchedMeter, segmentedText, compoundsFound, scansion.yati || [], customTempo);
+  const pir = buildProsodyIntermediateRepresentation(
+    cleanText, 
+    scansion, 
+    matchedMeter, 
+    acceptanceState, 
+    segmentedText, 
+    forbiddenBreathsList, 
+    scansion.yati || [], 
+    customTempo
+  );
 
   // Stage 8: Prompt Renderer (Translates structured PIR to speech realization directions)
   const stylePrompt = renderProsodyPrompt(pir);
+
+  // Ablation log for research tracking
+  const ablationLog = {
+    pipeline_version: pir.pir_version,
+    is_disambiguation_fallback_active: isFallbackTriggered,
+    breath_planner_confidence_score: breathPlannerConfidence,
+    meter_acceptance_state: acceptanceState,
+    scansion_syllable_traceability_active: true
+  };
 
   return {
     annotation: {
@@ -240,7 +275,10 @@ export async function runOrchestrator(apiKey, rawText, customTempo) {
       segmented_text: pir.meta.segmented_text,
       weights: pir.scansion.weights,
       is_verified: pir.meta.is_verified_meter,
-      acoustic_params: pir.acoustic
+      meter_acceptance_state: pir.meta.meter_acceptance_state,
+      scansion_trace: pir.scansion.syllables,
+      acoustic_params: pir.acoustic,
+      ablation: ablationLog
     },
     stylePrompt,
     disambiguationLog: log

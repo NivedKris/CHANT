@@ -294,6 +294,9 @@ export default function App() {
         stylePrompt: stylePrompt,
         segmentedText: segmentedText,
         disambiguationLog: disambigLog,
+        meterAcceptanceState: resData.annotation?.meter_acceptance_state || 'verified',
+        scansionTrace: resData.annotation?.scansion_trace || [],
+        ablation: resData.annotation?.ablation || null,
         date: new Date().toLocaleDateString('en-US', {
           month: 'short',
           day: 'numeric',
@@ -860,7 +863,7 @@ export default function App() {
                 borderTop: '1px solid var(--color-border)',
                 display: 'flex',
                 flexDirection: 'column',
-                gap: '10px'
+                gap: '12px'
               }}>
                 <span style={{
                   fontSize: '11px',
@@ -870,9 +873,23 @@ export default function App() {
                   fontWeight: '600'
                 }}>Agentic Recitation Board</span>
                 
+                {currentAudio.meterAcceptanceState && (
+                  <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '12px', paddingBottom: '4px' }}>
+                    <span style={{ color: 'var(--color-text-secondary)' }}>Meter Acceptance State:</span>
+                    <span style={{ 
+                      fontWeight: '700', 
+                      textTransform: 'uppercase', 
+                      fontSize: '11px',
+                      color: currentAudio.meterAcceptanceState === 'verified' ? '#34c759' : currentAudio.meterAcceptanceState === 'ambiguous' ? '#ff9500' : '#ff3b30' 
+                    }}>
+                      {currentAudio.meterAcceptanceState}
+                    </span>
+                  </div>
+                )}
+
                 {currentAudio.segmentedText && currentAudio.segmentedText !== currentAudio.text && (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-                    <span style={{ fontSize: '11px', color: 'var(--color-text-secondary)' }}>Compound Segmentation:</span>
+                    <span style={{ fontSize: '11px', color: 'var(--color-text-secondary)' }}>Breath-Group Segmentation Heuristic:</span>
                     <p style={{ fontFamily: 'var(--font-serif)', fontSize: '14px', color: 'var(--color-text)' }}>
                       {currentAudio.segmentedText}
                     </p>
@@ -885,6 +902,62 @@ export default function App() {
                     <p style={{ fontSize: '13px', fontStyle: 'italic', color: 'var(--color-text)', lineHeight: '1.4' }}>
                       "{currentAudio.stylePrompt}"
                     </p>
+                  </div>
+                )}
+
+                {currentAudio.ablation && (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                    <span style={{ fontSize: '11px', color: 'var(--color-text-secondary)' }}>Pipeline Ablation Details:</span>
+                    <div style={{
+                      backgroundColor: 'var(--color-secondary-bg)',
+                      borderRadius: '6px',
+                      padding: '8px 10px',
+                      fontSize: '11px',
+                      border: '1px solid var(--color-border)',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '4px'
+                    }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                        <span>Pipeline Version:</span>
+                        <span style={{ fontFamily: 'monospace' }}>{currentAudio.ablation.pipeline_version}</span>
+                      </div>
+                      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                        <span>Disambiguation Active:</span>
+                        <span style={{ fontFamily: 'monospace' }}>{String(currentAudio.ablation.is_disambiguation_fallback_active)}</span>
+                      </div>
+                      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                        <span>Segmenter Score:</span>
+                        <span style={{ fontFamily: 'monospace' }}>{currentAudio.ablation.breath_planner_confidence_score}</span>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {currentAudio.scansionTrace && currentAudio.scansionTrace.length > 0 && (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                    <span style={{ fontSize: '11px', color: 'var(--color-text-secondary)' }}>Traceable Scansion Trace:</span>
+                    <div style={{
+                      backgroundColor: 'var(--color-secondary-bg)',
+                      borderRadius: '6px',
+                      padding: '8px 10px',
+                      fontSize: '11px',
+                      border: '1px solid var(--color-border)',
+                      maxHeight: '140px',
+                      overflowY: 'auto',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '4px'
+                    }}>
+                      {currentAudio.scansionTrace.map((item, idx) => (
+                        <div key={idx} style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid var(--color-border)', paddingBottom: '2px' }}>
+                          <span style={{ fontFamily: 'var(--font-serif)', fontSize: '13px' }}>{idx + 1}: {item.text}</span>
+                          <span style={{ fontFamily: 'monospace', color: 'var(--color-text-secondary)' }}>
+                            Weight: {item.weight} | Nucleus: {item.nucleus} | Coda: {item.coda || 'None'}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 )}
 
