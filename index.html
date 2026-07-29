@@ -33,7 +33,7 @@
           #splash-loader {
             background-color: #000000 !important;
           }
-          #splash-text, #splash-logo-circle {
+          .first-letter, .rest-letters, #splash-logo-circle {
             color: #f5f5f7 !important;
             stroke: #f5f5f7 !important;
           }
@@ -48,44 +48,63 @@
           100% { transform: scale(1); opacity: 0.8; }
         }
 
-        @keyframes morphChant {
-          0% {
-            /* Holds 'Classical Hindu Acoustic Neural Technology' long, spaced, wide letter spacing */
-            letter-spacing: 2px;
-            font-size: 11px;
-            opacity: 0;
-            transform: translateY(10px);
-          }
-          20% {
-            opacity: 1;
-            transform: translateY(0);
-          }
-          55% {
-            /* Transition starts: keep wide spaced text clear */
-            letter-spacing: 2px;
-            font-size: 11px;
-          }
-          85% {
-            /* Compress and morph to capital CHANT */
-            letter-spacing: 12px;
-            font-size: 28px;
-            font-weight: 300;
-          }
-          100% {
-            letter-spacing: 12px;
-            font-size: 28px;
-            font-weight: 300;
-          }
+        #splash-text-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 12px;
+          animation: containerCompress 3.5s cubic-bezier(0.76, 0, 0.24, 1) forwards;
+          will-change: gap;
         }
 
-        #splash-text {
+        @keyframes containerCompress {
+          0% { gap: 12px; }
+          40% { gap: 12px; }
+          75% { gap: 0px; }
+          100% { gap: 0px; }
+        }
+
+        .word {
+          display: flex;
+          align-items: baseline;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+
+        .first-letter {
           font-family: Georgia, Cambria, "Times New Roman", Times, serif;
           color: #1d1d1f;
-          text-align: center;
           text-transform: uppercase;
+          font-size: 14px;
+          font-weight: 400;
           display: inline-block;
-          animation: morphChant 3s cubic-bezier(0.76, 0, 0.24, 1) forwards;
-          will-change: letter-spacing, font-size, opacity;
+          animation: morphFirst 3.5s cubic-bezier(0.76, 0, 0.24, 1) forwards;
+          will-change: font-size, margin-right;
+        }
+
+        .rest-letters {
+          font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+          color: #1d1d1f;
+          font-size: 14px;
+          display: inline-block;
+          max-width: 120px;
+          opacity: 1;
+          animation: fadeOutRest 3.5s cubic-bezier(0.76, 0, 0.24, 1) forwards;
+          will-change: max-width, opacity;
+        }
+
+        @keyframes fadeOutRest {
+          0% { opacity: 1; max-width: 120px; }
+          35% { opacity: 1; max-width: 120px; }
+          70% { opacity: 0; max-width: 0px; }
+          100% { opacity: 0; max-width: 0px; visibility: hidden; }
+        }
+
+        @keyframes morphFirst {
+          0% { font-size: 14px; font-weight: 400; margin-right: 0px; }
+          35% { font-size: 14px; font-weight: 400; margin-right: 0px; }
+          75% { font-size: 32px; font-weight: 300; margin-right: 12px; }
+          100% { font-size: 32px; font-weight: 300; margin-right: 12px; }
         }
 
         #splash-subtext {
@@ -94,9 +113,9 @@
           letter-spacing: 2px;
           color: #86868b;
           text-transform: uppercase;
-          margin-top: 14px;
+          margin-top: 20px;
           opacity: 0;
-          animation: fadeInText 0.5s ease 2.5s forwards;
+          animation: fadeInText 0.5s ease 2.6s forwards;
         }
 
         @keyframes fadeInText {
@@ -114,9 +133,15 @@
         </svg>
       </div>
 
-      <!-- Text Container -->
+      <!-- Text Container (Collapsing Full Form -> CHANT) -->
       <div style="display: flex; flex-direction: column; align-items: center; min-height: 80px;">
-        <div id="splash-text">Classical Hindu Acoustic Neural Technology</div>
+        <div id="splash-text-container">
+          <span class="word"><span class="first-letter">C</span><span class="rest-letters">lassical</span></span>
+          <span class="word"><span class="first-letter">H</span><span class="rest-letters">indu</span></span>
+          <span class="word"><span class="first-letter">A</span><span class="rest-letters">coustic</span></span>
+          <span class="word"><span class="first-letter">N</span><span class="rest-letters">eural</span></span>
+          <span class="word"><span class="first-letter">T</span><span class="rest-letters">echnology</span></span>
+        </div>
         <div id="splash-subtext">Sanskrit Recitation Portal</div>
       </div>
     </div>
@@ -134,7 +159,7 @@
               loader.style.visibility = 'hidden';
             }, 500);
           }
-        }, 3600); // 3.6s allows the full morph (3s) and subtext fade-in (2.5s) to satisfy elegantly
+        }, 3600); // 3.6s allows the full morph (3.5s) and subtext fade-in (2.6s) to satisfy elegantly
       });
 
       if ('serviceWorker' in navigator) {
