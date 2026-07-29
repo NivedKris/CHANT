@@ -34,23 +34,23 @@ function localApiPlugin() {
 
         try {
           if (endpoint === '/api/status') {
-            const module = await server.ssrLoadModule('/api/status.js');
+            const module = await import('./api/status.js');
             return module.default(req, res);
           }
           if (endpoint === '/api/recite') {
-            const module = await server.ssrLoadModule('/api/recite.js');
+            const module = await import('./api/recite.js');
             return module.default(req, res);
           }
           if (endpoint === '/api/disambiguate') {
-            const module = await server.ssrLoadModule('/api/disambiguate.js');
+            const module = await import('./api/disambiguate.js');
             return module.default(req, res);
           }
           if (endpoint === '/api/compounds') {
-            const module = await server.ssrLoadModule('/api/compounds.js');
+            const module = await import('./api/compounds.js');
             return module.default(req, res);
           }
           if (endpoint === '/api/compose') {
-            const module = await server.ssrLoadModule('/api/compose.js');
+            const module = await import('./api/compose.js');
             return module.default(req, res);
           }
         } catch (err) {

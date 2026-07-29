@@ -217,13 +217,6 @@ export async function runOrchestrator(apiKey, rawText, customTempo) {
 
   // Stage 6: Prosody Intermediate Representation (PIR) Annotation Layer
   const pir = buildProsodyIntermediateRepresentation(cleanText, scansion, matchedMeter, segmentedText, compoundsFound, scansion.yati || [], customTempo);
-    segmentedText = compoundRes.segmented_text;
-    compoundsFound = compoundRes.compounds_found || [];
-    log.push({ stage: 'Stage 5 (Compound Boundary Detection)', input: cleanText, decision: segmentedText, rationale: `Found compounds: ${JSON.stringify(compoundsFound)}` });
-  }
-
-  // Stage 6: Prosody Intermediate Representation (PIR) Annotation Layer
-  const pir = buildProsodyIntermediateRepresentation(cleanText, scansion, matchedMeter, segmentedText, compoundsFound, scansion.yati || []);
 
   // Stage 8: Prompt Renderer (Translates structured PIR to speech realization directions)
   const stylePrompt = renderProsodyPrompt(pir);
