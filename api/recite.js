@@ -42,8 +42,9 @@ export default async function handler(req, res) {
     }
 
     const ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress || '127.0.0.1';
+    const isLocalIp = ip === '127.0.0.1' || ip === '::1' || ip === '::ffff:127.0.0.1' || ip.includes('127.0.0.1');
     const host = req.headers.host || '';
-    const isDev = host.includes('localhost') || host.includes('127.0.0.1') || process.env.NODE_ENV !== 'production';
+    const isDev = isLocalIp || host.includes('localhost') || host.includes('127.0.0.1') || process.env.NODE_ENV !== 'production';
 
     const used = ipUsage.get(ip) || 0;
 
