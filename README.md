@@ -33,23 +33,13 @@ graph TD
     A[Raw Sanskrit Input] --> B[Stage 1: Unicode Normalization]
     B --> C[Stage 2: Syllable Segmenter]
     C --> D[Stage 3: Weight Classifier]
-    D --> E{Stage 3a: Meter Matcher & Yati Resolver}
-    E -->|High Confidence Match| F[Stage 5: Compound Break Detector]
-    E -->|Low Confidence / Unknown| G[Stage 3a: Disambiguator Agent LLM]
+    D --> E[Stage 3a: Meter Matcher and Yati Resolver]
+    E --> F[Stage 5: Compound Break Detector]
+    E --> G[Stage 3a: Disambiguator Agent LLM]
     G --> F
     F --> H[Stage 6: Prompt Composer Agent LLM]
     H --> I[Stage 7: TTS Synthesis Engine]
     I --> J[Output Audio Wave Stream]
-    
-    style B fill:#1c1c1e,stroke:#2c2c2e,stroke-width:2px,color:#f5f5f7
-    style C fill:#1c1c1e,stroke:#2c2c2e,stroke-width:2px,color:#f5f5f7
-    style D fill:#1c1c1e,stroke:#2c2c2e,stroke-width:2px,color:#f5f5f7
-    style E fill:#2c2c2e,stroke:#3c3c3e,stroke-width:2px,color:#f5f5f7
-    style G fill:#1c1c1e,stroke:#2c2c2e,stroke-width:2px,color:#f5f5f7
-    style F fill:#1c1c1e,stroke:#2c2c2e,stroke-width:2px,color:#f5f5f7
-    style H fill:#1c1c1e,stroke:#2c2c2e,stroke-width:2px,color:#f5f5f7
-    style I fill:#1c1c1e,stroke:#2c2c2e,stroke-width:2px,color:#f5f5f7
-    style J fill:#1c1c1e,stroke:#2c2c2e,stroke-width:2px,color:#f5f5f7
 ```
 
 ### Stage 1: Unicode and Phonetic Normalization
