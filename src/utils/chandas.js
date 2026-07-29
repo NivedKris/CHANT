@@ -87,65 +87,92 @@ export function preprocessAndTokenize(text) {
 export function segmentSyllables(text) {
   const tokens = preprocessAndTokenize(text);
   const syllables = [];
-  let currentOnset = [];
   
-  // Mapping of matras to corresponding standalone vowels for length calculations
   const MATRA_TO_VOWEL = {
     'ा': 'आ', 'ि': 'इ', 'ी': 'ई', 'ु': 'उ', 'ू': 'ऊ', 'ृ': 'ऋ', 'ॄ': 'ॠ', 'ॢ': 'ऌ', 'ॣ': 'ॡ',
     'े': 'ए', 'ै': 'ऐ', 'ो': 'ओ', 'ौ': 'औ', 'ॅ': 'ए', 'ॉ': 'ओ'
   };
 
-  for (let i = 0; i < tokens.length; i++) {
+  let i = 0;
+  while (i < tokens.length) {
     const token = tokens[i];
     
-    if (token.type === 'whitespace' || token.type === 'punctuation') {
-      // If we have trailing consonants with no vowel before a space/boundary, 
-      // attach them to the last syllable's trailing group
-      if (currentOnset.length > 0 && syllables.length > 0) {
-        const last = syllables[syllables.length - 1];
-        last.trailing = last.trailing ? [...last.trailing, ...currentOnset] : [...currentOnset];
-        currentOnset = [];
-      }
+    if (token.type === 'whitespace' || token.type === 'punctuation' || token.type === 'other') {
+      i++;
       continue;
     }
     
     if (token.type === 'consonant') {
-      currentOnset.push(token.value);
-    } else if (token.type === 'virama') {
-      // Virama suppresses the implicit vowel of the last consonant
-      // It remains part of the current consonant cluster (onset/trailing)
-      currentOnset.push(token.value);
-    } else if (token.type === 'vowel' || token.type === 'matra') {
-      // Determine actual vowel representation
-      let nucleus = token.value;
-      if (token.type === 'matra') {
-        nucleus = MATRA_TO_VOWEL[token.value] || 'अ';
+      const onset = [token.value];
+      let j = i + 1;
+      
+      // Consume all consonant-suppressing virama sequences to form conjunct onsets
+      while (j < tokens.length && (tokens[j].type === 'virama' || (tokens[j].type === 'consonant' && tokens[j-1].type === 'virama'))) {
+        onset.push(tokens[j].value);
+        j++;
       }
       
+      let nucleus = 'अ'; // Implicit inherent short vowel 'अ'
+      let matchedLength = j - i;
+      
+      if (j < tokens.length && (tokens[j].type === 'matra' || tokens[j].type === 'vowel')) {
+        nucleus = tokens[j].type === 'matra' ? (MATRA_TO_VOWEL[tokens[j].value] || 'अ') : tokens[j].value;
+        matchedLength = (j - i) + 1;
+      }
+      
+      // If the last character in the onset has a trailing virama and NO vowel follows,
+      // it means this is a halant trailing consonant (closed syllable coda/trailing).
+      // It should merge into the preceding syllable rather than creating a new short 'अ' syllable.
+      if (onset[onset.length - 1] === VIRAMA) {
+        if (syllables.length > 0) {
+          const last = syllables[syllables.length - 1];
+          const trailingConsonants = tokens.slice(i, j).map(t => t.value);
+          last.trailing = last.trailing ? [...last.trailing, ...trailingConsonants] : [...trailingConsonants];
+          last.text += trailingConsonants.join('');
+          i = j;
+          continue;
+        }
+      }
+
       const syllable = {
-        onset: [...currentOnset],
+        onset: onset.filter(c => c !== VIRAMA),
         nucleus: nucleus,
         coda: null,
         trailing: [],
-        text: currentOnset.join('') + token.value
+        text: tokens.slice(i, i + matchedLength).map(t => t.value).join('')
       };
       
-      syllables.push(syllable);
-      currentOnset = []; // Reset buffer
-    } else if (token.type === 'anusvara' || token.type === 'visarga') {
-      if (syllables.length > 0) {
-        const last = syllables[syllables.length - 1];
-        last.coda = token.value;
-        last.text += token.value;
+      let nextIdx = i + matchedLength;
+      if (nextIdx < tokens.length && (tokens[nextIdx].type === 'anusvara' || tokens[nextIdx].type === 'visarga')) {
+        syllable.coda = tokens[nextIdx].value;
+        syllable.text += tokens[nextIdx].value;
+        matchedLength++;
       }
+      
+      syllables.push(syllable);
+      i += matchedLength;
+    } else if (token.type === 'vowel') {
+      const syllable = {
+        onset: [],
+        nucleus: token.value,
+        coda: null,
+        trailing: [],
+        text: token.value
+      };
+      
+      let matchedLength = 1;
+      let nextIdx = i + 1;
+      if (nextIdx < tokens.length && (tokens[nextIdx].type === 'anusvara' || tokens[nextIdx].type === 'visarga')) {
+        syllable.coda = tokens[nextIdx].value;
+        syllable.text += tokens[nextIdx].value;
+        matchedLength++;
+      }
+      
+      syllables.push(syllable);
+      i += matchedLength;
+    } else {
+      i++;
     }
-  }
-  
-  // Attach remaining trailing consonants to the final syllable
-  if (currentOnset.length > 0 && syllables.length > 0) {
-    const last = syllables[syllables.length - 1];
-    last.trailing = last.trailing ? [...last.trailing, ...currentOnset] : [...currentOnset];
-    last.text += currentOnset.join('');
   }
   
   return syllables;
@@ -232,8 +259,52 @@ export function matchMeter(weightedSyllables) {
   const len = pattern.length;
   
   if (len === 0) return { name: 'Unknown', confidence: 0 };
-  
-  // 1. Check for Anuṣṭubh (Śloka) — 8 syllables per pada with specific constraints
+
+  // Helper to match a single pāda pattern against samavṛtta templates
+  const matchSinglePada = (p) => {
+    const l = p.length;
+    let bestMeterName = null;
+    let bestMeterScore = 0;
+    
+    for (const meter of METERS) {
+      if (Math.abs(meter.syllables - l) <= 1) {
+        let score = 0;
+        const compareLen = Math.min(meter.pattern.length, l);
+        for (let j = 0; j < compareLen; j++) {
+          if (j === compareLen - 1 || meter.pattern[j] === p[j]) {
+            score++;
+          }
+        }
+        const confidence = score / compareLen;
+        if (confidence > bestMeterScore && confidence >= 0.8) {
+          bestMeterScore = confidence;
+          bestMeterName = meter.name;
+        }
+      }
+    }
+    return { name: bestMeterName, score: bestMeterScore };
+  };
+
+  // 1. If length matches a multi-pāda verse (e.g. 4 padas of 19 syllables = 76), split and evaluate
+  for (const meter of METERS) {
+    if (len % meter.syllables === 0 && len > meter.syllables) {
+      const padasCount = len / meter.syllables;
+      let matchedAll = true;
+      for (let p = 0; p < padasCount; p++) {
+        const padaPattern = pattern.slice(p * meter.syllables, (p + 1) * meter.syllables);
+        const matchRes = matchSinglePada(padaPattern);
+        if (matchRes.name !== meter.name) {
+          matchedAll = false;
+          break;
+        }
+      }
+      if (matchedAll) {
+        return { name: meter.name, confidence: 1.0 };
+      }
+    }
+  }
+
+  // 2. Check for Anuṣṭubh (Śloka) — 8 syllables per pada with specific constraints
   // In many segmentations, we might have slightly different count due to trailing punctuation, so allow 8-10 syllables
   if (len >= 8 && len <= 10) {
     // Check first 8 syllables for Anuṣṭubh metrics
@@ -256,31 +327,12 @@ export function matchMeter(weightedSyllables) {
     }
   }
   
-  // 2. Exact/Similarity template matching
-  let bestMatch = null;
-  let bestScore = 0;
-  
-  for (const meter of METERS) {
-    if (Math.abs(meter.syllables - len) <= 1) {
-      let score = 0;
-      // Match up to the length of whichever is shorter
-      const compareLen = Math.min(meter.pattern.length, len);
-      for (let j = 0; j < compareLen; j++) {
-        // Final syllable can be any weight (pādānte guruḥ / anceps)
-        if (j === compareLen - 1 || meter.pattern[j] === pattern[j]) {
-          score++;
-        }
-      }
-      
-      const confidence = score / compareLen;
-      if (confidence > bestScore && confidence >= 0.8) {
-        bestScore = confidence;
-        bestMatch = { name: meter.name, confidence: confidence };
-      }
-    }
+  // 3. Exact/Similarity template matching for single lines
+  const singleMatch = matchSinglePada(pattern);
+  if (singleMatch.name) {
+    return { name: singleMatch.name, confidence: singleMatch.score };
   }
   
-  if (bestMatch) return bestMatch;
   return { name: 'Unknown (Muktaka/Free Verse)', confidence: 0.5 };
 }
 

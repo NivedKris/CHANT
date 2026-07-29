@@ -124,17 +124,16 @@ export default async function handler(req, res) {
     const pcmBuffer = Buffer.from(base64Data, 'base64');
     const wavHeader = getWavHeader(pcmBuffer.length, 24000, 1, 16);
     const wavBuffer = Buffer.concat([wavHeader, pcmBuffer]);
+    const base64Wav = wavBuffer.toString('base64');
 
-    // Send the high-quality WAV audio stream along with scansion statistics to save
-    res.setHeader('Content-Type', 'audio/wav');
-    res.setHeader('Content-Length', wavBuffer.length);
+    // Send the detailed Agentic JSON response
     res.setHeader('X-Remaining-Tries', String(MAX_TRIES - (used + 1)));
-    
-    // Pass scansion details back in custom headers so the client can display them instantly
-    res.setHeader('X-Sanskrit-Meter', encodeURIComponent(pipelineState.annotation.meter_name));
-    res.setHeader('X-Sanskrit-Pattern', pipelineState.annotation.weights);
-
-    return res.status(200).send(wavBuffer);
+    return res.status(200).json({
+      audio: base64Wav,
+      annotation: pipelineState.annotation,
+      stylePrompt: pipelineState.stylePrompt,
+      disambiguationLog: pipelineState.disambiguationLog
+    });
 
   } catch (error) {
     console.error("Recitation serverless handler error:", error);

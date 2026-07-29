@@ -1,12 +1,16 @@
+import { fileURLToPath } from 'url';
+import path from 'path';
+import reciteHandler from './api/recite.js';
+import statusHandler from './api/status.js';
+import disambiguateHandler from './api/disambiguate.js';
+import compoundsHandler from './api/compounds.js';
+import composeHandler from './api/compose.js';
+
 import dotenv from 'dotenv';
 dotenv.config();
 
 import express from 'express';
 import cors from 'cors';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import reciteHandler from './api/recite.js';
-import statusHandler from './api/status.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -19,9 +23,10 @@ app.use(express.json());
 
 // Map local server routes to our shared API handlers
 app.get('/api/status', statusHandler);
-app.post('/api/recite', (req, res) => {
-  reciteHandler(req, res);
-});
+app.post('/api/recite', reciteHandler);
+app.post('/api/disambiguate', disambiguateHandler);
+app.post('/api/compounds', compoundsHandler);
+app.post('/api/compose', composeHandler);
 
 // Serve frontend static files compiled by Vite in the 'dist' directory
 app.use(express.static(path.join(__dirname, 'dist')));

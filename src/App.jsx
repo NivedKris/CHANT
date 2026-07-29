@@ -74,7 +74,7 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [remainingTries, setRemainingTries] = useState(5);
   const [history, setHistory] = useState([]);
-  const [currentAudio, setCurrentAudio] = useState(null); // { id, text, blob, url, meter, pattern }
+  const [currentAudio, setCurrentAudio] = useState(null); // { id, text, blob, url, meter, pattern, stylePrompt, segmentedText, disambiguationLog }
   const [isPlaying, setIsPlaying] = useState(false);
   const [audioDuration, setAudioDuration] = useState(0);
   const [audioProgress, setAudioProgress] = useState(0);
@@ -82,6 +82,9 @@ export default function App() {
 
   // Local live scansion visualization
   const [scansion, setScansion] = useState(null);
+
+  // Real-time terminal trace logging
+  const [traceLogs, setTraceLogs] = useState([]);
 
   const audioRef = useRef(null);
 
@@ -148,18 +151,115 @@ export default function App() {
     setHistory(items);
   };
 
+  const addTraceLog = (stage, message) => {
+    setTraceLogs(prev => [...prev, { stage, message, time: new Date().toLocaleTimeString() }]);
+  };
+
   const handleRecite = async () => {
     if (!text.trim()) return;
     setIsLoading(true);
     setErrorMsg('');
+    setTraceLogs([]);
+
+    const cleanText = text.trim();
 
     try {
+      // Step 1: Local deterministic scansion
+      addTraceLog("Stage 1 & 2: Local Syllabifier Core", "Scanning Devanagari Unicode glyphs and segmenting akṣaras locally...");
+      const localScan = scanVerse(cleanText);
+      addTraceLog("Stage 3: Local Metric Scansion", `Syllables: ${localScan.syllables.length} | Weights: ${localScan.pattern}`);
+
+      let matchedMeterName = localScan.meter;
+      let disambigLog = [];
+
+      // Step 2: Trigger Meter Disambiguation Agent if needed
+      if (localScan.meter.startsWith('Unknown') || localScan.confidence < 0.9) {
+        addTraceLog("Stage 3a: Disambiguation Agent", "Initiating fallback Meter Disambiguation LLM classifier...");
+        try {
+          const candidates = ['Anuṣṭubh (Śloka)', 'Indravajrā', 'Upendravajrā', 'Vasantatilakā', 'Mandākrāntā', 'Śārdūlavikrīḍita', 'Sragdharā', 'Mālinī', 'Śikhariṇī'];
+          const disRes = await fetch('/api/disambiguate', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ pattern: localScan.pattern, len: localScan.syllables.length, candidates })
+          });
+          if (disRes.ok) {
+            const disData = await disRes.json();
+            if (disData.chosen_meter && disData.chosen_meter !== 'Unknown') {
+              matchedMeterName = disData.chosen_meter;
+              disambigLog.push({
+                stage: 'Stage 3a (Meter Disambiguation)',
+                decision: matchedMeterName,
+                rationale: disData.rationale
+              });
+              addTraceLog("Stage 3a: Disambiguation Complete", `Resolved irregular structure ➔ ${matchedMeterName}. Rationale: ${disData.rationale}`);
+            }
+          }
+        } catch (e) {
+          console.error(e);
+        }
+      } else {
+        addTraceLog("Stage 3: Metric Scansion Complete", `Matched direct samavṛtta template ➔ ${matchedMeterName}`);
+      }
+
+      // Step 3: Trigger Compound Word Boundary Splitter Agent
+      addTraceLog("Stage 5: Compound Splitter Agent", "Analyzing text for compound word boundary (samāsa) constraints...");
+      let segmentedText = cleanText;
+      try {
+        const segRes = await fetch('/api/compounds', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ text: cleanText })
+        });
+        if (segRes.ok) {
+          const segData = await segRes.json();
+          if (segData.segmented_text) {
+            segmentedText = segData.segmented_text;
+            addTraceLog("Stage 5: Segmentation Complete", `Found compound segments: ${JSON.stringify(segData.compounds_found)}`);
+          }
+        }
+      } catch (e) {
+        console.error(e);
+      }
+
+      // Step 4: Trigger Prosody-to-Prompt Composer Agent
+      addTraceLog("Stage 6: Prompt Composer Agent", "Composing optimal acoustic style parameters based on analyzed metrics...");
+      const annotation = {
+        original_text: cleanText,
+        segmented_text: segmentedText,
+        meter_name: matchedMeterName,
+        syllable_count: localScan.syllables.length,
+        weights: localScan.pattern,
+        has_long_guru_runs: localScan.pattern.includes('GGGG'),
+        estimated_duration_matras: localScan.syllables.reduce((acc, s) => acc + (s.weight === 'G' ? 2 : 1), 0),
+        visarga_count: (cleanText.match(/ः/g) || []).length
+      };
+
+      let stylePrompt = "steady traditional chanting style.";
+      try {
+        const compRes = await fetch('/api/compose', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ annotation })
+        });
+        if (compRes.ok) {
+          const compData = await compRes.json();
+          if (compData.style_prompt) {
+            stylePrompt = compData.style_prompt;
+            addTraceLog("Stage 6: Composition Complete", `Style prompt created ➔ "${stylePrompt}"`);
+          }
+        }
+      } catch (e) {
+        console.error(e);
+      }
+
+      // Step 5: Synthesize High-Fidelity Recitation audio (Stage 7)
+      addTraceLog("Stage 7: TTS Synthesis Engine", "Synthesizing chanting audio over high-fidelity voice vectors...");
       const response = await fetch('/api/recite', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ text: text.trim() })
+        body: JSON.stringify({ text: cleanText })
       });
 
       if (!response.ok) {
@@ -167,24 +267,29 @@ export default function App() {
         throw new Error(errData.error || "Failed to generate recitation.");
       }
 
-      // Read headers for scansion details
-      const meterHeader = response.headers.get('X-Sanskrit-Meter');
-      const patternHeader = response.headers.get('X-Sanskrit-Pattern');
-      
-      const meterName = meterHeader ? decodeURIComponent(meterHeader) : 'Unknown';
-      const weightPattern = patternHeader || '';
+      const resData = await response.json();
+      addTraceLog("Stage 7: Audio Complete", "Received high-fidelity WAV buffer.");
 
-      // Read audio binary data
-      const blob = await response.blob();
+      // Convert base64 audio to binary Blob
+      const binaryString = window.atob(resData.audio);
+      const len = binaryString.length;
+      const bytes = new Uint8Array(len);
+      for (let i = 0; i < len; i++) {
+        bytes[i] = binaryString.charCodeAt(i);
+      }
+      const blob = new Blob([bytes], { type: 'audio/wav' });
       const url = URL.createObjectURL(blob);
 
       // Create history item
       const newItem = {
         id: Date.now(),
-        text: text.trim(),
+        text: cleanText,
         audioBlob: blob,
-        meter: meterName,
-        pattern: weightPattern,
+        meter: matchedMeterName,
+        pattern: localScan.pattern,
+        stylePrompt: stylePrompt,
+        segmentedText: segmentedText,
+        disambiguationLog: disambigLog,
         date: new Date().toLocaleDateString('en-US', {
           month: 'short',
           day: 'numeric',
@@ -466,6 +571,46 @@ export default function App() {
             </div>
           )}
 
+          {/* Live Real-time Trace Log Visualization */}
+          {isLoading && traceLogs.length > 0 && (
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '8px',
+              backgroundColor: 'var(--color-bg)',
+              borderRadius: '8px',
+              padding: '12px 16px',
+              border: '1px solid var(--color-border)',
+              maxHeight: '160px',
+              overflowY: 'auto'
+            }}>
+              <span style={{
+                fontSize: '10px',
+                textTransform: 'uppercase',
+                letterSpacing: '1px',
+                color: 'var(--color-text-secondary)',
+                fontWeight: '600'
+              }}>Real-time Pipeline Tracking</span>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                {traceLogs.map((log, idx) => (
+                  <div key={idx} style={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    fontSize: '11px',
+                    lineHeight: '1.4'
+                  }}>
+                    <span style={{ color: 'var(--color-text)' }}>
+                      <b style={{ color: 'var(--color-text-secondary)' }}>{log.stage}:</b> {log.message}
+                    </span>
+                    <span style={{ fontFamily: 'monospace', color: 'var(--color-text-secondary)', marginLeft: '8px' }}>
+                      {log.time}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           <div style={{
             display: 'flex',
             justifyContent: 'space-between',
@@ -575,7 +720,7 @@ export default function App() {
               alignItems: 'center',
               gap: '16px'
             }}>
-              {/* Play Pause Trigger */}
+              {/* Play/Pause Button */}
               <button
                 onClick={handlePlayPause}
                 style={{
@@ -594,20 +739,18 @@ export default function App() {
                 }}
               >
                 {isPlaying ? (
-                  /* Pause Icon */
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                     <rect x="4" y="4" width="4" height="16" />
                     <rect x="16" y="4" width="4" height="16" />
                   </svg>
                 ) : (
-                  /* Play Icon */
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style={{ marginLeft: '2px' }}>
                     <path d="M8 5v14l11-7z" />
                   </svg>
                 )}
               </button>
 
-              {/* Progress Bar */}
+              {/* Progress Slider */}
               <div style={{
                 flex: 1,
                 display: 'flex',
@@ -639,7 +782,7 @@ export default function App() {
                 </span>
               </div>
 
-              {/* Direct Download */}
+              {/* Download */}
               <a
                 href={currentAudio.audioUrl}
                 download={`chant-${currentAudio.id}.wav`}
@@ -663,6 +806,65 @@ export default function App() {
                 </svg>
               </a>
             </div>
+
+            {/* Agentic Recitation Board */}
+            {(currentAudio.stylePrompt || currentAudio.disambiguationLog?.length > 0 || currentAudio.segmentedText) && (
+              <div style={{
+                marginTop: '12px',
+                paddingTop: '12px',
+                borderTop: '1px solid var(--color-border)',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '10px'
+              }}>
+                <span style={{
+                  fontSize: '11px',
+                  textTransform: 'uppercase',
+                  letterSpacing: '1px',
+                  color: 'var(--color-text-secondary)',
+                  fontWeight: '600'
+                }}>Agentic Recitation Board</span>
+                
+                {currentAudio.segmentedText && currentAudio.segmentedText !== currentAudio.text && (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                    <span style={{ fontSize: '11px', color: 'var(--color-text-secondary)' }}>Compound Segmentation:</span>
+                    <p style={{ fontFamily: 'var(--font-serif)', fontSize: '14px', color: 'var(--color-text)' }}>
+                      {currentAudio.segmentedText}
+                    </p>
+                  </div>
+                )}
+
+                {currentAudio.stylePrompt && (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                    <span style={{ fontSize: '11px', color: 'var(--color-text-secondary)' }}>Composed Speech Guidelines:</span>
+                    <p style={{ fontSize: '13px', fontStyle: 'italic', color: 'var(--color-text)', lineHeight: '1.4' }}>
+                      "{currentAudio.stylePrompt}"
+                    </p>
+                  </div>
+                )}
+
+                {currentAudio.disambiguationLog && currentAudio.disambiguationLog.length > 0 && (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                    <span style={{ fontSize: '11px', color: 'var(--color-text-secondary)' }}>Decision Trace:</span>
+                    {currentAudio.disambiguationLog.map((logItem, idx) => (
+                      <div key={idx} style={{
+                        backgroundColor: 'var(--color-secondary-bg)',
+                        borderRadius: '6px',
+                        padding: '8px 10px',
+                        fontSize: '11px',
+                        border: '1px solid var(--color-border)'
+                      }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '2px' }}>
+                          <span style={{ fontWeight: '600' }}>{logItem.stage}</span>
+                          <span style={{ fontFamily: 'monospace', color: 'var(--color-text-secondary)' }}>➔ {logItem.decision}</span>
+                        </div>
+                        <p style={{ color: 'var(--color-text-secondary)', lineHeight: '1.3' }}>{logItem.rationale}</p>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
           </div>
         )}
 

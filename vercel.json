@@ -2,8 +2,24 @@
   "version": 2,
   "rewrites": [
     {
-      "source": "/api/(.*)",
-      "destination": "/api/$1"
+      "source": "/api/status",
+      "destination": "/api/status.js"
+    },
+    {
+      "source": "/api/recite",
+      "destination": "/api/recite.js"
+    },
+    {
+      "source": "/api/disambiguate",
+      "destination": "/api/disambiguate.js"
+    },
+    {
+      "source": "/api/compounds",
+      "destination": "/api/compounds.js"
+    },
+    {
+      "source": "/api/compose",
+      "destination": "/api/compose.js"
     },
     {
       "source": "/(.*)",
