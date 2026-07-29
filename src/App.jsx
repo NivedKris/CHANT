@@ -234,7 +234,8 @@ export default function App() {
         weights: localScan.pattern,
         has_long_guru_runs: localScan.pattern.includes('GGGG'),
         estimated_duration_matras: localScan.syllables.reduce((acc, s) => acc + (s.weight === 'G' ? 2 : 1), 0),
-        visarga_count: (cleanText.match(/ः/g) || []).length
+        visarga_count: (cleanText.match(/ः/g) || []).length,
+        tempo: tempo // Explicitly feed tempo parameter to the composer
       };
 
       let stylePrompt = "steady traditional chanting style.";
