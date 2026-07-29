@@ -240,17 +240,17 @@ export const GAṆAS = {
 };
 
 export const METERS = [
-  { name: 'Indravajrā', syllables: 11, pattern: 'GGLGGLGLGG', yati: [5] }, 
-  { name: 'Upendravajrā', syllables: 11, pattern: 'LGLGGLGLGG', yati: [5] },
-  { name: 'Vasantatilakā', syllables: 14, pattern: 'GGLGLLLGLGLGG', yati: [8] },
-  { name: 'Mandākrāntā', syllables: 17, pattern: 'GGGGLLLLLGGLGGGLG', yati: [4, 10] },
+  { name: 'Indravajrā', syllables: 11, pattern: 'GGLGGLLGLGG', yati: [5] }, 
+  { name: 'Upendravajrā', syllables: 11, pattern: 'LGLGGLLGLGG', yati: [5] },
+  { name: 'Vasantatilakā', syllables: 14, pattern: 'GGLGLLLGLLGLGG', yati: [8] },
+  { name: 'Mandākrāntā', syllables: 17, pattern: 'GGGGLLLLLGGLGGLGG', yati: [4, 10] },
   { name: 'Śārdūlavikrīḍita', syllables: 19, pattern: 'GGGLLGLGLLLGGGLGGLG', yati: [12] },
   { name: 'Sragdharā', syllables: 21, pattern: 'GGGGLGGLLLLLLGGLGGLGG', yati: [7, 14] },
   { name: 'Mālinī', syllables: 15, pattern: 'LLLLLLGGGLGGLGG', yati: [8] },
   { name: 'Drutavilambita', syllables: 12, pattern: 'LLLGLLGLLGLG', yati: [] },
   { name: 'Toṭaka', syllables: 12, pattern: 'LLGLLGLLGLLG', yati: [] },
   { name: 'Bhujaṅgaprayāta', syllables: 12, pattern: 'LGGLGGLGGLGG', yati: [6] },
-  { name: 'Śikhariṇī', syllables: 17, pattern: 'LGGGGGLLLLLGGLG', yati: [6] },
+  { name: 'Śikhariṇī', syllables: 17, pattern: 'LGGGGGLLLLLGGLLLG', yati: [6] },
   { name: 'Vaṃśastha', syllables: 12, pattern: 'LGLGGLLGLGLG', yati: [5] }
 ];
 
