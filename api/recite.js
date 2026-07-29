@@ -42,9 +42,12 @@ export default async function handler(req, res) {
     }
 
     const ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress || '127.0.0.1';
+    const host = req.headers.host || '';
+    const isDev = host.includes('localhost') || host.includes('127.0.0.1') || process.env.NODE_ENV !== 'production';
+
     const used = ipUsage.get(ip) || 0;
 
-    if (used >= MAX_TRIES) {
+    if (!isDev && used >= MAX_TRIES) {
       return res.status(429).json({ 
         error: "Session limit reached. You have completed your 5 allowed recitations for this session." 
       });
@@ -127,7 +130,7 @@ export default async function handler(req, res) {
     const base64Wav = wavBuffer.toString('base64');
 
     // Send the detailed Agentic JSON response
-    res.setHeader('X-Remaining-Tries', String(MAX_TRIES - (used + 1)));
+    res.setHeader('X-Remaining-Tries', isDev ? '9999' : String(MAX_TRIES - (used + 1)));
     return res.status(200).json({
       audio: base64Wav,
       annotation: pipelineState.annotation,
