@@ -31,8 +31,9 @@
     "prompt_sent": "Read this Sanskrit text following the inline syllable-level brackets. A bracket '[G:1]' indicates a Guru (heavy) syllable, while '[L:1]' indicates a Laghu (light) syllable. Do not read the brackets or symbols out loud. Read ONLY the Sanskrit syllables:\n\nध[G:1]र्म[G:1]क्षे[G:1]त्रे[G:1]कु[L:1]रु[G:1]क्षे[G:1]त्रे[G:1]स[L:1]म[L:1]वे[G:1]ता[G:1]यु[L:1]यु[G:1]त्स[L:1]वः[G:1]मा[G:1]म[L:1]काः[G:1]पा[G:1]ण्ड[L:1]वा[G:1]श्चै[G:1]व[L:1]कि[L:1]म[L:1]कु[G:1]र्व[L:1]त[L:1]स[G:1]ञ्ज[L:1]य[L:1]",
     "file_name": "verse_1_formatB.wav",
     "file_path": "audio/verse_1_formatB.wav",
-    "status": "failed",
-    "error": "No inline audio data returned in candidate response."
+    "file_size_bytes": 698924,
+    "measured_duration_seconds": 14.56,
+    "status": "success"
   },
   {
     "verse_id": 1,
@@ -174,8 +175,9 @@
     "prompt_sent": "Read this Sanskrit text following the inline syllable-level brackets. A bracket '[G:1]' indicates a Guru (heavy) syllable, while '[L:1]' indicates a Laghu (light) syllable. Do not read the brackets or symbols out loud. Read ONLY the Sanskrit syllables:\n\nय[L:1]दा[G:1]य[L:1]दा[G:1]हि[L:1]ध[G:1]र्म[G:1]स्य[G:1]ग्ला[G:1]नि[G:1]र्भ[L:1]व[L:1]ति[L:1]भा[G:1]र[L:1]त[L:1]अ[G:1]भ्यु[G:1]त्था[G:1]न[L:1]म[L:1]ध[G:1]र्म[G:1]स्य[L:1]त[L:1]दा[G:1]त्मा[G:1]नं[G:1]सृ[L:1]जा[G:1]म्य[L:1]हम्[G:1]",
     "file_name": "verse_4_formatB.wav",
     "file_path": "audio/verse_4_formatB.wav",
-    "status": "failed",
-    "error": "No inline audio data returned in candidate response."
+    "file_size_bytes": 796844,
+    "measured_duration_seconds": 16.6,
+    "status": "success"
   },
   {
     "verse_id": 4,
@@ -209,8 +211,9 @@
     "prompt_sent": "Read this Sanskrit text in a traditional, monotone Anuṣṭubh chanting style. Maintain a steady tempo of 86 BPM. Hold all heavy (guru) syllables roughly twice as long as light (laghu) syllables.  Pronounce visargas with a gentle echo. Speak ONLY the Sanskrit text below:\n\nनैमिषेऽनिमिषक्षेत्रे ऋषयः शौनकादयः। सत्रं स्वर्गाय लोकाय सहस्रसममासत॥",
     "file_name": "verse_5_formatA.wav",
     "file_path": "audio/verse_5_formatA.wav",
-    "status": "failed",
-    "error": "No inline audio data returned in candidate response."
+    "file_size_bytes": 737324,
+    "measured_duration_seconds": 15.36,
+    "status": "success"
   },
   {
     "verse_id": 5,
@@ -220,8 +223,9 @@
     "prompt_sent": "Read this Sanskrit text following the inline syllable-level brackets. A bracket '[G:1]' indicates a Guru (heavy) syllable, while '[L:1]' indicates a Laghu (light) syllable. Do not read the brackets or symbols out loud. Read ONLY the Sanskrit syllables:\n\nनै[G:1]मि[L:1]षे[G:1]नि[L:1]मि[L:1]ष[G:1]क्षे[G:1]त्रे[G:1]ऋ[L:1]ष[L:1]यः[G:1]शौ[G:1]न[L:1]का[G:1]द[L:1]यः[G:1]स[G:1]त्रं[G:1]स्व[G:1]र्गा[G:1]य[L:1]लो[G:1]का[G:1]य[L:1]स[L:1]ह[G:1]स्र[L:1]स[L:1]म[L:1]मा[G:1]स[L:1]त[L:1]",
     "file_name": "verse_5_formatB.wav",
     "file_path": "audio/verse_5_formatB.wav",
-    "status": "failed",
-    "error": "Gemini TTS API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"Request contains an invalid argument.\",\n    \"status\": \"INVALID_ARGUMENT\"\n  }\n}\n"
+    "file_size_bytes": 756524,
+    "measured_duration_seconds": 15.76,
+    "status": "success"
   },
   {
     "verse_id": 5,
@@ -327,8 +331,9 @@
     "prompt_sent": "Read this Sanskrit text in a steady traditional monotone Vasantatilakā chanting style. Strict Performance Directives:\n- Tempo: 86 BPM\n- Duration: Guru is 2x, Laghu is 1x\n- Breaks: Under no circumstances pause or breathe inside compound bounds (marked by hyphens). Take clean breaths only at punctuation.\n\nRecite ONLY this text:\n\nअङ्गं-हरेः-पुलकभूषणमाश्रयन्ती-भृङ्गाङ्गनेव-मुकुलाभरणं-तमालम्।--अङ्गीकृताखिलविभूतिरपाङ्गलीला-माङ्गल्यदास्तु-मम-मङ्गलदेवतायाः॥-",
     "file_name": "verse_7_formatC.wav",
     "file_path": "audio/verse_7_formatC.wav",
-    "status": "failed",
-    "error": "No inline audio data returned in candidate response."
+    "file_size_bytes": 1138604,
+    "measured_duration_seconds": 23.72,
+    "status": "success"
   },
   {
     "verse_id": 8,
@@ -458,8 +463,9 @@
     "prompt_sent": "Read this Sanskrit text following the inline syllable-level brackets. A bracket '[G:1]' indicates a Guru (heavy) syllable, while '[L:1]' indicates a Laghu (light) syllable. Do not read the brackets or symbols out loud. Read ONLY the Sanskrit syllables:\n\nज[G:1]न्मा[G:1]द्य[G:1]स्य[L:1]य[L:1]तो[G:1]न्व[L:1]या[G:1]दि[L:1]त[L:1]र[L:1]त[G:1]श्चा[G:1]र्थे[G:1]ष्व[L:1]भि[G:1]ज्ञः[G:1]स्व[L:1]राट्[G:1]ते[G:1]ने[G:1]ब्र[G:1]ह्म[L:1]हृ[L:1]दा[G:1]य[L:1]आ[G:1]दि[L:1]क[L:1]व[L:1]ये[G:1]मु[G:1]ह्य[G:1]न्ति[L:1]य[G:1]त्सू[G:1]र[L:1]यः[G:1]ते[G:1]जो[G:1]वा[G:1]रि[L:1]मृ[L:1]दां[G:1]य[L:1]था[G:1]वि[L:1]नि[L:1]म[L:1]यो[G:1]य[G:1]त्र[G:1]त्रि[L:1]स[G:1]र्गो[G:1]मृ[L:1]षा[G:1]धा[G:1]म्ना[G:1]स्वे[G:1]न[L:1]स[L:1]दा[G:1]नि[L:1]र[G:1]स्त[L:1]कु[L:1]ह[L:1]कं[G:1]स[G:1]त्यं[G:1]प[L:1]रं[G:1]धी[G:1]म[L:1]हि[L:1]",
     "file_name": "verse_10_formatB.wav",
     "file_path": "audio/verse_10_formatB.wav",
-    "status": "failed",
-    "error": "Gemini TTS API error: 400 - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"Request contains an invalid argument.\",\n    \"status\": \"INVALID_ARGUMENT\"\n  }\n}\n"
+    "file_size_bytes": 1895084,
+    "measured_duration_seconds": 39.48,
+    "status": "success"
   },
   {
     "verse_id": 10,
@@ -517,8 +523,9 @@
     "prompt_sent": "Read this Sanskrit text in a steady traditional monotone Śārdūlavikrīḍita chanting style. Strict Performance Directives:\n- Tempo: 86 BPM\n- Duration: Guru is 2x, Laghu is 1x\n- Breaks: Under no circumstances pause or breathe inside compound bounds (marked by hyphens). Take clean breaths only at punctuation.\n\nRecite ONLY this text:\n\nयं-ब्रह्मा-वरुणेन्द्ररुद्रमरुतः-स्तुन्वन्ति-दिव्यैः-स्तवैर्वेदैः-साङ्गपदक्रमोपनिषदैर्गायन्ति-यं-सामगाः।--ध्यानावस्थिततद्गतेन-मनसा-पश्यन्ति-यं-योगिनो-यस्यान्तं-न-विदुः-सुरासुरगणा-देवाय-तस्मै-नमः॥-",
     "file_name": "verse_11_formatC.wav",
     "file_path": "audio/verse_11_formatC.wav",
-    "status": "failed",
-    "error": "No inline audio data returned in candidate response."
+    "file_size_bytes": 1612844,
+    "measured_duration_seconds": 33.6,
+    "status": "success"
   },
   {
     "verse_id": 12,
@@ -552,8 +559,9 @@
     "prompt_sent": "Read this Sanskrit text following the inline syllable-level brackets. A bracket '[G:1]' indicates a Guru (heavy) syllable, while '[L:1]' indicates a Laghu (light) syllable. Do not read the brackets or symbols out loud. Read ONLY the Sanskrit syllables:\n\nक[G:1]स्तू[G:1]री[G:1]ति[L:1]ल[L:1]कं[G:1]ल[L:1]ला[G:1]ट[L:1]फ[L:1]ल[L:1]के[G:1]व[G:1]क्षः[G:1]स्थ[L:1]ले[G:1]कौ[G:1]स्तु[L:1]भं[G:1]ना[G:1]सा[G:1]ग्रे[G:1]न[L:1]व[L:1]मौ[G:1]क्ति[L:1]कं[G:1]क[L:1]र[L:1]त[L:1]ले[G:1]वे[G:1]णुं[G:1]क[L:1]रे[G:1]क[G:1]ङ्क[L:1]णम्[G:1]स[G:1]र्वा[G:1]ङ्गे[G:1]ह[L:1]रि[L:1]च[G:1]न्द[L:1]नं[G:1]सु[L:1]ल[L:1]लि[L:1]तं[G:1]क[G:1]ण्ठे[G:1]च[L:1]मु[G:1]क्ता[G:1]व[L:1]ली[G:1]गो[G:1]प[G:1]स्त्री[G:1]प[L:1]रि[L:1]वे[G:1]ष्टि[L:1]तो[G:1]वि[L:1]ज[L:1]य[L:1]ते[G:1]गो[G:1]पा[G:1]ल[L:1]चू[G:1]डा[G:1]म[L:1]णिः[G:1]",
     "file_name": "verse_12_formatB.wav",
     "file_path": "audio/verse_12_formatB.wav",
-    "status": "failed",
-    "error": "No inline audio data returned in candidate response."
+    "file_size_bytes": 2150444,
+    "measured_duration_seconds": 44.8,
+    "status": "success"
   },
   {
     "verse_id": 12,
