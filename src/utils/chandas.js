@@ -234,7 +234,9 @@ export function matchMeter(weightedSyllables) {
   if (len === 0) return { name: 'Unknown', confidence: 0 };
   
   // 1. Check for Anuṣṭubh (Śloka) — 8 syllables per pada with specific constraints
-  if (len === 8) {
+  // In many segmentations, we might have slightly different count due to trailing punctuation, so allow 8-10 syllables
+  if (len >= 8 && len <= 10) {
+    // Check first 8 syllables for Anuṣṭubh metrics
     const s5 = pattern[4];
     const s6 = pattern[5];
     const s7 = pattern[6];
@@ -247,6 +249,10 @@ export function matchMeter(weightedSyllables) {
         return { name: 'Anuṣṭubh (Śloka - Even Pāda)', confidence: 0.95, yati: [4] };
       }
       return { name: 'Anuṣṭubh (Śloka - Vipulā)', confidence: 0.8, yati: [4] };
+    }
+    // General fallback check: 8 syllables is traditionally almost always Anuṣṭubh in classical prayers
+    if (len === 8) {
+      return { name: 'Anuṣṭubh (Śloka)', confidence: 0.8, yati: [4] };
     }
   }
   
