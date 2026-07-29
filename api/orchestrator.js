@@ -174,10 +174,23 @@ function matchMeterVerification(scansion, matchedMeter) {
 
 // Rendering Structured Prosody Intermediate Representation (PIR) to Speech Prompts
 function renderProsodyPrompt(pir) {
+  let speedAdjective = "moderate, steady pace";
+  const bpm = pir.acoustic.tempo_bpm;
+  if (bpm >= 120) {
+    speedAdjective = "extremely fast, rapid, high-speed, brisk chanting with very quick word-transitions and short pauses";
+  } else if (bpm >= 100) {
+    speedAdjective = "fast, brisk, quick-tempo chanting with short pauses and rapid syllables";
+  } else if (bpm <= 65) {
+    speedAdjective = "extremely slow, solemn, drawn-out, highly elongated chanting with very long pauses and stretched vowels";
+  } else if (bpm <= 75) {
+    speedAdjective = "slow, measured, solemn chanting with elongated vowels and deep pauses";
+  }
+
   return (
     `Traditional Sanskrit recitation style: ${pir.meta.meter_name}. ` +
+    `CRITICAL PACING DIRECTIVE: You MUST recite at an ${speedAdjective}.\n` +
     `Performance parameters:\n` +
-    `- Tempo: ${pir.acoustic.tempo_bpm} BPM\n` +
+    `- Tempo: ${pir.acoustic.tempo_bpm} BPM (Strictly follow this speed)\n` +
     `- Pitch Variance: ${pir.acoustic.pitch_variance}\n` +
     `- Syllable duration ratio (mātrā): Guru (heavy) is ${pir.acoustic.guru_ratio}x, Laghu (light) is ${pir.acoustic.laghu_ratio}x.\n` +
     `- Pause constraints: Pause exactly ${pir.acoustic.pause_yati_ms}ms at matched yati (caesura) splits [${pir.acoustic.rules.allowedBreaths.filter(b => b.type === 'yati').map(b => b.position).join(', ')}]. ` +
