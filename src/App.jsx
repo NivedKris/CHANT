@@ -404,6 +404,8 @@ export default function App() {
     return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
   };
 
+  const isDev = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+
   return (
     <div style={{
       maxWidth: '640px',
@@ -625,7 +627,9 @@ export default function App() {
               fontFamily: 'var(--font-sans)',
               letterSpacing: '0.5px'
             }}>
-              {remainingTries === 0 ? (
+              {isDev ? (
+                "Unlimited development recitations"
+              ) : remainingTries === 0 ? (
                 <span style={{ color: 'var(--color-danger)' }}>No remaining recitations this session</span>
               ) : (
                 `${remainingTries} of 5 recitations remaining`
@@ -635,7 +639,7 @@ export default function App() {
             {/* Recite Action Button */}
             <button
               onClick={handleRecite}
-              disabled={isLoading || !text.trim() || remainingTries <= 0}
+              disabled={isLoading || !text.trim() || (!isDev && remainingTries <= 0)}
               style={{
                 backgroundColor: 'var(--color-accent)',
                 color: 'var(--color-bg)',
@@ -648,7 +652,7 @@ export default function App() {
                 display: 'flex',
                 alignItems: 'center',
                 gap: '8px',
-                opacity: (isLoading || !text.trim() || remainingTries <= 0) ? 0.4 : 1,
+                opacity: (isLoading || !text.trim() || (!isDev && remainingTries <= 0)) ? 0.4 : 1,
                 transition: 'opacity 0.2s ease, transform 0.1s ease',
               }}
             >
