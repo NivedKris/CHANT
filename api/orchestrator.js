@@ -157,6 +157,7 @@ export async function runOrchestrator(apiKey, rawText) {
     meter_name: matchedMeter,
     syllable_count: scansion.syllables.length,
     weights: scansion.pattern,
+    yati_caesura_positions: scansion.yati || [],
     has_long_guru_runs: hasLongGuruRuns,
     estimated_duration_matras: scansion.syllables.reduce((acc, s) => acc + (s.weight === 'G' ? 2 : 1), 0),
     visarga_count: (cleanText.match(/ः/g) || []).length

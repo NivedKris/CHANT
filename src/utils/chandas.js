@@ -240,18 +240,18 @@ export const GAṆAS = {
 };
 
 export const METERS = [
-  { name: 'Indravajrā', syllables: 11, pattern: 'GGLGGLGLGG' }, // allow last syllable anceps
-  { name: 'Upendravajrā', syllables: 11, pattern: 'LGLGGLGLGG' },
-  { name: 'Vasantatilakā', syllables: 14, pattern: 'GGLGLLLGLGLGG' },
-  { name: 'Mandākrāntā', syllables: 17, pattern: 'GGGGLLLLLGGLGGGLG' },
-  { name: 'Śārdūlavikrīḍita', syllables: 19, pattern: 'GGGLLGLGLLLGGGLGGLG' },
-  { name: 'Sragdharā', syllables: 21, pattern: 'GGGGLGGLLLLLLGGLGGLGG' },
-  { name: 'Mālinī', syllables: 15, pattern: 'LLLLLLGGGLGGLGG' },
-  { name: 'Drutavilambita', syllables: 12, pattern: 'LLLGLLGLLGLG' },
-  { name: 'Toṭaka', syllables: 12, pattern: 'LLGLLGLLGLLG' },
-  { name: 'Bhujaṅgaprayāta', syllables: 12, pattern: 'LGGLGGLGGLGG' },
-  { name: 'Śikhariṇī', syllables: 17, pattern: 'LGGGGGLLLLLGGLG' },
-  { name: 'Vaṃśastha', syllables: 12, pattern: 'LGLGGLLGLGLG' }
+  { name: 'Indravajrā', syllables: 11, pattern: 'GGLGGLGLGG', yati: [5] }, 
+  { name: 'Upendravajrā', syllables: 11, pattern: 'LGLGGLGLGG', yati: [5] },
+  { name: 'Vasantatilakā', syllables: 14, pattern: 'GGLGLLLGLGLGG', yati: [8] },
+  { name: 'Mandākrāntā', syllables: 17, pattern: 'GGGGLLLLLGGLGGGLG', yati: [4, 10] },
+  { name: 'Śārdūlavikrīḍita', syllables: 19, pattern: 'GGGLLGLGLLLGGGLGGLG', yati: [12] },
+  { name: 'Sragdharā', syllables: 21, pattern: 'GGGGLGGLLLLLLGGLGGLGG', yati: [7, 14] },
+  { name: 'Mālinī', syllables: 15, pattern: 'LLLLLLGGGLGGLGG', yati: [8] },
+  { name: 'Drutavilambita', syllables: 12, pattern: 'LLLGLLGLLGLG', yati: [] },
+  { name: 'Toṭaka', syllables: 12, pattern: 'LLGLLGLLGLLG', yati: [] },
+  { name: 'Bhujaṅgaprayāta', syllables: 12, pattern: 'LGGLGGLGGLGG', yati: [6] },
+  { name: 'Śikhariṇī', syllables: 17, pattern: 'LGGGGGLLLLLGGLG', yati: [6] },
+  { name: 'Vaṃśastha', syllables: 12, pattern: 'LGLGGLLGLGLG', yati: [5] }
 ];
 
 // Determine if the weighted pattern matches any classical samavrtta meter (ignoring final anceps)
@@ -364,10 +364,15 @@ export function scanVerse(text) {
   const weighted = classifyWeights(syllables);
   const match = matchMeter(weighted);
   
+  // Resolve yati (caesura) splits based on matched meter template
+  const matchedTemplate = METERS.find(m => m.name === match.name);
+  const yatiPositions = matchedTemplate ? (matchedTemplate.yati || []) : (match.yati || []);
+
   return {
     syllables: weighted,
     pattern: weighted.map(s => s.weight).join(''),
     meter: match.name,
-    confidence: match.confidence
+    confidence: match.confidence,
+    yati: yatiPositions
   };
 }
