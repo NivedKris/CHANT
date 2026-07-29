@@ -17,7 +17,8 @@ export default async function handler(req, res) {
 
   const url = `https://generativelanguage.googleapis.com/v1alpha/models/gemini-2.5-flash:generateContent?key=${API_KEY}`;
   
-  const systemPrompt = `You are a Sanskrit Meter (Chandas) classifier. You are given a syllable length, a binary weight pattern (L=Laghu, G=Guru), and a list of candidates. Select the best match from the candidates or return "irregular/vipulā" if it matches an irregular Anuṣṭubh variant. Output JSON ONLY.`;
+  const systemPrompt = `You are a Sanskrit Meter (Chandas) classifier. You are given a syllable length, a binary weight pattern (L=Laghu, G=Guru), and a list of candidates. Select the best match from the candidates.
+If the pattern contains structural/syllable irregularities or doesn't match the strict metric constraints of the candidate (for example, a Vasantatilakā quarter ending in GL instead of GG, or a Vaṃśastha missing its required alternation), you must categorize it as "irregular/vipulā" rather than forcing a false positive match. Output JSON ONLY.`;
   
   const payload = {
     contents: [

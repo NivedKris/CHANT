@@ -220,7 +220,10 @@ export async function runOrchestrator(apiKey, rawText, customTempo) {
 
   // Stage 3a: Conditional Meter Disambiguation Fallback
   let isFallbackTriggered = false;
-  if (scansion.meter.startsWith('Unknown') || scansion.confidence < 0.9) {
+  // Fallback only if scansion completely failed to match any samavrtta AND confidence is 0.0 (Unknown)
+  // If we already identified a candidate samavrtta locally with a valid threshold (e.g. Vasantatilakā 77%),
+  // we strictly PRESERVE it to avoid LLM hallucination and bad classification overrides!
+  if (scansion.meter === 'Unknown (Muktaka/Free Verse)') {
     isFallbackTriggered = true;
     const candidates = ['Anuṣṭubh (Śloka)', 'Indravajrā', 'Upendravajrā', 'Vasantatilakā', 'Mandākrāntā', 'Śārdūlavikrīḍita', 'Sragdharā', 'Mālinī', 'Śikhariṇī', 'Vaṃśastha'];
     const disambigRes = await disambiguateMeter(apiKey, scansion.pattern, scansion.syllables.length, candidates);
