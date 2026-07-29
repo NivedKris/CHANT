@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { scanVerse } from './utils/chandas';
 
 // Simple IndexedDB wrapper to store audio Blobs offline across browser restarts
 const DB_NAME = 'ChantDB';
@@ -73,13 +74,26 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [remainingTries, setRemainingTries] = useState(5);
   const [history, setHistory] = useState([]);
-  const [currentAudio, setCurrentAudio] = useState(null); // { id, text, blob, url }
+  const [currentAudio, setCurrentAudio] = useState(null); // { id, text, blob, url, meter, pattern }
   const [isPlaying, setIsPlaying] = useState(false);
   const [audioDuration, setAudioDuration] = useState(0);
   const [audioProgress, setAudioProgress] = useState(0);
   const [errorMsg, setErrorMsg] = useState('');
 
+  // Local live scansion visualization
+  const [scansion, setScansion] = useState(null);
+
   const audioRef = useRef(null);
+
+  // Analyze text on change for live scansion preview
+  useEffect(() => {
+    if (text.trim()) {
+      const scan = scanVerse(text);
+      setScansion(scan);
+    } else {
+      setScansion(null);
+    }
+  }, [text]);
 
   // Load status and history on mount
   useEffect(() => {
@@ -153,6 +167,13 @@ export default function App() {
         throw new Error(errData.error || "Failed to generate recitation.");
       }
 
+      // Read headers for scansion details
+      const meterHeader = response.headers.get('X-Sanskrit-Meter');
+      const patternHeader = response.headers.get('X-Sanskrit-Pattern');
+      
+      const meterName = meterHeader ? decodeURIComponent(meterHeader) : 'Unknown';
+      const weightPattern = patternHeader || '';
+
       // Read audio binary data
       const blob = await response.blob();
       const url = URL.createObjectURL(blob);
@@ -162,6 +183,8 @@ export default function App() {
         id: Date.now(),
         text: text.trim(),
         audioBlob: blob,
+        meter: meterName,
+        pattern: weightPattern,
         date: new Date().toLocaleDateString('en-US', {
           month: 'short',
           day: 'numeric',
@@ -376,6 +399,62 @@ export default function App() {
             }}
           />
 
+          {/* Live Scansion Visualization Block */}
+          {scansion && (
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '10px',
+              backgroundColor: 'var(--color-bg)',
+              borderRadius: '8px',
+              padding: '12px 16px',
+              border: '1px solid var(--color-border)',
+              animation: 'fadeIn 0.2s ease'
+            }}>
+              <div style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                fontSize: '11px',
+                color: 'var(--color-text-secondary)',
+                letterSpacing: '0.5px'
+              }}>
+                <span style={{ textTransform: 'uppercase', fontWeight: '500' }}>Live Meter Scan</span>
+                <span style={{ fontFamily: 'var(--font-serif)', color: 'var(--color-text)' }}>{scansion.meter}</span>
+              </div>
+              <div style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '8px',
+                marginTop: '4px'
+              }}>
+                {scansion.syllables.map((s, idx) => (
+                  <div key={idx} style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    minWidth: '24px',
+                    gap: '2px'
+                  }}>
+                    <span style={{
+                      fontSize: '12px',
+                      fontWeight: '600',
+                      color: s.weight === 'G' ? 'var(--color-text)' : 'var(--color-text-secondary)'
+                    }}>
+                      {s.weight === 'G' ? '◌̄' : '◌̆'}
+                    </span>
+                    <span style={{
+                      fontFamily: 'var(--font-serif)',
+                      fontSize: '15px',
+                      color: 'var(--color-text)'
+                    }}>
+                      {s.text}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           {errorMsg && (
             <div style={{
               color: 'var(--color-danger)',
@@ -458,13 +537,28 @@ export default function App() {
               flexDirection: 'column',
               gap: '4px'
             }}>
-              <span style={{
-                fontSize: '11px',
-                textTransform: 'uppercase',
-                letterSpacing: '1px',
-                color: 'var(--color-text-secondary)',
-                fontWeight: '500'
-              }}>Now Playing</span>
+              <div style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center'
+              }}>
+                <span style={{
+                  fontSize: '11px',
+                  textTransform: 'uppercase',
+                  letterSpacing: '1px',
+                  color: 'var(--color-text-secondary)',
+                  fontWeight: '500'
+                }}>Now Playing</span>
+                {currentAudio.meter && (
+                  <span style={{
+                    fontSize: '11px',
+                    fontFamily: 'var(--font-serif)',
+                    color: 'var(--color-text-secondary)'
+                  }}>
+                    {currentAudio.meter}
+                  </span>
+                )}
+              </div>
               <p style={{
                 fontFamily: 'var(--font-serif)',
                 fontSize: '16px',
@@ -621,14 +715,29 @@ export default function App() {
                       marginRight: '16px',
                       overflow: 'hidden'
                     }}>
-                      <p style={{
-                        fontFamily: 'var(--font-serif)',
-                        fontSize: '15px',
-                        color: 'var(--color-text)',
-                        whiteSpace: 'nowrap',
-                        overflow: 'hidden',
-                        textOverflow: 'ellipsis'
-                      }}>{item.text}</p>
+                      <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px', flexWrap: 'wrap' }}>
+                        <p style={{
+                          fontFamily: 'var(--font-serif)',
+                          fontSize: '15px',
+                          color: 'var(--color-text)',
+                          whiteSpace: 'nowrap',
+                          overflow: 'hidden',
+                          textOverflow: 'ellipsis'
+                        }}>{item.text}</p>
+                        {item.meter && (
+                          <span style={{
+                            fontSize: '10px',
+                            fontFamily: 'var(--font-serif)',
+                            color: 'var(--color-text-secondary)',
+                            backgroundColor: 'var(--color-bg)',
+                            padding: '2px 6px',
+                            borderRadius: '4px',
+                            border: '1px solid var(--color-border)'
+                          }}>
+                            {item.meter}
+                          </span>
+                        )}
+                      </div>
                       <span style={{
                         fontSize: '10px',
                         color: 'var(--color-text-secondary)'
