@@ -526,7 +526,9 @@ export default function App() {
                 letterSpacing: '0.5px'
               }}>
                 <span style={{ textTransform: 'uppercase', fontWeight: '500' }}>Live Meter Scan</span>
-                <span style={{ fontFamily: 'var(--font-serif)', color: 'var(--color-text)' }}>{scansion.meter}</span>
+                <span style={{ fontFamily: 'var(--font-serif)', color: 'var(--color-text)' }}>
+                  {scansion.meter} {scansion.confidence ? `(${Math.round(scansion.confidence * 100)}% Match)` : ''}
+                </span>
               </div>
               <div style={{
                 display: 'flex',
