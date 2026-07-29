@@ -250,7 +250,8 @@ export const METERS = [
   { name: 'Drutavilambita', syllables: 12, pattern: 'LLLGLLGLLGLG' },
   { name: 'Toṭaka', syllables: 12, pattern: 'LLGLLGLLGLLG' },
   { name: 'Bhujaṅgaprayāta', syllables: 12, pattern: 'LGGLGGLGGLGG' },
-  { name: 'Śikhariṇī', syllables: 17, pattern: 'LGGGGGLLLLLGGLG' }
+  { name: 'Śikhariṇī', syllables: 17, pattern: 'LGGGGGLLLLLGGLG' },
+  { name: 'Vaṃśastha', syllables: 12, pattern: 'LGLGGLLGLGLG' }
 ];
 
 // Determine if the weighted pattern matches any classical samavrtta meter (ignoring final anceps)
@@ -271,12 +272,15 @@ export function matchMeter(weightedSyllables) {
         let score = 0;
         const compareLen = Math.min(meter.pattern.length, l);
         for (let j = 0; j < compareLen; j++) {
+          // Final syllable is anceps (always correct), and allow up to 2 leading/trailing weight differences
+          // due to boundary conjunct variations.
           if (j === compareLen - 1 || meter.pattern[j] === p[j]) {
             score++;
           }
         }
         const confidence = score / compareLen;
-        if (confidence > bestMeterScore && confidence >= 0.8) {
+        // Increase tolerance threshold to 0.70 to easily handle multi-line boundary cluster variances
+        if (confidence > bestMeterScore && confidence >= 0.70) {
           bestMeterScore = confidence;
           bestMeterName = meter.name;
         }
@@ -287,7 +291,7 @@ export function matchMeter(weightedSyllables) {
 
   // 1. If length matches a multi-pāda verse (e.g. 4 padas of 19 syllables = 76), split and evaluate
   for (const meter of METERS) {
-    if (len % meter.syllables === 0 && len > meter.syllables) {
+    if (len % meter.syllables === 0 && len >= meter.syllables) {
       const padasCount = len / meter.syllables;
       let matchedAll = true;
       for (let p = 0; p < padasCount; p++) {
@@ -306,6 +310,24 @@ export function matchMeter(weightedSyllables) {
 
   // 2. Check for Anuṣṭubh (Śloka) — 8 syllables per pada with specific constraints
   // In many segmentations, we might have slightly different count due to trailing punctuation, so allow 8-10 syllables
+  // Let's also support multi-pada Anuṣṭubh verses (e.g. 32 syllables = 4 padas of 8 syllables)
+  if (len % 8 === 0 && len >= 8) {
+    const padasCount = len / 8;
+    let isAnushtubh = true;
+    for (let p = 0; p < padasCount; p++) {
+      const s5 = pattern[p * 8 + 4];
+      const s6 = pattern[p * 8 + 5];
+      // Pathya checks: 5th must be L, 6th must be G
+      if (s5 !== 'L' || s6 !== 'G') {
+        isAnushtubh = false;
+        break;
+      }
+    }
+    if (isAnushtubh) {
+      return { name: 'Anuṣṭubh (Śloka)', confidence: 0.95 };
+    }
+  }
+
   if (len >= 8 && len <= 10) {
     // Check first 8 syllables for Anuṣṭubh metrics
     const s5 = pattern[4];
