@@ -80,6 +80,9 @@ export default function App() {
   const [audioProgress, setAudioProgress] = useState(0);
   const [errorMsg, setErrorMsg] = useState('');
 
+  // Customizable tempo state (defaults to standard 86 BPM)
+  const [tempo, setTempo] = useState(86);
+
   // Local live scansion visualization
   const [scansion, setScansion] = useState(null);
 
@@ -259,7 +262,7 @@ export default function App() {
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ text: cleanText })
+        body: JSON.stringify({ text: cleanText, tempo: tempo })
       });
 
       if (!response.ok) {
@@ -511,7 +514,7 @@ export default function App() {
             <div style={{
               display: 'flex',
               flexDirection: 'column',
-              gap: '10px',
+              gap: '12px',
               backgroundColor: 'var(--color-bg)',
               borderRadius: '8px',
               padding: '12px 16px',
@@ -560,6 +563,41 @@ export default function App() {
                     </span>
                   </div>
                 ))}
+              </div>
+
+              {/* Tempo Control Bar */}
+              <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '4px',
+                borderTop: '1px solid var(--color-border)',
+                paddingTop: '10px',
+                marginTop: '4px'
+              }}>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  fontSize: '11px',
+                  color: 'var(--color-text-secondary)'
+                }}>
+                  <span style={{ textTransform: 'uppercase', fontWeight: '500' }}>Recitation Tempo (BPM)</span>
+                  <span style={{ fontFamily: 'monospace', color: 'var(--color-text)' }}>{tempo} BPM</span>
+                </div>
+                <input
+                  type="range"
+                  min="55"
+                  max="140"
+                  value={tempo}
+                  onChange={(e) => setTempo(parseInt(e.target.value, 10))}
+                  style={{
+                    width: '100%',
+                    accentColor: 'var(--color-text)',
+                    height: '3px',
+                    cursor: 'pointer',
+                    borderRadius: '2px',
+                    marginTop: '2px'
+                  }}
+                />
               </div>
             </div>
           )}

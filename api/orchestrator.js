@@ -119,11 +119,13 @@ function resolveConflicts(meterName, yatiPositions, dandaPositions, compoundsFou
 }
 
 // Structured Acoustic Parameter Generator
-function generateAcousticParameters(scansion, yatiPositions, conflictsState) {
+function generateAcousticParameters(scansion, yatiPositions, conflictsState, customTempo) {
   const hasLongGuru = scansion.pattern.includes('GGGG');
+  const baseTempo = hasLongGuru ? 72 : 86;
+  const tempo = customTempo || baseTempo;
   
   return {
-    tempo_bpm: hasLongGuru ? 72 : 86, // slower, more solemn tempo for heavy guru runs
+    tempo_bpm: tempo, // slower, more solemn tempo for heavy guru runs
     pitch_variance: "low (monotone traditional chanting register)",
     guru_ratio: 2.0,
     laghu_ratio: 1.0,
@@ -135,7 +137,7 @@ function generateAcousticParameters(scansion, yatiPositions, conflictsState) {
 }
 
 // Structured Prosody Intermediate Representation (PIR) Builder
-function buildProsodyIntermediateRepresentation(cleanText, scansion, matchedMeter, segmentedText, compoundsFound, yatiPositions) {
+function buildProsodyIntermediateRepresentation(cleanText, scansion, matchedMeter, segmentedText, compoundsFound, yatiPositions, customTempo) {
   // Find danda indices in text
   const dandaPositions = [];
   for (let i = 0; i < cleanText.length; i++) {
@@ -145,7 +147,7 @@ function buildProsodyIntermediateRepresentation(cleanText, scansion, matchedMete
   }
 
   const conflictsState = resolveConflicts(matchedMeter, yatiPositions, dandaPositions, compoundsFound);
-  const acousticParams = generateAcousticParameters(scansion, yatiPositions, conflictsState);
+  const acousticParams = generateAcousticParameters(scansion, yatiPositions, conflictsState, customTempo);
 
   return {
     pir_version: "2.0 (Linguistically Robust)",
@@ -185,7 +187,7 @@ function renderProsodyPrompt(pir) {
 }
 
 // [7] Main Orchestrator Pipeline
-export async function runOrchestrator(apiKey, rawText) {
+export async function runOrchestrator(apiKey, rawText, customTempo) {
   const cleanText = rawText.trim();
   const log = [];
 
@@ -208,6 +210,13 @@ export async function runOrchestrator(apiKey, rawText) {
   let compoundsFound = [];
   const compoundRes = await detectCompoundBoundaries(apiKey, cleanText);
   if (compoundRes && compoundRes.segmented_text) {
+    segmentedText = compoundRes.segmented_text;
+    compoundsFound = compoundRes.compounds_found || [];
+    log.push({ stage: 'Stage 5 (Compound Boundary Detection)', input: cleanText, decision: segmentedText, rationale: `Found compounds: ${JSON.stringify(compoundsFound)}` });
+  }
+
+  // Stage 6: Prosody Intermediate Representation (PIR) Annotation Layer
+  const pir = buildProsodyIntermediateRepresentation(cleanText, scansion, matchedMeter, segmentedText, compoundsFound, scansion.yati || [], customTempo);
     segmentedText = compoundRes.segmented_text;
     compoundsFound = compoundRes.compounds_found || [];
     log.push({ stage: 'Stage 5 (Compound Boundary Detection)', input: cleanText, decision: segmentedText, rationale: `Found compounds: ${JSON.stringify(compoundsFound)}` });

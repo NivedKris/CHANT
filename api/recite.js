@@ -36,7 +36,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { text } = req.body;
+    const { text, tempo } = req.body;
     if (!text || typeof text !== 'string' || text.trim().length === 0) {
       return res.status(400).json({ error: "Sanskrit text is required." });
     }
@@ -57,7 +57,7 @@ export default async function handler(req, res) {
     const cleanText = text.trim();
 
     // 1. Run full multi-stage orchestrator pipeline (agentic.md)
-    const pipelineState = await runOrchestrator(API_KEY, cleanText);
+    const pipelineState = await runOrchestrator(API_KEY, cleanText, tempo);
     
     // 2. Wrap and build full prompting transcript for TTS
     const prompt = (
