@@ -87,3 +87,13 @@ env/
 # Build directories
 /client/dist
 /dist
+
+# Research & Evaluation Artifacts (Offline testing & experimental logs)
+/experiments/
+/generate_logs.js
+/goal.md
+/agentic.md
+/test.md
+/prosody_analysis_logs.json
+/rules.md
+
