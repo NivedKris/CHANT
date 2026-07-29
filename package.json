@@ -9,6 +9,7 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "body-parser": "^2.3.0",
     "cors": "^2.8.5",
     "dotenv": "^16.6.1",
     "express": "^4.19.2",
