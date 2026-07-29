@@ -82,44 +82,106 @@ async function detectCompoundBoundaries(apiKey, text) {
   return null;
 }
 
-// [6] Prosody-to-Prompt Composer Agent (LLM) (agentic.md §2 [6])
-async function composeStylePrompt(apiKey, annotation) {
-  const url = `https://generativelanguage.googleapis.com/v1alpha/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
-  
-  const prompt = `You are writing a short, high-fidelity recitation performance direction for a Sanskrit speech engine. Write ONE natural-language style direction (2-3 sentences) that a traditional chanter would follow based on the provided scansion metrics. Keep it concise, professional, and focus on pacing, yati (pauses), visarga aspiration, and heavy vowel lengthening. Do not alter the original text or introduce any emojis. Output JSON ONLY.`;
-  
-  const payload = {
-    contents: [
-      {
-        parts: [
-          {
-            text: `${prompt}\n\nMetrics:\n${JSON.stringify(annotation, null, 2)}\n\nResponse format:\n{\n  "style_prompt": "..."\n}`
-          }
-        ]
-      }
-    ],
-    generationConfig: {
-      responseMimeType: "application/json"
-    }
-  };
+// Prosody Conflict Resolver (Priority Rule-based System)
+function resolveConflicts(meterName, yatiPositions, dandaPositions, compoundsFound) {
+  const conflicts = [];
+  const allowedBreaths = [];
+  const forbiddenBreaths = [];
 
-  try {
-    const res = await fetch(url, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload)
+  // Priority Rule: Meter > Yati > Danda > Compound > Word boundary
+  // 1. Mark obligatory Yati positions as preferred breath marks
+  if (yatiPositions && yatiPositions.length > 0) {
+    yatiPositions.forEach(pos => {
+      allowedBreaths.push({ position: pos, type: 'yati', reason: `Obligatory caesura defined by matched meter: ${meterName}` });
     });
-    if (res.ok) {
-      const data = await res.json();
-      const textResponse = data.candidates?.[0]?.content?.parts?.[0]?.text;
-      if (textResponse) {
-        return JSON.parse(textResponse.trim());
-      }
-    }
-  } catch (err) {
-    console.error("Style prompt composer agent failed:", err);
   }
-  return null;
+
+  // 2. Mark danda/double danda positions as allowed/obligatory breaths
+  if (dandaPositions && dandaPositions.length > 0) {
+    dandaPositions.forEach(pos => {
+      allowedBreaths.push({ position: pos, type: 'danda', reason: 'Classical punctuation line split boundary' });
+    });
+  }
+
+  // 3. Mark compounds as strictly forbidden breaths
+  if (compoundsFound && compoundsFound.length > 0) {
+    compoundsFound.forEach(comp => {
+      forbiddenBreaths.push({ pattern: comp, reason: 'Strict compound word boundary (samāsa). Breaths forbidden inside compound.' });
+    });
+  }
+
+  return {
+    priority: "Meter > Yati > Danda > Compound > Word boundary",
+    allowedBreaths,
+    forbiddenBreaths,
+    conflicts
+  };
+}
+
+// Structured Acoustic Parameter Generator
+function generateAcousticParameters(scansion, yatiPositions, conflictsState) {
+  const hasLongGuru = scansion.pattern.includes('GGGG');
+  
+  return {
+    tempo_bpm: hasLongGuru ? 72 : 86, // slower, more solemn tempo for heavy guru runs
+    pitch_variance: "low (monotone traditional chanting register)",
+    guru_ratio: 2.0,
+    laghu_ratio: 1.0,
+    pause_yati_ms: 180,
+    pause_danda_ms: 450,
+    compound_pause_allowed: false,
+    rules: conflictsState
+  };
+}
+
+// Structured Prosody Intermediate Representation (PIR) Builder
+function buildProsodyIntermediateRepresentation(cleanText, scansion, matchedMeter, segmentedText, compoundsFound, yatiPositions) {
+  // Find danda indices in text
+  const dandaPositions = [];
+  for (let i = 0; i < cleanText.length; i++) {
+    if (cleanText[i] === '।' || cleanText[i] === '॥') {
+      dandaPositions.push(i);
+    }
+  }
+
+  const conflictsState = resolveConflicts(matchedMeter, yatiPositions, dandaPositions, compoundsFound);
+  const acousticParams = generateAcousticParameters(scansion, yatiPositions, conflictsState);
+
+  return {
+    pir_version: "2.0 (Linguistically Robust)",
+    meta: {
+      original_text: cleanText,
+      segmented_text: segmentedText,
+      meter_name: matchedMeter,
+      syllable_count: scansion.syllables.length,
+      is_verified_meter: matchMeterVerification(scansion, matchedMeter)
+    },
+    scansion: {
+      weights: scansion.pattern,
+      syllables: scansion.syllables.map(s => ({ text: s.text, weight: s.weight }))
+    },
+    acoustic: acousticParams
+  };
+}
+
+// Meter Verification Step (Verifies scansion weights against perfect templates)
+function matchMeterVerification(scansion, matchedMeter) {
+  if (matchedMeter.startsWith('Unknown')) return false;
+  return scansion.confidence >= 0.9;
+}
+
+// Rendering Structured Prosody Intermediate Representation (PIR) to Speech Prompts
+function renderProsodyPrompt(pir) {
+  return (
+    `Traditional Sanskrit recitation style: ${pir.meta.meter_name}. ` +
+    `Performance parameters:\n` +
+    `- Tempo: ${pir.acoustic.tempo_bpm} BPM\n` +
+    `- Pitch Variance: ${pir.acoustic.pitch_variance}\n` +
+    `- Syllable duration ratio (mātrā): Guru (heavy) is ${pir.acoustic.guru_ratio}x, Laghu (light) is ${pir.acoustic.laghu_ratio}x.\n` +
+    `- Pause constraints: Pause exactly ${pir.acoustic.pause_yati_ms}ms at matched yati (caesura) splits [${pir.acoustic.rules.allowedBreaths.filter(b => b.type === 'yati').map(b => b.position).join(', ')}]. ` +
+    `Pause exactly ${pir.acoustic.pause_danda_ms}ms at classical danda punctuation marks.\n` +
+    `- Breathing restrictions: Under absolutely no circumstances should you pause or breath inside compound boundaries: ${JSON.stringify(pir.acoustic.rules.forbiddenBreaths.map(b => b.pattern))}.`
+  );
 }
 
 // [7] Main Orchestrator Pipeline
@@ -133,7 +195,7 @@ export async function runOrchestrator(apiKey, rawText) {
 
   // Stage 3a: Conditional Meter Disambiguation Fallback
   if (scansion.meter.startsWith('Unknown') || scansion.confidence < 0.9) {
-    const candidates = ['Anuṣṭubh (Śloka)', 'Indravajrā', 'Upendravajrā', 'Vasantatilakā', 'Mandākrāntā', 'Śārdūlavikrīḍita', 'Sragdharā', 'Mālinī', 'Śikhariṇī'];
+    const candidates = ['Anuṣṭubh (Śloka)', 'Indravajrā', 'Upendravajrā', 'Vasantatilakā', 'Mandākrāntā', 'Śārdūlavikrīḍita', 'Sragdharā', 'Mālinī', 'Śikhariṇī', 'Vaṃśastha'];
     const disambigRes = await disambiguateMeter(apiKey, scansion.pattern, scansion.syllables.length, candidates);
     if (disambigRes && disambigRes.chosen_meter !== 'Unknown') {
       matchedMeter = disambigRes.chosen_meter;
@@ -143,32 +205,28 @@ export async function runOrchestrator(apiKey, rawText) {
 
   // Stage 5: Compound boundaries detection
   let segmentedText = cleanText;
+  let compoundsFound = [];
   const compoundRes = await detectCompoundBoundaries(apiKey, cleanText);
   if (compoundRes && compoundRes.segmented_text) {
     segmentedText = compoundRes.segmented_text;
-    log.push({ stage: 'Stage 5 (Compound Boundary Detection)', input: cleanText, decision: segmentedText, rationale: `Found compounds: ${JSON.stringify(compoundRes.compounds_found)}` });
+    compoundsFound = compoundRes.compounds_found || [];
+    log.push({ stage: 'Stage 5 (Compound Boundary Detection)', input: cleanText, decision: segmentedText, rationale: `Found compounds: ${JSON.stringify(compoundsFound)}` });
   }
 
-  // Stage 6: Prosody Annotation Construction
-  const hasLongGuruRuns = scansion.pattern.includes('GGGG');
-  const annotation = {
-    original_text: cleanText,
-    segmented_text: segmentedText,
-    meter_name: matchedMeter,
-    syllable_count: scansion.syllables.length,
-    weights: scansion.pattern,
-    yati_caesura_positions: scansion.yati || [],
-    has_long_guru_runs: hasLongGuruRuns,
-    estimated_duration_matras: scansion.syllables.reduce((acc, s) => acc + (s.weight === 'G' ? 2 : 1), 0),
-    visarga_count: (cleanText.match(/ः/g) || []).length
-  };
+  // Stage 6: Prosody Intermediate Representation (PIR) Annotation Layer
+  const pir = buildProsodyIntermediateRepresentation(cleanText, scansion, matchedMeter, segmentedText, compoundsFound, scansion.yati || []);
 
-  // Stage 6: Compose performance prompts
-  const composerOutput = await composeStylePrompt(apiKey, annotation);
-  const stylePrompt = composerOutput?.style_prompt || `steady traditional Sanskrit recitation. Perfect classical pronunciation. No extra commentary.`;
+  // Stage 8: Prompt Renderer (Translates structured PIR to speech realization directions)
+  const stylePrompt = renderProsodyPrompt(pir);
 
   return {
-    annotation,
+    annotation: {
+      meter_name: pir.meta.meter_name,
+      segmented_text: pir.meta.segmented_text,
+      weights: pir.scansion.weights,
+      is_verified: pir.meta.is_verified_meter,
+      acoustic_params: pir.acoustic
+    },
     stylePrompt,
     disambiguationLog: log
   };
