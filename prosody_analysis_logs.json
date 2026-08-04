@@ -1,0 +1,7949 @@
+[
+  {
+    "expected_meter": "Anuṣṭubh",
+    "annotation": {
+      "meter_name": "Anuṣṭubh (Śloka)",
+      "segmented_text": "धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः। मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय",
+      "weights": "GGGGLGGGLLGGLGLGGLGGLGGLLLGLLGLL",
+      "meter_acceptance_state": "verified",
+      "scansion_trace": [
+        {
+          "text": "ध",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ध"
+          ]
+        },
+        {
+          "text": "र्म",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र",
+            "म"
+          ]
+        },
+        {
+          "text": "क्षे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "क",
+            "ष"
+          ]
+        },
+        {
+          "text": "त्रे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "त",
+            "र"
+          ]
+        },
+        {
+          "text": "कु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "रु",
+          "weight": "G",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "क्षे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "क",
+            "ष"
+          ]
+        },
+        {
+          "text": "त्रे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "त",
+            "र"
+          ]
+        },
+        {
+          "text": "स",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "म",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "वे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "ता",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "यु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "यु",
+          "weight": "G",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "त्स",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त",
+            "स"
+          ]
+        },
+        {
+          "text": "वः",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ः",
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "मा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "म",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "काः",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": "ः",
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "पा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "प"
+          ]
+        },
+        {
+          "text": "ण्ड",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ण",
+            "ड"
+          ]
+        },
+        {
+          "text": "वा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "श्चै",
+          "weight": "G",
+          "nucleus": "ऐ",
+          "coda": null,
+          "onset": [
+            "श",
+            "च"
+          ]
+        },
+        {
+          "text": "व",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "कि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "म",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "कु",
+          "weight": "G",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "र्व",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र",
+            "व"
+          ]
+        },
+        {
+          "text": "त",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "स",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "ञ्ज",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ञ",
+            "ज"
+          ]
+        },
+        {
+          "text": "य",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        }
+      ],
+      "acoustic_params": {
+        "tempo_bpm": 86,
+        "pitch_variance": "low (monotone traditional chanting register)",
+        "guru_ratio": 2,
+        "laghu_ratio": 1,
+        "pause_yati_ms": 180,
+        "pause_danda_ms": 450,
+        "compound_pause_allowed": false,
+        "rules": {
+          "priority_order": "Meter > Yati > Danda > Compound > Word boundary",
+          "allowedBreaths": [
+            {
+              "position": 42,
+              "type": "danda",
+              "reason": "Classical punctuation line split boundary"
+            }
+          ],
+          "forbiddenBreaths": []
+        }
+      },
+      "ablation": {
+        "pipeline_version": "2.1 (Linguistically Robust)",
+        "is_disambiguation_fallback_active": false,
+        "breath_planner_confidence_score": 1,
+        "meter_acceptance_state": "verified",
+        "scansion_syllable_traceability_active": true
+      }
+    },
+    "stylePrompt": "Traditional Sanskrit recitation style: Anuṣṭubh (Śloka). CRITICAL PACING DIRECTIVE: You MUST recite at an moderate, steady pace.\nPerformance parameters:\n- Tempo: 86 BPM (Strictly follow this speed)\n- Pitch Variance: low (monotone traditional chanting register)\n- Syllable duration ratio (mātrā): Guru (heavy) is 2x, Laghu (light) is 1x.\n- Pause constraints: Pause exactly 180ms at matched yati (caesura) splits []. Pause exactly 450ms at classical danda punctuation marks.\n- Breathing restrictions: Under absolutely no circumstances should you pause or breath inside compound boundaries: [].",
+    "disambiguationLog": []
+  },
+  {
+    "expected_meter": "Anuṣṭubh",
+    "annotation": {
+      "meter_name": "Anuṣṭubh (Śloka)",
+      "segmented_text": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन। मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि",
+      "weights": "GGGGLGGGGLGLLGLLGGLLLGGGGGGGLGLL",
+      "meter_acceptance_state": "verified",
+      "scansion_trace": [
+        {
+          "text": "क",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "र्म",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र",
+            "म"
+          ]
+        },
+        {
+          "text": "ण्ये",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "ण",
+            "य"
+          ]
+        },
+        {
+          "text": "वा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "धि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "ध"
+          ]
+        },
+        {
+          "text": "का",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "र",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "स्ते",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "स",
+            "त"
+          ]
+        },
+        {
+          "text": "मा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "फ",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "फ"
+          ]
+        },
+        {
+          "text": "ले",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "षु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "ष"
+          ]
+        },
+        {
+          "text": "क",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "दा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "च",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "च"
+          ]
+        },
+        {
+          "text": "न",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "मा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "क",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "र्म",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र",
+            "म"
+          ]
+        },
+        {
+          "text": "फ",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "फ"
+          ]
+        },
+        {
+          "text": "ल",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "हे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "ह"
+          ]
+        },
+        {
+          "text": "तु",
+          "weight": "G",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "र्भू",
+          "weight": "G",
+          "nucleus": "ऊ",
+          "coda": null,
+          "onset": [
+            "र",
+            "भ"
+          ]
+        },
+        {
+          "text": "र्मा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "र",
+            "म"
+          ]
+        },
+        {
+          "text": "ते",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "स",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "ङ्गो",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": null,
+          "onset": [
+            "ङ",
+            "ग"
+          ]
+        },
+        {
+          "text": "स्त्व",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स",
+            "त",
+            "व"
+          ]
+        },
+        {
+          "text": "क",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "र्म",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र",
+            "म"
+          ]
+        },
+        {
+          "text": "णि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "ण"
+          ]
+        }
+      ],
+      "acoustic_params": {
+        "tempo_bpm": 86,
+        "pitch_variance": "low (monotone traditional chanting register)",
+        "guru_ratio": 2,
+        "laghu_ratio": 1,
+        "pause_yati_ms": 180,
+        "pause_danda_ms": 450,
+        "compound_pause_allowed": false,
+        "rules": {
+          "priority_order": "Meter > Yati > Danda > Compound > Word boundary",
+          "allowedBreaths": [
+            {
+              "position": 34,
+              "type": "danda",
+              "reason": "Classical punctuation line split boundary"
+            }
+          ],
+          "forbiddenBreaths": []
+        }
+      },
+      "ablation": {
+        "pipeline_version": "2.1 (Linguistically Robust)",
+        "is_disambiguation_fallback_active": false,
+        "breath_planner_confidence_score": 1,
+        "meter_acceptance_state": "verified",
+        "scansion_syllable_traceability_active": true
+      }
+    },
+    "stylePrompt": "Traditional Sanskrit recitation style: Anuṣṭubh (Śloka). CRITICAL PACING DIRECTIVE: You MUST recite at an moderate, steady pace.\nPerformance parameters:\n- Tempo: 86 BPM (Strictly follow this speed)\n- Pitch Variance: low (monotone traditional chanting register)\n- Syllable duration ratio (mātrā): Guru (heavy) is 2x, Laghu (light) is 1x.\n- Pause constraints: Pause exactly 180ms at matched yati (caesura) splits []. Pause exactly 450ms at classical danda punctuation marks.\n- Breathing restrictions: Under absolutely no circumstances should you pause or breath inside compound boundaries: [].",
+    "disambiguationLog": []
+  },
+  {
+    "expected_meter": "Anuṣṭubh",
+    "annotation": {
+      "meter_name": "Anuṣṭubh (Śloka)",
+      "segmented_text": "यदा यदा हि धर्मस्य ग्लानिर्भवति भारत। अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम्",
+      "weights": "LGLGLGGGGGLLLGLLGGGLLGGLLGGGLGLG",
+      "meter_acceptance_state": "verified",
+      "scansion_trace": [
+        {
+          "text": "य",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "दा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "य",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "दा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "हि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "ह"
+          ]
+        },
+        {
+          "text": "ध",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ध"
+          ]
+        },
+        {
+          "text": "र्म",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र",
+            "म"
+          ]
+        },
+        {
+          "text": "स्य",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स",
+            "य"
+          ]
+        },
+        {
+          "text": "ग्ला",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "ग",
+            "ल"
+          ]
+        },
+        {
+          "text": "नि",
+          "weight": "G",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "र्भ",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र",
+            "भ"
+          ]
+        },
+        {
+          "text": "व",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "ति",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "भा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "भ"
+          ]
+        },
+        {
+          "text": "र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "त",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "अ",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": []
+        },
+        {
+          "text": "भ्यु",
+          "weight": "G",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "भ",
+            "य"
+          ]
+        },
+        {
+          "text": "त्था",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "त",
+            "थ"
+          ]
+        },
+        {
+          "text": "न",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "म",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "ध",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ध"
+          ]
+        },
+        {
+          "text": "र्म",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र",
+            "म"
+          ]
+        },
+        {
+          "text": "स्य",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स",
+            "य"
+          ]
+        },
+        {
+          "text": "त",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "दा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "त्मा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "त",
+            "म"
+          ]
+        },
+        {
+          "text": "नं",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ं",
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "सृ",
+          "weight": "L",
+          "nucleus": "ऋ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "जा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "ज"
+          ]
+        },
+        {
+          "text": "म्य",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "म",
+            "य"
+          ]
+        },
+        {
+          "text": "हम्",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ह"
+          ]
+        }
+      ],
+      "acoustic_params": {
+        "tempo_bpm": 86,
+        "pitch_variance": "low (monotone traditional chanting register)",
+        "guru_ratio": 2,
+        "laghu_ratio": 1,
+        "pause_yati_ms": 180,
+        "pause_danda_ms": 450,
+        "compound_pause_allowed": false,
+        "rules": {
+          "priority_order": "Meter > Yati > Danda > Compound > Word boundary",
+          "allowedBreaths": [
+            {
+              "position": 36,
+              "type": "danda",
+              "reason": "Classical punctuation line split boundary"
+            }
+          ],
+          "forbiddenBreaths": []
+        }
+      },
+      "ablation": {
+        "pipeline_version": "2.1 (Linguistically Robust)",
+        "is_disambiguation_fallback_active": false,
+        "breath_planner_confidence_score": 1,
+        "meter_acceptance_state": "verified",
+        "scansion_syllable_traceability_active": true
+      }
+    },
+    "stylePrompt": "Traditional Sanskrit recitation style: Anuṣṭubh (Śloka). CRITICAL PACING DIRECTIVE: You MUST recite at an moderate, steady pace.\nPerformance parameters:\n- Tempo: 86 BPM (Strictly follow this speed)\n- Pitch Variance: low (monotone traditional chanting register)\n- Syllable duration ratio (mātrā): Guru (heavy) is 2x, Laghu (light) is 1x.\n- Pause constraints: Pause exactly 180ms at matched yati (caesura) splits []. Pause exactly 450ms at classical danda punctuation marks.\n- Breathing restrictions: Under absolutely no circumstances should you pause or breath inside compound boundaries: [].",
+    "disambiguationLog": []
+  },
+  {
+    "expected_meter": "Anuṣṭubh",
+    "annotation": {
+      "meter_name": "Anuṣṭubh (Śloka)",
+      "segmented_text": "नैमिषेऽनिमिषक्षेत्रे ऋषयः शौनकादयः। सत्रं स्वर्गाय लोकाय सहस्रसममासत",
+      "weights": "GLGLLGGGLLGGLGLGGGGGLGGLLGLLLGLL",
+      "meter_acceptance_state": "verified",
+      "scansion_trace": [
+        {
+          "text": "नै",
+          "weight": "G",
+          "nucleus": "ऐ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "मि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "षे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "ष"
+          ]
+        },
+        {
+          "text": "नि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "मि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "ष",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ष"
+          ]
+        },
+        {
+          "text": "क्षे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "क",
+            "ष"
+          ]
+        },
+        {
+          "text": "त्रे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "त",
+            "र"
+          ]
+        },
+        {
+          "text": "ऋ",
+          "weight": "L",
+          "nucleus": "ऋ",
+          "coda": null,
+          "onset": []
+        },
+        {
+          "text": "ष",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ष"
+          ]
+        },
+        {
+          "text": "यः",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ः",
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "शौ",
+          "weight": "G",
+          "nucleus": "औ",
+          "coda": null,
+          "onset": [
+            "श"
+          ]
+        },
+        {
+          "text": "न",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "का",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "द",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "यः",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ः",
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "स",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "त्रं",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ं",
+          "onset": [
+            "त",
+            "र"
+          ]
+        },
+        {
+          "text": "स्व",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स",
+            "व"
+          ]
+        },
+        {
+          "text": "र्गा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "र",
+            "ग"
+          ]
+        },
+        {
+          "text": "य",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "लो",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "का",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "य",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "स",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "ह",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ह"
+          ]
+        },
+        {
+          "text": "स्र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स",
+            "र"
+          ]
+        },
+        {
+          "text": "स",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "म",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "मा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "स",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "त",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        }
+      ],
+      "acoustic_params": {
+        "tempo_bpm": 86,
+        "pitch_variance": "low (monotone traditional chanting register)",
+        "guru_ratio": 2,
+        "laghu_ratio": 1,
+        "pause_yati_ms": 180,
+        "pause_danda_ms": 450,
+        "compound_pause_allowed": false,
+        "rules": {
+          "priority_order": "Meter > Yati > Danda > Compound > Word boundary",
+          "allowedBreaths": [
+            {
+              "position": 34,
+              "type": "danda",
+              "reason": "Classical punctuation line split boundary"
+            }
+          ],
+          "forbiddenBreaths": []
+        }
+      },
+      "ablation": {
+        "pipeline_version": "2.1 (Linguistically Robust)",
+        "is_disambiguation_fallback_active": false,
+        "breath_planner_confidence_score": 1,
+        "meter_acceptance_state": "verified",
+        "scansion_syllable_traceability_active": true
+      }
+    },
+    "stylePrompt": "Traditional Sanskrit recitation style: Anuṣṭubh (Śloka). CRITICAL PACING DIRECTIVE: You MUST recite at an moderate, steady pace.\nPerformance parameters:\n- Tempo: 86 BPM (Strictly follow this speed)\n- Pitch Variance: low (monotone traditional chanting register)\n- Syllable duration ratio (mātrā): Guru (heavy) is 2x, Laghu (light) is 1x.\n- Pause constraints: Pause exactly 180ms at matched yati (caesura) splits []. Pause exactly 450ms at classical danda punctuation marks.\n- Breathing restrictions: Under absolutely no circumstances should you pause or breath inside compound boundaries: [].",
+    "disambiguationLog": []
+  },
+  {
+    "expected_meter": "Vasantatilakā",
+    "annotation": {
+      "meter_name": "Vasantatilakā",
+      "segmented_text": "नारायणाय परिपूर्णगुणार्णवाय विश्वोदयस्थितिलयोन्नियतिप्रदाय। ज्ञानप्रदाय विबुधासुरसौख्यदुःखसत्कारणाय वितताय नमोनमस्ते",
+      "weights": "GGLGLLLGLLGLGLGGLGLLLGLLGLGGGGLGLLLGLLGLGLGGLGLLLGLLGLGG",
+      "meter_acceptance_state": "verified",
+      "scansion_trace": [
+        {
+          "text": "ना",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "रा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "य",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "णा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "ण"
+          ]
+        },
+        {
+          "text": "य",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "प",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "प"
+          ]
+        },
+        {
+          "text": "रि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "पू",
+          "weight": "G",
+          "nucleus": "ऊ",
+          "coda": null,
+          "onset": [
+            "प"
+          ]
+        },
+        {
+          "text": "र्ण",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र",
+            "ण"
+          ]
+        },
+        {
+          "text": "गु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "ग"
+          ]
+        },
+        {
+          "text": "णा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "ण"
+          ]
+        },
+        {
+          "text": "र्ण",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र",
+            "ण"
+          ]
+        },
+        {
+          "text": "वा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "य",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "वि",
+          "weight": "G",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "श्वो",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": null,
+          "onset": [
+            "श",
+            "व"
+          ]
+        },
+        {
+          "text": "द",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "य",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "स्थि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "स",
+            "थ"
+          ]
+        },
+        {
+          "text": "ति",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "ल",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "यो",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "न्नि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "न",
+            "न"
+          ]
+        },
+        {
+          "text": "य",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "ति",
+          "weight": "G",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "प्र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "प",
+            "र"
+          ]
+        },
+        {
+          "text": "दा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "य",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "ज्ञा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "ज",
+            "ञ"
+          ]
+        },
+        {
+          "text": "न",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "प्र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "प",
+            "र"
+          ]
+        },
+        {
+          "text": "दा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "य",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "वि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "बु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "ब"
+          ]
+        },
+        {
+          "text": "धा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "ध"
+          ]
+        },
+        {
+          "text": "सु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "सौ",
+          "weight": "G",
+          "nucleus": "औ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "ख्य",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ख",
+            "य"
+          ]
+        },
+        {
+          "text": "दुः",
+          "weight": "G",
+          "nucleus": "उ",
+          "coda": "ः",
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "ख",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ख"
+          ]
+        },
+        {
+          "text": "स",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "त्का",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "त",
+            "क"
+          ]
+        },
+        {
+          "text": "र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "णा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "ण"
+          ]
+        },
+        {
+          "text": "य",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "वि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "त",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "ता",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "य",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "न",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "मो",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "न",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "म",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "स्ते",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "स",
+            "त"
+          ]
+        }
+      ],
+      "acoustic_params": {
+        "tempo_bpm": 86,
+        "pitch_variance": "low (monotone traditional chanting register)",
+        "guru_ratio": 2,
+        "laghu_ratio": 1,
+        "pause_yati_ms": 180,
+        "pause_danda_ms": 450,
+        "compound_pause_allowed": false,
+        "rules": {
+          "priority_order": "Meter > Yati > Danda > Compound > Word boundary",
+          "allowedBreaths": [
+            {
+              "position": 8,
+              "type": "yati",
+              "reason": "Obligatory caesura defined by matched meter: Vasantatilakā"
+            },
+            {
+              "position": 58,
+              "type": "danda",
+              "reason": "Classical punctuation line split boundary"
+            }
+          ],
+          "forbiddenBreaths": []
+        }
+      },
+      "ablation": {
+        "pipeline_version": "2.1 (Linguistically Robust)",
+        "is_disambiguation_fallback_active": false,
+        "breath_planner_confidence_score": 1,
+        "meter_acceptance_state": "verified",
+        "scansion_syllable_traceability_active": true
+      }
+    },
+    "stylePrompt": "Traditional Sanskrit recitation style: Vasantatilakā. CRITICAL PACING DIRECTIVE: You MUST recite at an moderate, steady pace.\nPerformance parameters:\n- Tempo: 86 BPM (Strictly follow this speed)\n- Pitch Variance: low (monotone traditional chanting register)\n- Syllable duration ratio (mātrā): Guru (heavy) is 2x, Laghu (light) is 1x.\n- Pause constraints: Pause exactly 180ms at matched yati (caesura) splits [8]. Pause exactly 450ms at classical danda punctuation marks.\n- Breathing restrictions: Under absolutely no circumstances should you pause or breath inside compound boundaries: [].",
+    "disambiguationLog": []
+  },
+  {
+    "expected_meter": "Vasantatilakā",
+    "annotation": {
+      "meter_name": "Vasantatilakā",
+      "segmented_text": "अङ्गं हरेः पुलकभूषणमाश्रयन्ती भृङ्गाङ्गनेव मुकुलाभरणं तमालम्। अङ्गीकृताखिलविभूतिरपाङ्गलीला माङ्गल्यदास्तु मम मङ्गलदेवतायाः",
+      "weights": "GGLGLLLGLLGLGGGGLGLLLGLLGLGGGGLGLLLGLLGLGGGGLGLLLGLLGLGG",
+      "meter_acceptance_state": "verified",
+      "scansion_trace": [
+        {
+          "text": "अ",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": []
+        },
+        {
+          "text": "ङ्गं",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ं",
+          "onset": [
+            "ङ",
+            "ग"
+          ]
+        },
+        {
+          "text": "ह",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ह"
+          ]
+        },
+        {
+          "text": "रेः",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": "ः",
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "पु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "प"
+          ]
+        },
+        {
+          "text": "ल",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "क",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "भू",
+          "weight": "G",
+          "nucleus": "ऊ",
+          "coda": null,
+          "onset": [
+            "भ"
+          ]
+        },
+        {
+          "text": "ष",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ष"
+          ]
+        },
+        {
+          "text": "ण",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ण"
+          ]
+        },
+        {
+          "text": "मा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "श्र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "श",
+            "र"
+          ]
+        },
+        {
+          "text": "य",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "न्ती",
+          "weight": "G",
+          "nucleus": "ई",
+          "coda": null,
+          "onset": [
+            "न",
+            "त"
+          ]
+        },
+        {
+          "text": "भृ",
+          "weight": "G",
+          "nucleus": "ऋ",
+          "coda": null,
+          "onset": [
+            "भ"
+          ]
+        },
+        {
+          "text": "ङ्गा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "ङ",
+            "ग"
+          ]
+        },
+        {
+          "text": "ङ्ग",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ङ",
+            "ग"
+          ]
+        },
+        {
+          "text": "ने",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "व",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "मु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "कु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "ला",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "भ",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "भ"
+          ]
+        },
+        {
+          "text": "र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "णं",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ं",
+          "onset": [
+            "ण"
+          ]
+        },
+        {
+          "text": "त",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "मा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "लम्",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "अ",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": []
+        },
+        {
+          "text": "ङ्गी",
+          "weight": "G",
+          "nucleus": "ई",
+          "coda": null,
+          "onset": [
+            "ङ",
+            "ग"
+          ]
+        },
+        {
+          "text": "कृ",
+          "weight": "L",
+          "nucleus": "ऋ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "ता",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "खि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "ख"
+          ]
+        },
+        {
+          "text": "ल",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "वि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "भू",
+          "weight": "G",
+          "nucleus": "ऊ",
+          "coda": null,
+          "onset": [
+            "भ"
+          ]
+        },
+        {
+          "text": "ति",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "पा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "प"
+          ]
+        },
+        {
+          "text": "ङ्ग",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ङ",
+            "ग"
+          ]
+        },
+        {
+          "text": "ली",
+          "weight": "G",
+          "nucleus": "ई",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "ला",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "मा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "ङ्ग",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ङ",
+            "ग"
+          ]
+        },
+        {
+          "text": "ल्य",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ल",
+            "य"
+          ]
+        },
+        {
+          "text": "दा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "स्तु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "स",
+            "त"
+          ]
+        },
+        {
+          "text": "म",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "म",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "म",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "ङ्ग",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ङ",
+            "ग"
+          ]
+        },
+        {
+          "text": "ल",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "दे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "व",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "ता",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "याः",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": "ः",
+          "onset": [
+            "य"
+          ]
+        }
+      ],
+      "acoustic_params": {
+        "tempo_bpm": 86,
+        "pitch_variance": "low (monotone traditional chanting register)",
+        "guru_ratio": 2,
+        "laghu_ratio": 1,
+        "pause_yati_ms": 180,
+        "pause_danda_ms": 450,
+        "compound_pause_allowed": false,
+        "rules": {
+          "priority_order": "Meter > Yati > Danda > Compound > Word boundary",
+          "allowedBreaths": [
+            {
+              "position": 8,
+              "type": "yati",
+              "reason": "Obligatory caesura defined by matched meter: Vasantatilakā"
+            },
+            {
+              "position": 60,
+              "type": "danda",
+              "reason": "Classical punctuation line split boundary"
+            }
+          ],
+          "forbiddenBreaths": []
+        }
+      },
+      "ablation": {
+        "pipeline_version": "2.1 (Linguistically Robust)",
+        "is_disambiguation_fallback_active": false,
+        "breath_planner_confidence_score": 1,
+        "meter_acceptance_state": "verified",
+        "scansion_syllable_traceability_active": true
+      }
+    },
+    "stylePrompt": "Traditional Sanskrit recitation style: Vasantatilakā. CRITICAL PACING DIRECTIVE: You MUST recite at an moderate, steady pace.\nPerformance parameters:\n- Tempo: 86 BPM (Strictly follow this speed)\n- Pitch Variance: low (monotone traditional chanting register)\n- Syllable duration ratio (mātrā): Guru (heavy) is 2x, Laghu (light) is 1x.\n- Pause constraints: Pause exactly 180ms at matched yati (caesura) splits [8]. Pause exactly 450ms at classical danda punctuation marks.\n- Breathing restrictions: Under absolutely no circumstances should you pause or breath inside compound boundaries: [].",
+    "disambiguationLog": []
+  },
+  {
+    "expected_meter": "Vasantatilakā",
+    "annotation": {
+      "meter_name": "Vasantatilakā",
+      "segmented_text": "मुग्धा मुहुर्विदधती वदने मुरारेः प्रेमत्रपाप्रणिहितानि गतागतानि। माला दृशोर्मधुकरीव महोत्पले या सा मे श्रियं दिशतु सागरसंभवायाः",
+      "weights": "GGLGLLLGLLGLGGGGLGLLLGLLGLGLGGLGLLLGLLGLGGGGLGLLLGLLGLGG",
+      "meter_acceptance_state": "verified",
+      "scansion_trace": [
+        {
+          "text": "मु",
+          "weight": "G",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "ग्धा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "ग",
+            "ध"
+          ]
+        },
+        {
+          "text": "मु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "हु",
+          "weight": "G",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "ह"
+          ]
+        },
+        {
+          "text": "र्वि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "र",
+            "व"
+          ]
+        },
+        {
+          "text": "द",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "ध",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ध"
+          ]
+        },
+        {
+          "text": "ती",
+          "weight": "G",
+          "nucleus": "ई",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "व",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "द",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "ने",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "मु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "रा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "रेः",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": "ः",
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "प्रे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "प",
+            "र"
+          ]
+        },
+        {
+          "text": "म",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "त्र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त",
+            "र"
+          ]
+        },
+        {
+          "text": "पा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "प"
+          ]
+        },
+        {
+          "text": "प्र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "प",
+            "र"
+          ]
+        },
+        {
+          "text": "णि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "ण"
+          ]
+        },
+        {
+          "text": "हि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "ह"
+          ]
+        },
+        {
+          "text": "ता",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "नि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "ग",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ग"
+          ]
+        },
+        {
+          "text": "ता",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "ग",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ग"
+          ]
+        },
+        {
+          "text": "ता",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "नि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "मा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "ला",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "दृ",
+          "weight": "L",
+          "nucleus": "ऋ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "शो",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": null,
+          "onset": [
+            "श"
+          ]
+        },
+        {
+          "text": "र्म",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र",
+            "म"
+          ]
+        },
+        {
+          "text": "धु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "ध"
+          ]
+        },
+        {
+          "text": "क",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "री",
+          "weight": "G",
+          "nucleus": "ई",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "व",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "म",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "हो",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": null,
+          "onset": [
+            "ह"
+          ]
+        },
+        {
+          "text": "त्प",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त",
+            "प"
+          ]
+        },
+        {
+          "text": "ले",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "या",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "सा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "मे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "श्रि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "श",
+            "र"
+          ]
+        },
+        {
+          "text": "यं",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ं",
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "दि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "श",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "श"
+          ]
+        },
+        {
+          "text": "तु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "सा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "ग",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ग"
+          ]
+        },
+        {
+          "text": "र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "सं",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ं",
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "भ",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "भ"
+          ]
+        },
+        {
+          "text": "वा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "याः",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": "ः",
+          "onset": [
+            "य"
+          ]
+        }
+      ],
+      "acoustic_params": {
+        "tempo_bpm": 86,
+        "pitch_variance": "low (monotone traditional chanting register)",
+        "guru_ratio": 2,
+        "laghu_ratio": 1,
+        "pause_yati_ms": 180,
+        "pause_danda_ms": 450,
+        "compound_pause_allowed": false,
+        "rules": {
+          "priority_order": "Meter > Yati > Danda > Compound > Word boundary",
+          "allowedBreaths": [
+            {
+              "position": 8,
+              "type": "yati",
+              "reason": "Obligatory caesura defined by matched meter: Vasantatilakā"
+            },
+            {
+              "position": 63,
+              "type": "danda",
+              "reason": "Classical punctuation line split boundary"
+            }
+          ],
+          "forbiddenBreaths": []
+        }
+      },
+      "ablation": {
+        "pipeline_version": "2.1 (Linguistically Robust)",
+        "is_disambiguation_fallback_active": false,
+        "breath_planner_confidence_score": 1,
+        "meter_acceptance_state": "verified",
+        "scansion_syllable_traceability_active": true
+      }
+    },
+    "stylePrompt": "Traditional Sanskrit recitation style: Vasantatilakā. CRITICAL PACING DIRECTIVE: You MUST recite at an moderate, steady pace.\nPerformance parameters:\n- Tempo: 86 BPM (Strictly follow this speed)\n- Pitch Variance: low (monotone traditional chanting register)\n- Syllable duration ratio (mātrā): Guru (heavy) is 2x, Laghu (light) is 1x.\n- Pause constraints: Pause exactly 180ms at matched yati (caesura) splits [8]. Pause exactly 450ms at classical danda punctuation marks.\n- Breathing restrictions: Under absolutely no circumstances should you pause or breath inside compound boundaries: [].",
+    "disambiguationLog": []
+  },
+  {
+    "expected_meter": "Vasantatilakā",
+    "annotation": {
+      "meter_name": "Vasantatilakā",
+      "segmented_text": "आहुश्च ते नलिननाभ पदारविन्दं योगेश्वरैर्हृदि विचिन्त्यमगाधबोधैः। संसारकूपपतितोत्तरणावलम्बं गेहजुषामपि मनस्युदियात्सदा नः",
+      "weights": "GGLGLLLGLLGLGGGGLGLLLGLLGLGGGGLGLLLGLLGLGGGLLGLLLGLLGLGG",
+      "meter_acceptance_state": "verified",
+      "scansion_trace": [
+        {
+          "text": "आ",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": []
+        },
+        {
+          "text": "हु",
+          "weight": "G",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "ह"
+          ]
+        },
+        {
+          "text": "श्च",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "श",
+            "च"
+          ]
+        },
+        {
+          "text": "ते",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "न",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "लि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "न",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "ना",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "भ",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "भ"
+          ]
+        },
+        {
+          "text": "प",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "प"
+          ]
+        },
+        {
+          "text": "दा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "वि",
+          "weight": "G",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "न्दं",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ं",
+          "onset": [
+            "न",
+            "द"
+          ]
+        },
+        {
+          "text": "यो",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "गे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "ग"
+          ]
+        },
+        {
+          "text": "श्व",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "श",
+            "व"
+          ]
+        },
+        {
+          "text": "रै",
+          "weight": "G",
+          "nucleus": "ऐ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "र्हृ",
+          "weight": "L",
+          "nucleus": "ऋ",
+          "coda": null,
+          "onset": [
+            "र",
+            "ह"
+          ]
+        },
+        {
+          "text": "दि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "वि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "चि",
+          "weight": "G",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "च"
+          ]
+        },
+        {
+          "text": "न्त्य",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "न",
+            "त",
+            "य"
+          ]
+        },
+        {
+          "text": "म",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "गा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "ग"
+          ]
+        },
+        {
+          "text": "ध",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ध"
+          ]
+        },
+        {
+          "text": "बो",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": null,
+          "onset": [
+            "ब"
+          ]
+        },
+        {
+          "text": "धैः",
+          "weight": "G",
+          "nucleus": "ऐ",
+          "coda": "ः",
+          "onset": [
+            "ध"
+          ]
+        },
+        {
+          "text": "सं",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ं",
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "सा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "कू",
+          "weight": "G",
+          "nucleus": "ऊ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "प",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "प"
+          ]
+        },
+        {
+          "text": "प",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "प"
+          ]
+        },
+        {
+          "text": "ति",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "तो",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "त्त",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त",
+            "त"
+          ]
+        },
+        {
+          "text": "र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "णा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "ण"
+          ]
+        },
+        {
+          "text": "व",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "ल",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "म्बं",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ं",
+          "onset": [
+            "म",
+            "ब"
+          ]
+        },
+        {
+          "text": "गे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "ग"
+          ]
+        },
+        {
+          "text": "ह",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ह"
+          ]
+        },
+        {
+          "text": "जु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "ज"
+          ]
+        },
+        {
+          "text": "षा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "ष"
+          ]
+        },
+        {
+          "text": "म",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "पि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "प"
+          ]
+        },
+        {
+          "text": "म",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "न",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "स्यु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "स",
+            "य"
+          ]
+        },
+        {
+          "text": "दि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "या",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "त्स",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त",
+            "स"
+          ]
+        },
+        {
+          "text": "दा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "नः",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ः",
+          "onset": [
+            "न"
+          ]
+        }
+      ],
+      "acoustic_params": {
+        "tempo_bpm": 86,
+        "pitch_variance": "low (monotone traditional chanting register)",
+        "guru_ratio": 2,
+        "laghu_ratio": 1,
+        "pause_yati_ms": 180,
+        "pause_danda_ms": 450,
+        "compound_pause_allowed": false,
+        "rules": {
+          "priority_order": "Meter > Yati > Danda > Compound > Word boundary",
+          "allowedBreaths": [
+            {
+              "position": 8,
+              "type": "yati",
+              "reason": "Obligatory caesura defined by matched meter: Vasantatilakā"
+            },
+            {
+              "position": 63,
+              "type": "danda",
+              "reason": "Classical punctuation line split boundary"
+            }
+          ],
+          "forbiddenBreaths": []
+        }
+      },
+      "ablation": {
+        "pipeline_version": "2.1 (Linguistically Robust)",
+        "is_disambiguation_fallback_active": false,
+        "breath_planner_confidence_score": 1,
+        "meter_acceptance_state": "verified",
+        "scansion_syllable_traceability_active": true
+      }
+    },
+    "stylePrompt": "Traditional Sanskrit recitation style: Vasantatilakā. CRITICAL PACING DIRECTIVE: You MUST recite at an moderate, steady pace.\nPerformance parameters:\n- Tempo: 86 BPM (Strictly follow this speed)\n- Pitch Variance: low (monotone traditional chanting register)\n- Syllable duration ratio (mātrā): Guru (heavy) is 2x, Laghu (light) is 1x.\n- Pause constraints: Pause exactly 180ms at matched yati (caesura) splits [8]. Pause exactly 450ms at classical danda punctuation marks.\n- Breathing restrictions: Under absolutely no circumstances should you pause or breath inside compound boundaries: [].",
+    "disambiguationLog": []
+  },
+  {
+    "expected_meter": "Śārdūlavikrīḍita",
+    "annotation": {
+      "meter_name": "Śārdūlavikrīḍita",
+      "segmented_text": "जन्माद्यस्य यतोऽन्वयादितरतश्चार्थेष्वभिज्ञः स्वराट् तेने ब्रह्म हृदा य आदिकवये मुह्यन्ति यत्सूरयः। तेजोवारिमृदां यथा विनिमयो यत्र त्रिसर्गोऽमृषा धाम्ना स्वेन सदा निरस्तकुहकं सत्यं परं धीमहि",
+      "weights": "GGGLLGLGLLLGGGLGGLGGGGLLGLGLLLGGGLGGLGGGGLLGLGLLLGGGLGGLGGGGLLGLGLLLGGGLGGLL",
+      "meter_acceptance_state": "verified",
+      "scansion_trace": [
+        {
+          "text": "ज",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ज"
+          ]
+        },
+        {
+          "text": "न्मा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "न",
+            "म"
+          ]
+        },
+        {
+          "text": "द्य",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "द",
+            "य"
+          ]
+        },
+        {
+          "text": "स्य",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स",
+            "य"
+          ]
+        },
+        {
+          "text": "य",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "तो",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "न्व",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "न",
+            "व"
+          ]
+        },
+        {
+          "text": "या",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "दि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "त",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "त",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "श्चा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "श",
+            "च"
+          ]
+        },
+        {
+          "text": "र्थे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "र",
+            "थ"
+          ]
+        },
+        {
+          "text": "ष्व",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ष",
+            "व"
+          ]
+        },
+        {
+          "text": "भि",
+          "weight": "G",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "भ"
+          ]
+        },
+        {
+          "text": "ज्ञः",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ः",
+          "onset": [
+            "ज",
+            "ञ"
+          ]
+        },
+        {
+          "text": "स्व",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स",
+            "व"
+          ]
+        },
+        {
+          "text": "राट्",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "ते",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "ने",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "ब्र",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ब",
+            "र"
+          ]
+        },
+        {
+          "text": "ह्म",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ह",
+            "म"
+          ]
+        },
+        {
+          "text": "हृ",
+          "weight": "L",
+          "nucleus": "ऋ",
+          "coda": null,
+          "onset": [
+            "ह"
+          ]
+        },
+        {
+          "text": "दा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "य",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "आ",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": []
+        },
+        {
+          "text": "दि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "क",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "व",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "ये",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "मु",
+          "weight": "G",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "ह्य",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ह",
+            "य"
+          ]
+        },
+        {
+          "text": "न्ति",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "न",
+            "त"
+          ]
+        },
+        {
+          "text": "य",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "त्सू",
+          "weight": "G",
+          "nucleus": "ऊ",
+          "coda": null,
+          "onset": [
+            "त",
+            "स"
+          ]
+        },
+        {
+          "text": "र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "यः",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ः",
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "ते",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "जो",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": null,
+          "onset": [
+            "ज"
+          ]
+        },
+        {
+          "text": "वा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "रि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "मृ",
+          "weight": "L",
+          "nucleus": "ऋ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "दां",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": "ं",
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "य",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "था",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "थ"
+          ]
+        },
+        {
+          "text": "वि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "नि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "म",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "यो",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "य",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "त्र",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त",
+            "र"
+          ]
+        },
+        {
+          "text": "त्रि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "त",
+            "र"
+          ]
+        },
+        {
+          "text": "स",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "र्गो",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": null,
+          "onset": [
+            "र",
+            "ग"
+          ]
+        },
+        {
+          "text": "मृ",
+          "weight": "L",
+          "nucleus": "ऋ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "षा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "ष"
+          ]
+        },
+        {
+          "text": "धा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "ध"
+          ]
+        },
+        {
+          "text": "म्ना",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "म",
+            "न"
+          ]
+        },
+        {
+          "text": "स्वे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "स",
+            "व"
+          ]
+        },
+        {
+          "text": "न",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "स",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "दा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "नि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "र",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "स्त",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स",
+            "त"
+          ]
+        },
+        {
+          "text": "कु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "ह",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ह"
+          ]
+        },
+        {
+          "text": "कं",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ं",
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "स",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "त्यं",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ं",
+          "onset": [
+            "त",
+            "य"
+          ]
+        },
+        {
+          "text": "प",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "प"
+          ]
+        },
+        {
+          "text": "रं",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ं",
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "धी",
+          "weight": "G",
+          "nucleus": "ई",
+          "coda": null,
+          "onset": [
+            "ध"
+          ]
+        },
+        {
+          "text": "म",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "हि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "ह"
+          ]
+        }
+      ],
+      "acoustic_params": {
+        "tempo_bpm": 86,
+        "pitch_variance": "low (monotone traditional chanting register)",
+        "guru_ratio": 2,
+        "laghu_ratio": 1,
+        "pause_yati_ms": 180,
+        "pause_danda_ms": 450,
+        "compound_pause_allowed": false,
+        "rules": {
+          "priority_order": "Meter > Yati > Danda > Compound > Word boundary",
+          "allowedBreaths": [
+            {
+              "position": 12,
+              "type": "yati",
+              "reason": "Obligatory caesura defined by matched meter: Śārdūlavikrīḍita"
+            },
+            {
+              "position": 97,
+              "type": "danda",
+              "reason": "Classical punctuation line split boundary"
+            }
+          ],
+          "forbiddenBreaths": []
+        }
+      },
+      "ablation": {
+        "pipeline_version": "2.1 (Linguistically Robust)",
+        "is_disambiguation_fallback_active": false,
+        "breath_planner_confidence_score": 1,
+        "meter_acceptance_state": "verified",
+        "scansion_syllable_traceability_active": true
+      }
+    },
+    "stylePrompt": "Traditional Sanskrit recitation style: Śārdūlavikrīḍita. CRITICAL PACING DIRECTIVE: You MUST recite at an moderate, steady pace.\nPerformance parameters:\n- Tempo: 86 BPM (Strictly follow this speed)\n- Pitch Variance: low (monotone traditional chanting register)\n- Syllable duration ratio (mātrā): Guru (heavy) is 2x, Laghu (light) is 1x.\n- Pause constraints: Pause exactly 180ms at matched yati (caesura) splits [12]. Pause exactly 450ms at classical danda punctuation marks.\n- Breathing restrictions: Under absolutely no circumstances should you pause or breath inside compound boundaries: [].",
+    "disambiguationLog": []
+  },
+  {
+    "expected_meter": "Śārdūlavikrīḍita",
+    "annotation": {
+      "meter_name": "Śārdūlavikrīḍita",
+      "segmented_text": "यं ब्रह्मा वरुणेन्द्ररुद्रमरुतः स्तुन्वन्ति दिव्यैः स्तवैर्वेदैः साङ्गपदक्रमोपनिषदैर्गायन्ति यं सामगाः। ध्यानावस्थिततद्गतेन मनसा पश्यन्ति यं योगिनो यस्यान्तं न विदुः सुरासुरगणा देवाय तस्मै नमः",
+      "weights": "GGGLLGLGLLLGGGLGGLGGGGLLGLGLLLGGGLGGLGGGGLLGLGLLLGGGLGGLGGGGLLGLGLLLGGGLGGLG",
+      "meter_acceptance_state": "verified",
+      "scansion_trace": [
+        {
+          "text": "यं",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ं",
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "ब्र",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ब",
+            "र"
+          ]
+        },
+        {
+          "text": "ह्मा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "ह",
+            "म"
+          ]
+        },
+        {
+          "text": "व",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "रु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "णे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "ण"
+          ]
+        },
+        {
+          "text": "न्द्र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "न",
+            "द",
+            "र"
+          ]
+        },
+        {
+          "text": "रु",
+          "weight": "G",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "द्र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "द",
+            "र"
+          ]
+        },
+        {
+          "text": "म",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "रु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "तः",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ः",
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "स्तु",
+          "weight": "G",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "स",
+            "त"
+          ]
+        },
+        {
+          "text": "न्व",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "न",
+            "व"
+          ]
+        },
+        {
+          "text": "न्ति",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "न",
+            "त"
+          ]
+        },
+        {
+          "text": "दि",
+          "weight": "G",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "व्यैः",
+          "weight": "G",
+          "nucleus": "ऐ",
+          "coda": "ः",
+          "onset": [
+            "व",
+            "य"
+          ]
+        },
+        {
+          "text": "स्त",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स",
+            "त"
+          ]
+        },
+        {
+          "text": "वै",
+          "weight": "G",
+          "nucleus": "ऐ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "र्वे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "र",
+            "व"
+          ]
+        },
+        {
+          "text": "दैः",
+          "weight": "G",
+          "nucleus": "ऐ",
+          "coda": "ः",
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "सा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "ङ्ग",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ङ",
+            "ग"
+          ]
+        },
+        {
+          "text": "प",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "प"
+          ]
+        },
+        {
+          "text": "द",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "क्र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "क",
+            "र"
+          ]
+        },
+        {
+          "text": "मो",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "प",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "प"
+          ]
+        },
+        {
+          "text": "नि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "ष",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ष"
+          ]
+        },
+        {
+          "text": "दै",
+          "weight": "G",
+          "nucleus": "ऐ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "र्गा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "र",
+            "ग"
+          ]
+        },
+        {
+          "text": "य",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "न्ति",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "न",
+            "त"
+          ]
+        },
+        {
+          "text": "यं",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ं",
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "सा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "म",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "गाः",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": "ः",
+          "onset": [
+            "ग"
+          ]
+        },
+        {
+          "text": "ध्या",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "ध",
+            "य"
+          ]
+        },
+        {
+          "text": "ना",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "व",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "स्थि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "स",
+            "थ"
+          ]
+        },
+        {
+          "text": "त",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "त",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "द्ग",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "द",
+            "ग"
+          ]
+        },
+        {
+          "text": "ते",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "न",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "म",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "न",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "सा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "प",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "प"
+          ]
+        },
+        {
+          "text": "श्य",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "श",
+            "य"
+          ]
+        },
+        {
+          "text": "न्ति",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "न",
+            "त"
+          ]
+        },
+        {
+          "text": "यं",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ं",
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "यो",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "गि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "ग"
+          ]
+        },
+        {
+          "text": "नो",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "य",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "स्या",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "स",
+            "य"
+          ]
+        },
+        {
+          "text": "न्तं",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ं",
+          "onset": [
+            "न",
+            "त"
+          ]
+        },
+        {
+          "text": "न",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "वि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "दुः",
+          "weight": "G",
+          "nucleus": "उ",
+          "coda": "ः",
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "सु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "रा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "सु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "ग",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ग"
+          ]
+        },
+        {
+          "text": "णा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "ण"
+          ]
+        },
+        {
+          "text": "दे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "वा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "य",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "त",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "स्मै",
+          "weight": "G",
+          "nucleus": "ऐ",
+          "coda": null,
+          "onset": [
+            "स",
+            "म"
+          ]
+        },
+        {
+          "text": "न",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "मः",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ः",
+          "onset": [
+            "म"
+          ]
+        }
+      ],
+      "acoustic_params": {
+        "tempo_bpm": 86,
+        "pitch_variance": "low (monotone traditional chanting register)",
+        "guru_ratio": 2,
+        "laghu_ratio": 1,
+        "pause_yati_ms": 180,
+        "pause_danda_ms": 450,
+        "compound_pause_allowed": false,
+        "rules": {
+          "priority_order": "Meter > Yati > Danda > Compound > Word boundary",
+          "allowedBreaths": [
+            {
+              "position": 12,
+              "type": "yati",
+              "reason": "Obligatory caesura defined by matched meter: Śārdūlavikrīḍita"
+            },
+            {
+              "position": 102,
+              "type": "danda",
+              "reason": "Classical punctuation line split boundary"
+            }
+          ],
+          "forbiddenBreaths": []
+        }
+      },
+      "ablation": {
+        "pipeline_version": "2.1 (Linguistically Robust)",
+        "is_disambiguation_fallback_active": false,
+        "breath_planner_confidence_score": 1,
+        "meter_acceptance_state": "verified",
+        "scansion_syllable_traceability_active": true
+      }
+    },
+    "stylePrompt": "Traditional Sanskrit recitation style: Śārdūlavikrīḍita. CRITICAL PACING DIRECTIVE: You MUST recite at an moderate, steady pace.\nPerformance parameters:\n- Tempo: 86 BPM (Strictly follow this speed)\n- Pitch Variance: low (monotone traditional chanting register)\n- Syllable duration ratio (mātrā): Guru (heavy) is 2x, Laghu (light) is 1x.\n- Pause constraints: Pause exactly 180ms at matched yati (caesura) splits [12]. Pause exactly 450ms at classical danda punctuation marks.\n- Breathing restrictions: Under absolutely no circumstances should you pause or breath inside compound boundaries: [].",
+    "disambiguationLog": []
+  },
+  {
+    "expected_meter": "Śārdūlavikrīḍita",
+    "annotation": {
+      "meter_name": "Śārdūlavikrīḍita",
+      "segmented_text": "कस्तूरीतिलकं ललाटफलके वक्षःस्थले कौस्तुभं नासाग्रे नवमौक्तिकं करतले वेणुं करे कङ्कणम्। सर्वाङ्गे हरिचन्दनं सुललितं कण्ठे च मुक्तावली गोपस्त्रीपरिवेष्टितो विजयते गोपालचूडामणिः",
+      "weights": "GGGLLGLGLLLGGGLGGLGGGGLLGLGLLLGGGLGGLGGGGLLGLGLLLGGGLGGLGGGGLLGLGLLLGGGLGGLG",
+      "meter_acceptance_state": "verified",
+      "scansion_trace": [
+        {
+          "text": "क",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "स्तू",
+          "weight": "G",
+          "nucleus": "ऊ",
+          "coda": null,
+          "onset": [
+            "स",
+            "त"
+          ]
+        },
+        {
+          "text": "री",
+          "weight": "G",
+          "nucleus": "ई",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "ति",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "ल",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "कं",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ं",
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "ल",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "ला",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "ट",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ट"
+          ]
+        },
+        {
+          "text": "फ",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "फ"
+          ]
+        },
+        {
+          "text": "ल",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "के",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "व",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "क्षः",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ः",
+          "onset": [
+            "क",
+            "ष"
+          ]
+        },
+        {
+          "text": "स्थ",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स",
+            "थ"
+          ]
+        },
+        {
+          "text": "ले",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "कौ",
+          "weight": "G",
+          "nucleus": "औ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "स्तु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "स",
+            "त"
+          ]
+        },
+        {
+          "text": "भं",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ं",
+          "onset": [
+            "भ"
+          ]
+        },
+        {
+          "text": "ना",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "सा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "ग्रे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "ग",
+            "र"
+          ]
+        },
+        {
+          "text": "न",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "व",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "मौ",
+          "weight": "G",
+          "nucleus": "औ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "क्ति",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "क",
+            "त"
+          ]
+        },
+        {
+          "text": "कं",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ं",
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "क",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "त",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "ले",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "वे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "णुं",
+          "weight": "G",
+          "nucleus": "उ",
+          "coda": "ं",
+          "onset": [
+            "ण"
+          ]
+        },
+        {
+          "text": "क",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "रे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "क",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "ङ्क",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ङ",
+            "क"
+          ]
+        },
+        {
+          "text": "णम्",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ण"
+          ]
+        },
+        {
+          "text": "स",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "र्वा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "र",
+            "व"
+          ]
+        },
+        {
+          "text": "ङ्गे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "ङ",
+            "ग"
+          ]
+        },
+        {
+          "text": "ह",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ह"
+          ]
+        },
+        {
+          "text": "रि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "च",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "च"
+          ]
+        },
+        {
+          "text": "न्द",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "न",
+            "द"
+          ]
+        },
+        {
+          "text": "नं",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ं",
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "सु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "ल",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "लि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "तं",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ं",
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "क",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "ण्ठे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "ण",
+            "ठ"
+          ]
+        },
+        {
+          "text": "च",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "च"
+          ]
+        },
+        {
+          "text": "मु",
+          "weight": "G",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "क्ता",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "क",
+            "त"
+          ]
+        },
+        {
+          "text": "व",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "ली",
+          "weight": "G",
+          "nucleus": "ई",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "गो",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": null,
+          "onset": [
+            "ग"
+          ]
+        },
+        {
+          "text": "प",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "प"
+          ]
+        },
+        {
+          "text": "स्त्री",
+          "weight": "G",
+          "nucleus": "ई",
+          "coda": null,
+          "onset": [
+            "स",
+            "त",
+            "र"
+          ]
+        },
+        {
+          "text": "प",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "प"
+          ]
+        },
+        {
+          "text": "रि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "वे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "ष्टि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "ष",
+            "ट"
+          ]
+        },
+        {
+          "text": "तो",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "वि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "ज",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ज"
+          ]
+        },
+        {
+          "text": "य",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "ते",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "गो",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": null,
+          "onset": [
+            "ग"
+          ]
+        },
+        {
+          "text": "पा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "प"
+          ]
+        },
+        {
+          "text": "ल",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "चू",
+          "weight": "G",
+          "nucleus": "ऊ",
+          "coda": null,
+          "onset": [
+            "च"
+          ]
+        },
+        {
+          "text": "डा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "ड"
+          ]
+        },
+        {
+          "text": "म",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "णिः",
+          "weight": "G",
+          "nucleus": "इ",
+          "coda": "ः",
+          "onset": [
+            "ण"
+          ]
+        }
+      ],
+      "acoustic_params": {
+        "tempo_bpm": 86,
+        "pitch_variance": "low (monotone traditional chanting register)",
+        "guru_ratio": 2,
+        "laghu_ratio": 1,
+        "pause_yati_ms": 180,
+        "pause_danda_ms": 450,
+        "compound_pause_allowed": false,
+        "rules": {
+          "priority_order": "Meter > Yati > Danda > Compound > Word boundary",
+          "allowedBreaths": [
+            {
+              "position": 12,
+              "type": "yati",
+              "reason": "Obligatory caesura defined by matched meter: Śārdūlavikrīḍita"
+            },
+            {
+              "position": 85,
+              "type": "danda",
+              "reason": "Classical punctuation line split boundary"
+            }
+          ],
+          "forbiddenBreaths": []
+        }
+      },
+      "ablation": {
+        "pipeline_version": "2.1 (Linguistically Robust)",
+        "is_disambiguation_fallback_active": false,
+        "breath_planner_confidence_score": 1,
+        "meter_acceptance_state": "verified",
+        "scansion_syllable_traceability_active": true
+      }
+    },
+    "stylePrompt": "Traditional Sanskrit recitation style: Śārdūlavikrīḍita. CRITICAL PACING DIRECTIVE: You MUST recite at an moderate, steady pace.\nPerformance parameters:\n- Tempo: 86 BPM (Strictly follow this speed)\n- Pitch Variance: low (monotone traditional chanting register)\n- Syllable duration ratio (mātrā): Guru (heavy) is 2x, Laghu (light) is 1x.\n- Pause constraints: Pause exactly 180ms at matched yati (caesura) splits [12]. Pause exactly 450ms at classical danda punctuation marks.\n- Breathing restrictions: Under absolutely no circumstances should you pause or breath inside compound boundaries: [].",
+    "disambiguationLog": []
+  },
+  {
+    "expected_meter": "Mālinī",
+    "annotation": {
+      "meter_name": "Mālinī",
+      "segmented_text": "भगवति तव तीरे नीरमात्राशनोऽहं विगतविषयतृष्णः कृष्णमाराधयामि। सकलकलुषभङ्गे स्वर्गसोपानसङ्गे तरलतरतरङ्गे देवि गङ्गे प्रसीद",
+      "weights": "LLLLLLGGGLGGLGGLLLLLLGGGLGGLGLLLLLLLGGGLGGLGGLLLLLLGGGLGGLGL",
+      "meter_acceptance_state": "verified",
+      "scansion_trace": [
+        {
+          "text": "भ",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "भ"
+          ]
+        },
+        {
+          "text": "ग",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ग"
+          ]
+        },
+        {
+          "text": "व",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "ति",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "त",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "व",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "ती",
+          "weight": "G",
+          "nucleus": "ई",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "रे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "नी",
+          "weight": "G",
+          "nucleus": "ई",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "मा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "त्रा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "त",
+            "र"
+          ]
+        },
+        {
+          "text": "श",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "श"
+          ]
+        },
+        {
+          "text": "नो",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "हं",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ं",
+          "onset": [
+            "ह"
+          ]
+        },
+        {
+          "text": "वि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "ग",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ग"
+          ]
+        },
+        {
+          "text": "त",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "वि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "ष",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ष"
+          ]
+        },
+        {
+          "text": "य",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "तृ",
+          "weight": "G",
+          "nucleus": "ऋ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "ष्णः",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ः",
+          "onset": [
+            "ष",
+            "ण"
+          ]
+        },
+        {
+          "text": "कृ",
+          "weight": "G",
+          "nucleus": "ऋ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "ष्ण",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ष",
+            "ण"
+          ]
+        },
+        {
+          "text": "मा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "रा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "ध",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ध"
+          ]
+        },
+        {
+          "text": "या",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "मि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "स",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "क",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "ल",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "क",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "लु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "ष",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ष"
+          ]
+        },
+        {
+          "text": "भ",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "भ"
+          ]
+        },
+        {
+          "text": "ङ्गे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "ङ",
+            "ग"
+          ]
+        },
+        {
+          "text": "स्व",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स",
+            "व"
+          ]
+        },
+        {
+          "text": "र्ग",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र",
+            "ग"
+          ]
+        },
+        {
+          "text": "सो",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "पा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "प"
+          ]
+        },
+        {
+          "text": "न",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "स",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "ङ्गे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "ङ",
+            "ग"
+          ]
+        },
+        {
+          "text": "त",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "ल",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "त",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "त",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "र",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "ङ्गे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "ङ",
+            "ग"
+          ]
+        },
+        {
+          "text": "दे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "वि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "ग",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ग"
+          ]
+        },
+        {
+          "text": "ङ्गे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "ङ",
+            "ग"
+          ]
+        },
+        {
+          "text": "प्र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "प",
+            "र"
+          ]
+        },
+        {
+          "text": "सी",
+          "weight": "G",
+          "nucleus": "ई",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "द",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        }
+      ],
+      "acoustic_params": {
+        "tempo_bpm": 86,
+        "pitch_variance": "low (monotone traditional chanting register)",
+        "guru_ratio": 2,
+        "laghu_ratio": 1,
+        "pause_yati_ms": 180,
+        "pause_danda_ms": 450,
+        "compound_pause_allowed": false,
+        "rules": {
+          "priority_order": "Meter > Yati > Danda > Compound > Word boundary",
+          "allowedBreaths": [
+            {
+              "position": 8,
+              "type": "yati",
+              "reason": "Obligatory caesura defined by matched meter: Mālinī"
+            },
+            {
+              "position": 59,
+              "type": "danda",
+              "reason": "Classical punctuation line split boundary"
+            }
+          ],
+          "forbiddenBreaths": []
+        }
+      },
+      "ablation": {
+        "pipeline_version": "2.1 (Linguistically Robust)",
+        "is_disambiguation_fallback_active": false,
+        "breath_planner_confidence_score": 1,
+        "meter_acceptance_state": "verified",
+        "scansion_syllable_traceability_active": true
+      }
+    },
+    "stylePrompt": "Traditional Sanskrit recitation style: Mālinī. CRITICAL PACING DIRECTIVE: You MUST recite at an moderate, steady pace.\nPerformance parameters:\n- Tempo: 86 BPM (Strictly follow this speed)\n- Pitch Variance: low (monotone traditional chanting register)\n- Syllable duration ratio (mātrā): Guru (heavy) is 2x, Laghu (light) is 1x.\n- Pause constraints: Pause exactly 180ms at matched yati (caesura) splits [8]. Pause exactly 450ms at classical danda punctuation marks.\n- Breathing restrictions: Under absolutely no circumstances should you pause or breath inside compound boundaries: [].",
+    "disambiguationLog": []
+  },
+  {
+    "expected_meter": "Mālinī",
+    "annotation": {
+      "meter_name": "Unknown (Muktaka/Free Verse)",
+      "segmented_text": "हठलुठ दल घिष्टोत्कण्ठदष्ठष्विघुत् सटशठ कठिनोः पीठभित्सुष्ठनिष्ठाम्। पठतिनुतव कण्ठाधिष्ठ घोरान्त्रमाला दह दह नरसिंहासह्यवीर्याहितं मे",
+      "weights": "LLLLLLGGGLGGLGLLLLLLGGLGGLGGLLLLLLGGGLGGLGGLLLLLLGGGLGGLGG",
+      "meter_acceptance_state": "rejected",
+      "scansion_trace": [
+        {
+          "text": "ह",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ह"
+          ]
+        },
+        {
+          "text": "ठ",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ठ"
+          ]
+        },
+        {
+          "text": "लु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "ठ",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ठ"
+          ]
+        },
+        {
+          "text": "द",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "ल",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "घि",
+          "weight": "G",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "घ"
+          ]
+        },
+        {
+          "text": "ष्टो",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": null,
+          "onset": [
+            "ष",
+            "ट"
+          ]
+        },
+        {
+          "text": "त्क",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त",
+            "क"
+          ]
+        },
+        {
+          "text": "ण्ठ",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ण",
+            "ठ"
+          ]
+        },
+        {
+          "text": "द",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "ष्ठ",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ष",
+            "ठ"
+          ]
+        },
+        {
+          "text": "ष्वि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "ष",
+            "व"
+          ]
+        },
+        {
+          "text": "घुत्",
+          "weight": "G",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "घ"
+          ]
+        },
+        {
+          "text": "स",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "ट",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ट"
+          ]
+        },
+        {
+          "text": "श",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "श"
+          ]
+        },
+        {
+          "text": "ठ",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ठ"
+          ]
+        },
+        {
+          "text": "क",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "ठि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "ठ"
+          ]
+        },
+        {
+          "text": "नोः",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": "ः",
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "पी",
+          "weight": "G",
+          "nucleus": "ई",
+          "coda": null,
+          "onset": [
+            "प"
+          ]
+        },
+        {
+          "text": "ठ",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ठ"
+          ]
+        },
+        {
+          "text": "भि",
+          "weight": "G",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "भ"
+          ]
+        },
+        {
+          "text": "त्सु",
+          "weight": "G",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "त",
+            "स"
+          ]
+        },
+        {
+          "text": "ष्ठ",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ष",
+            "ठ"
+          ]
+        },
+        {
+          "text": "नि",
+          "weight": "G",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "ष्ठाम्",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "ष",
+            "ठ"
+          ]
+        },
+        {
+          "text": "प",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "प"
+          ]
+        },
+        {
+          "text": "ठ",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ठ"
+          ]
+        },
+        {
+          "text": "ति",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "नु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "त",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "व",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "क",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "ण्ठा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "ण",
+            "ठ"
+          ]
+        },
+        {
+          "text": "धि",
+          "weight": "G",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "ध"
+          ]
+        },
+        {
+          "text": "ष्ठ",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ष",
+            "ठ"
+          ]
+        },
+        {
+          "text": "घो",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": null,
+          "onset": [
+            "घ"
+          ]
+        },
+        {
+          "text": "रा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "न्त्र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "न",
+            "त",
+            "र"
+          ]
+        },
+        {
+          "text": "मा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "ला",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "द",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "ह",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ह"
+          ]
+        },
+        {
+          "text": "द",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "ह",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ह"
+          ]
+        },
+        {
+          "text": "न",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "सिं",
+          "weight": "G",
+          "nucleus": "इ",
+          "coda": "ं",
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "हा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "ह"
+          ]
+        },
+        {
+          "text": "स",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "ह्य",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ह",
+            "य"
+          ]
+        },
+        {
+          "text": "वी",
+          "weight": "G",
+          "nucleus": "ई",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "र्या",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "र",
+            "य"
+          ]
+        },
+        {
+          "text": "हि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "ह"
+          ]
+        },
+        {
+          "text": "तं",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ं",
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "मे",
+          "weight": "G",
+          "nucleus": "ए",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        }
+      ],
+      "acoustic_params": {
+        "tempo_bpm": 86,
+        "pitch_variance": "low (monotone traditional chanting register)",
+        "guru_ratio": 2,
+        "laghu_ratio": 1,
+        "pause_yati_ms": 180,
+        "pause_danda_ms": 450,
+        "compound_pause_allowed": false,
+        "rules": {
+          "priority_order": "Meter > Yati > Danda > Compound > Word boundary",
+          "allowedBreaths": [
+            {
+              "position": 66,
+              "type": "danda",
+              "reason": "Classical punctuation line split boundary"
+            }
+          ],
+          "forbiddenBreaths": []
+        }
+      },
+      "ablation": {
+        "pipeline_version": "2.1 (Linguistically Robust)",
+        "is_disambiguation_fallback_active": true,
+        "breath_planner_confidence_score": 1,
+        "meter_acceptance_state": "rejected",
+        "scansion_syllable_traceability_active": true
+      }
+    },
+    "stylePrompt": "Traditional Sanskrit recitation style: Unknown (Muktaka/Free Verse). CRITICAL PACING DIRECTIVE: You MUST recite at an moderate, steady pace.\nPerformance parameters:\n- Tempo: 86 BPM (Strictly follow this speed)\n- Pitch Variance: low (monotone traditional chanting register)\n- Syllable duration ratio (mātrā): Guru (heavy) is 2x, Laghu (light) is 1x.\n- Pause constraints: Pause exactly 180ms at matched yati (caesura) splits []. Pause exactly 450ms at classical danda punctuation marks.\n- Breathing restrictions: Under absolutely no circumstances should you pause or breath inside compound boundaries: [].",
+    "disambiguationLog": []
+  },
+  {
+    "expected_meter": "Drutavilambita",
+    "annotation": {
+      "meter_name": "Drutavilambita",
+      "segmented_text": "निगमकल्पतरोर्गलितं फलं शुकमुखादमृतद्रवसंयुतम्。 पिबत भागवतं रसमालयं मुहुरहो रसिका भुवि भावुकाः",
+      "weights": "LLLGLLGLLGLGLLLGLLGLLGLGLLLGLLGLLGLGLLLGLLGLLGLG",
+      "meter_acceptance_state": "verified",
+      "scansion_trace": [
+        {
+          "text": "नि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "ग",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ग"
+          ]
+        },
+        {
+          "text": "म",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "क",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "ल्प",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ल",
+            "प"
+          ]
+        },
+        {
+          "text": "त",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "रो",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "र्ग",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र",
+            "ग"
+          ]
+        },
+        {
+          "text": "लि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "तं",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ं",
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "फ",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "फ"
+          ]
+        },
+        {
+          "text": "लं",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ं",
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "शु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "श"
+          ]
+        },
+        {
+          "text": "क",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "मु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "खा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "ख"
+          ]
+        },
+        {
+          "text": "द",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "मृ",
+          "weight": "L",
+          "nucleus": "ऋ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "त",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "द्र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "द",
+            "र"
+          ]
+        },
+        {
+          "text": "व",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "सं",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ं",
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "यु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "तम्",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "पि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "प"
+          ]
+        },
+        {
+          "text": "ब",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ब"
+          ]
+        },
+        {
+          "text": "त",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "भा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "भ"
+          ]
+        },
+        {
+          "text": "ग",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ग"
+          ]
+        },
+        {
+          "text": "व",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "तं",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ं",
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "स",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "मा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "ल",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "यं",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ं",
+          "onset": [
+            "य"
+          ]
+        },
+        {
+          "text": "मु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "हु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "ह"
+          ]
+        },
+        {
+          "text": "र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "हो",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": null,
+          "onset": [
+            "ह"
+          ]
+        },
+        {
+          "text": "र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "सि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "का",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "भु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "भ"
+          ]
+        },
+        {
+          "text": "वि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "भा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "भ"
+          ]
+        },
+        {
+          "text": "वु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "काः",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": "ः",
+          "onset": [
+            "क"
+          ]
+        }
+      ],
+      "acoustic_params": {
+        "tempo_bpm": 86,
+        "pitch_variance": "low (monotone traditional chanting register)",
+        "guru_ratio": 2,
+        "laghu_ratio": 1,
+        "pause_yati_ms": 180,
+        "pause_danda_ms": 450,
+        "compound_pause_allowed": false,
+        "rules": {
+          "priority_order": "Meter > Yati > Danda > Compound > Word boundary",
+          "allowedBreaths": [],
+          "forbiddenBreaths": []
+        }
+      },
+      "ablation": {
+        "pipeline_version": "2.1 (Linguistically Robust)",
+        "is_disambiguation_fallback_active": false,
+        "breath_planner_confidence_score": 1,
+        "meter_acceptance_state": "verified",
+        "scansion_syllable_traceability_active": true
+      }
+    },
+    "stylePrompt": "Traditional Sanskrit recitation style: Drutavilambita. CRITICAL PACING DIRECTIVE: You MUST recite at an moderate, steady pace.\nPerformance parameters:\n- Tempo: 86 BPM (Strictly follow this speed)\n- Pitch Variance: low (monotone traditional chanting register)\n- Syllable duration ratio (mātrā): Guru (heavy) is 2x, Laghu (light) is 1x.\n- Pause constraints: Pause exactly 180ms at matched yati (caesura) splits []. Pause exactly 450ms at classical danda punctuation marks.\n- Breathing restrictions: Under absolutely no circumstances should you pause or breath inside compound boundaries: [].",
+    "disambiguationLog": []
+  },
+  {
+    "expected_meter": "Vaṃśastha",
+    "annotation": {
+      "meter_name": "Unknown (Muktaka/Free Verse)",
+      "segmented_text": "पश्यन्त्यदो रूपमदभ्रचक्षुषः सहस्रपादोरुभुजाननाद्भुतम्। सहस्रमूर्ध्नश्रवणाक्षिनासिकं सहस्रमौल्यम्बरकुण्डलोल्लसत्",
+      "weights": "GGLGGLLGLGLGLGLGGLLGLGLGLGLGGLLGLGLGLGLGGLLGLGLG",
+      "meter_acceptance_state": "rejected",
+      "scansion_trace": [
+        {
+          "text": "प",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "प"
+          ]
+        },
+        {
+          "text": "श्य",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "श",
+            "य"
+          ]
+        },
+        {
+          "text": "न्त्य",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "न",
+            "त",
+            "य"
+          ]
+        },
+        {
+          "text": "दो",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "रू",
+          "weight": "G",
+          "nucleus": "ऊ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "प",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "प"
+          ]
+        },
+        {
+          "text": "म",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "द",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "भ्र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "भ",
+            "र"
+          ]
+        },
+        {
+          "text": "च",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "च"
+          ]
+        },
+        {
+          "text": "क्षु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "क",
+            "ष"
+          ]
+        },
+        {
+          "text": "षः",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ः",
+          "onset": [
+            "ष"
+          ]
+        },
+        {
+          "text": "स",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "ह",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ह"
+          ]
+        },
+        {
+          "text": "स्र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स",
+            "र"
+          ]
+        },
+        {
+          "text": "पा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "प"
+          ]
+        },
+        {
+          "text": "दो",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": null,
+          "onset": [
+            "द"
+          ]
+        },
+        {
+          "text": "रु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "भु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "भ"
+          ]
+        },
+        {
+          "text": "जा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "ज"
+          ]
+        },
+        {
+          "text": "न",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "ना",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "द्भु",
+          "weight": "L",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "द",
+            "भ"
+          ]
+        },
+        {
+          "text": "तम्",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "त"
+          ]
+        },
+        {
+          "text": "स",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "ह",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ह"
+          ]
+        },
+        {
+          "text": "स्र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स",
+            "र"
+          ]
+        },
+        {
+          "text": "मू",
+          "weight": "G",
+          "nucleus": "ऊ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "र्ध्न",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र",
+            "ध",
+            "न"
+          ]
+        },
+        {
+          "text": "श्र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "श",
+            "र"
+          ]
+        },
+        {
+          "text": "व",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "व"
+          ]
+        },
+        {
+          "text": "णा",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "ण"
+          ]
+        },
+        {
+          "text": "क्षि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "क",
+            "ष"
+          ]
+        },
+        {
+          "text": "ना",
+          "weight": "G",
+          "nucleus": "आ",
+          "coda": null,
+          "onset": [
+            "न"
+          ]
+        },
+        {
+          "text": "सि",
+          "weight": "L",
+          "nucleus": "इ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "कं",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": "ं",
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "स",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        },
+        {
+          "text": "ह",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ह"
+          ]
+        },
+        {
+          "text": "स्र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स",
+            "र"
+          ]
+        },
+        {
+          "text": "मौ",
+          "weight": "G",
+          "nucleus": "औ",
+          "coda": null,
+          "onset": [
+            "म"
+          ]
+        },
+        {
+          "text": "ल्य",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ल",
+            "य"
+          ]
+        },
+        {
+          "text": "म्ब",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "म",
+            "ब"
+          ]
+        },
+        {
+          "text": "र",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "र"
+          ]
+        },
+        {
+          "text": "कु",
+          "weight": "G",
+          "nucleus": "उ",
+          "coda": null,
+          "onset": [
+            "क"
+          ]
+        },
+        {
+          "text": "ण्ड",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ण",
+            "ड"
+          ]
+        },
+        {
+          "text": "लो",
+          "weight": "G",
+          "nucleus": "ओ",
+          "coda": null,
+          "onset": [
+            "ल"
+          ]
+        },
+        {
+          "text": "ल्ल",
+          "weight": "L",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "ल",
+            "ल"
+          ]
+        },
+        {
+          "text": "सत्",
+          "weight": "G",
+          "nucleus": "अ",
+          "coda": null,
+          "onset": [
+            "स"
+          ]
+        }
+      ],
+      "acoustic_params": {
+        "tempo_bpm": 86,
+        "pitch_variance": "low (monotone traditional chanting register)",
+        "guru_ratio": 2,
+        "laghu_ratio": 1,
+        "pause_yati_ms": 180,
+        "pause_danda_ms": 450,
+        "compound_pause_allowed": false,
+        "rules": {
+          "priority_order": "Meter > Yati > Danda > Compound > Word boundary",
+          "allowedBreaths": [
+            {
+              "position": 53,
+              "type": "danda",
+              "reason": "Classical punctuation line split boundary"
+            }
+          ],
+          "forbiddenBreaths": []
+        }
+      },
+      "ablation": {
+        "pipeline_version": "2.1 (Linguistically Robust)",
+        "is_disambiguation_fallback_active": true,
+        "breath_planner_confidence_score": 1,
+        "meter_acceptance_state": "rejected",
+        "scansion_syllable_traceability_active": true
+      }
+    },
+    "stylePrompt": "Traditional Sanskrit recitation style: Unknown (Muktaka/Free Verse). CRITICAL PACING DIRECTIVE: You MUST recite at an moderate, steady pace.\nPerformance parameters:\n- Tempo: 86 BPM (Strictly follow this speed)\n- Pitch Variance: low (monotone traditional chanting register)\n- Syllable duration ratio (mātrā): Guru (heavy) is 2x, Laghu (light) is 1x.\n- Pause constraints: Pause exactly 180ms at matched yati (caesura) splits []. Pause exactly 450ms at classical danda punctuation marks.\n- Breathing restrictions: Under absolutely no circumstances should you pause or breath inside compound boundaries: [].",
+    "disambiguationLog": []
+  }
+]

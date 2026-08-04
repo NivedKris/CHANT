@@ -1,0 +1,256 @@
+Verse ID,Meter,Sanskrit Text,Condition Name,File Name,Audio Link,File Size (KB),Measured Duration (s),Generation Status,Gemini Prompt Sent,VERIFICATION: Meter Rhythm (1-5),VERIFICATION: Voice Naturalness (1-5),VERIFICATION: Visarga Echo Pronounced (Y/N),VERIFICATION: Pauses Inside Compounds (Y/N),VERIFICATION: Listener Notes
+"1","Anuṣṭubh","धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः। मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय॥","baseline","verse_1_baseline.wav","=HYPERLINK(""audio/verse_1_baseline.wav"", ""Play Audio"")","536.29","11.44","success","Read this Sanskrit text out loud:
+
+धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः। मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय॥",,,,,
+"1","Anuṣṭubh","धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः। मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय॥","formatA","verse_1_formatA.wav","=HYPERLINK(""audio/verse_1_formatA.wav"", ""Play Audio"")","601.92","12.84","success","Read this Sanskrit text in a traditional, monotone Anuṣṭubh chanting style. Maintain a steady tempo of 86 BPM. Hold all heavy (guru) syllables roughly twice as long as light (laghu) syllables.  Pronounce visargas with a gentle echo. Speak ONLY the Sanskrit text below:
+
+धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः। मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय॥",,,,,
+"1","Anuṣṭubh","धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः। मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय॥","formatB","verse_1_formatB.wav","=HYPERLINK(""audio/verse_1_formatB.wav"", ""Play Audio"")","682.54","14.56","success","Read this Sanskrit text following the inline syllable-level brackets. A bracket '[G:1]' indicates a Guru (heavy) syllable, while '[L:1]' indicates a Laghu (light) syllable. Do not read the brackets or symbols out loud. Read ONLY the Sanskrit syllables:
+
+ध[G:1]र्म[G:1]क्षे[G:1]त्रे[G:1]कु[L:1]रु[G:1]क्षे[G:1]त्रे[G:1]स[L:1]म[L:1]वे[G:1]ता[G:1]यु[L:1]यु[G:1]त्स[L:1]वः[G:1]मा[G:1]म[L:1]काः[G:1]पा[G:1]ण्ड[L:1]वा[G:1]श्चै[G:1]व[L:1]कि[L:1]म[L:1]कु[G:1]र्व[L:1]त[L:1]स[G:1]ञ्ज[L:1]य[L:1]",,,,,
+"1","Anuṣṭubh","धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः। मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय॥","formatC","verse_1_formatC.wav","=HYPERLINK(""audio/verse_1_formatC.wav"", ""Play Audio"")","639.42","13.64","success","Read this Sanskrit text in a steady traditional monotone Anuṣṭubh chanting style. Strict Performance Directives:
+- Tempo: 86 BPM
+- Duration: Guru is 2x, Laghu is 1x
+- Breaks: Under no circumstances pause or breathe inside compound bounds (marked by hyphens). Take clean breaths only at punctuation.
+
+Recite ONLY this text:
+
+धर्मक्षेत्रे-कुरुक्षेत्रे-समवेता-युयुत्सवः।--मामकाः-पाण्डवाश्चैव-किमकुर्वत-सञ्जय॥-",,,,,
+"2","Anuṣṭubh","कर्मण्येवाधिकारस्ते मा फलेषु कदाचन। मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥","baseline","verse_2_baseline.wav","=HYPERLINK(""audio/verse_2_baseline.wav"", ""Play Audio"")","491.29","10.48","success","Read this Sanskrit text out loud:
+
+कर्मण्येवाधिकारस्ते मा फलेषु कदाचन। मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥",,,,,
+"2","Anuṣṭubh","कर्मण्येवाधिकारस्ते मा फलेषु कदाचन। मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥","formatA","verse_2_formatA.wav","=HYPERLINK(""audio/verse_2_formatA.wav"", ""Play Audio"")","665.67","14.20","success","Read this Sanskrit text in a traditional, monotone Anuṣṭubh chanting style. Maintain a steady tempo of 86 BPM. Hold all heavy (guru) syllables roughly twice as long as light (laghu) syllables.  Pronounce visargas with a gentle echo. Speak ONLY the Sanskrit text below:
+
+कर्मण्येवाधिकारस्ते मा फलेषु कदाचन। मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥",,,,,
+"2","Anuṣṭubh","कर्मण्येवाधिकारस्ते मा फलेषु कदाचन। मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥","formatB","verse_2_formatB.wav","=HYPERLINK(""audio/verse_2_formatB.wav"", ""Play Audio"")","821.29","17.52","success","Read this Sanskrit text following the inline syllable-level brackets. A bracket '[G:1]' indicates a Guru (heavy) syllable, while '[L:1]' indicates a Laghu (light) syllable. Do not read the brackets or symbols out loud. Read ONLY the Sanskrit syllables:
+
+क[G:1]र्म[G:1]ण्ये[G:1]वा[G:1]धि[L:1]का[G:1]र[G:1]स्ते[G:1]मा[G:1]फ[L:1]ले[G:1]षु[L:1]क[L:1]दा[G:1]च[L:1]न[L:1]मा[G:1]क[G:1]र्म[L:1]फ[L:1]ल[L:1]हे[G:1]तु[G:1]र्भू[G:1]र्मा[G:1]ते[G:1]स[G:1]ङ्गो[G:1]स्त्व[L:1]क[G:1]र्म[L:1]णि[L:1]",,,,,
+"2","Anuṣṭubh","कर्मण्येवाधिकारस्ते मा फलेषु कदाचन। मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥","formatC","verse_2_formatC.wav","=HYPERLINK(""audio/verse_2_formatC.wav"", ""Play Audio"")","675.04","14.40","success","Read this Sanskrit text in a steady traditional monotone Anuṣṭubh chanting style. Strict Performance Directives:
+- Tempo: 86 BPM
+- Duration: Guru is 2x, Laghu is 1x
+- Breaks: Under no circumstances pause or breathe inside compound bounds (marked by hyphens). Take clean breaths only at punctuation.
+
+Recite ONLY this text:
+
+कर्मण्येवाधिकारस्ते-मा-फलेषु-कदाचन।--मा-कर्मफलहेतुर्भूर्मा-ते-सङ्गोऽस्त्वकर्मणि॥-",,,,,
+"3","Anuṣṭubh","वासांसि जीर्णानि यथा विहाय नवानि गृह्णाति नरोऽपराणि। तथा शरीराणि विहाय जीर्णान्यन्यानि संयाति नवानि देही॥","baseline","verse_3_baseline.wav","=HYPERLINK(""audio/verse_3_baseline.wav"", ""Play Audio"")","609.42","13.00","success","Read this Sanskrit text out loud:
+
+वासांसि जीर्णानि यथा विहाय नवानि गृह्णाति नरोऽपराणि। तथा शरीराणि विहाय जीर्णान्यन्यानि संयाति नवानि देही॥",,,,,
+"3","Anuṣṭubh","वासांसि जीर्णानि यथा विहाय नवानि गृह्णाति नरोऽपराणि। तथा शरीराणि विहाय जीर्णान्यन्यानि संयाति नवानि देही॥","formatA","verse_3_formatA.wav","=HYPERLINK(""audio/verse_3_formatA.wav"", ""Play Audio"")","881.29","18.80","success","Read this Sanskrit text in a traditional, monotone Anuṣṭubh chanting style. Maintain a steady tempo of 86 BPM. Hold all heavy (guru) syllables roughly twice as long as light (laghu) syllables.  Pronounce visargas with a gentle echo. Speak ONLY the Sanskrit text below:
+
+वासांसि जीर्णानि यथा विहाय नवानि गृह्णाति नरोऽपराणि। तथा शरीराणि विहाय जीर्णान्यन्यानि संयाति नवानि देही॥",,,,,
+"3","Anuṣṭubh","वासांसि जीर्णानि यथा विहाय नवानि गृह्णाति नरोऽपराणि। तथा शरीराणि विहाय जीर्णान्यन्यानि संयाति नवानि देही॥","formatB","verse_3_formatB.wav","=HYPERLINK(""audio/verse_3_formatB.wav"", ""Play Audio"")","1569.42","33.48","success","Read this Sanskrit text following the inline syllable-level brackets. A bracket '[G:1]' indicates a Guru (heavy) syllable, while '[L:1]' indicates a Laghu (light) syllable. Do not read the brackets or symbols out loud. Read ONLY the Sanskrit syllables:
+
+वा[G:1]सां[G:1]सि[L:1]जी[G:1]र्णा[G:1]नि[L:1]य[L:1]था[G:1]वि[L:1]हा[G:1]य[L:1]न[L:1]वा[G:1]नि[L:1]गृ[G:1]ह्णा[G:1]ति[L:1]न[L:1]रो[G:1]प[L:1]रा[G:1]णि[L:1]त[L:1]था[G:1]श[L:1]री[G:1]रा[G:1]णि[L:1]वि[L:1]हा[G:1]य[L:1]जी[G:1]र्णा[G:1]न्य[G:1]न्या[G:1]नि[L:1]सं[G:1]या[G:1]ति[L:1]न[L:1]वा[G:1]नि[L:1]दे[G:1]ही[G:1]",,,,,
+"3","Anuṣṭubh","वासांसि जीर्णानि यथा विहाय नवानि गृह्णाति नरोऽपराणि। तथा शरीराणि विहाय जीर्णान्यन्यानि संयाति नवानि देही॥","formatC","verse_3_formatC.wav","=HYPERLINK(""audio/verse_3_formatC.wav"", ""Play Audio"")","879.42","18.76","success","Read this Sanskrit text in a steady traditional monotone Anuṣṭubh chanting style. Strict Performance Directives:
+- Tempo: 86 BPM
+- Duration: Guru is 2x, Laghu is 1x
+- Breaks: Under no circumstances pause or breathe inside compound bounds (marked by hyphens). Take clean breaths only at punctuation.
+
+Recite ONLY this text:
+
+वासांसि-जीर्णानि-यथा-विहाय-नवानि-गृह्णाति-नरोऽपराणि।--तथा-शरीराणि-विहाय-जीर्णान्यन्यानि-संयाति-नवानि-देही॥-",,,,,
+"4","Anuṣṭubh","यदा यदा हि धर्मस्य ग्लानिर्भवति भारत। अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम्॥","baseline","verse_4_baseline.wav","=HYPERLINK(""audio/verse_4_baseline.wav"", ""Play Audio"")","740.67","15.80","success","Read this Sanskrit text out loud:
+
+यदा यदा हि धर्मस्य ग्लानिर्भवति भारत। अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम्॥",,,,,
+"4","Anuṣṭubh","यदा यदा हि धर्मस्य ग्लानिर्भवति भारत। अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम्॥","formatA","verse_4_formatA.wav","=HYPERLINK(""audio/verse_4_formatA.wav"", ""Play Audio"")","633.79","13.52","success","Read this Sanskrit text in a traditional, monotone Anuṣṭubh chanting style. Maintain a steady tempo of 86 BPM. Hold all heavy (guru) syllables roughly twice as long as light (laghu) syllables.  Pronounce visargas with a gentle echo. Speak ONLY the Sanskrit text below:
+
+यदा यदा हि धर्मस्य ग्लानिर्भवति भारत। अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम्॥",,,,,
+"4","Anuṣṭubh","यदा यदा हि धर्मस्य ग्लानिर्भवति भारत। अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम्॥","formatB","verse_4_formatB.wav","=HYPERLINK(""audio/verse_4_formatB.wav"", ""Play Audio"")","778.17","16.60","success","Read this Sanskrit text following the inline syllable-level brackets. A bracket '[G:1]' indicates a Guru (heavy) syllable, while '[L:1]' indicates a Laghu (light) syllable. Do not read the brackets or symbols out loud. Read ONLY the Sanskrit syllables:
+
+य[L:1]दा[G:1]य[L:1]दा[G:1]हि[L:1]ध[G:1]र्म[G:1]स्य[G:1]ग्ला[G:1]नि[G:1]र्भ[L:1]व[L:1]ति[L:1]भा[G:1]र[L:1]त[L:1]अ[G:1]भ्यु[G:1]त्था[G:1]न[L:1]म[L:1]ध[G:1]र्म[G:1]स्य[L:1]त[L:1]दा[G:1]त्मा[G:1]नं[G:1]सृ[L:1]जा[G:1]म्य[L:1]हम्[G:1]",,,,,
+"4","Anuṣṭubh","यदा यदा हि धर्मस्य ग्लानिर्भवति भारत। अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम्॥","formatC","verse_4_formatC.wav","=HYPERLINK(""audio/verse_4_formatC.wav"", ""Play Audio"")","735.04","15.68","success","Read this Sanskrit text in a steady traditional monotone Anuṣṭubh chanting style. Strict Performance Directives:
+- Tempo: 86 BPM
+- Duration: Guru is 2x, Laghu is 1x
+- Breaks: Under no circumstances pause or breathe inside compound bounds (marked by hyphens). Take clean breaths only at punctuation.
+
+Recite ONLY this text:
+
+यदा-यदा-हि-धर्मस्य-ग्लानिर्भवति-भारत।--अभ्युत्थानमधर्मस्य-तदात्मानं-सृजाम्यहम्॥-",,,,,
+"5","Anuṣṭubh","नैमिषेऽनिमिषक्षेत्रे ऋषयः शौनकादयः। सत्रं स्वर्गाय लोकाय सहस्रसममासत॥","baseline","verse_5_baseline.wav","=HYPERLINK(""audio/verse_5_baseline.wav"", ""Play Audio"")","463.17","9.88","success","Read this Sanskrit text out loud:
+
+नैमिषेऽनिमिषक्षेत्रे ऋषयः शौनकादयः। सत्रं स्वर्गाय लोकाय सहस्रसममासत॥",,,,,
+"5","Anuṣṭubh","नैमिषेऽनिमिषक्षेत्रे ऋषयः शौनकादयः। सत्रं स्वर्गाय लोकाय सहस्रसममासत॥","formatA","verse_5_formatA.wav","=HYPERLINK(""audio/verse_5_formatA.wav"", ""Play Audio"")","720.04","15.36","success","Read this Sanskrit text in a traditional, monotone Anuṣṭubh chanting style. Maintain a steady tempo of 86 BPM. Hold all heavy (guru) syllables roughly twice as long as light (laghu) syllables.  Pronounce visargas with a gentle echo. Speak ONLY the Sanskrit text below:
+
+नैमिषेऽनिमिषक्षेत्रे ऋषयः शौनकादयः। सत्रं स्वर्गाय लोकाय सहस्रसममासत॥",,,,,
+"5","Anuṣṭubh","नैमिषेऽनिमिषक्षेत्रे ऋषयः शौनकादयः। सत्रं स्वर्गाय लोकाय सहस्रसममासत॥","formatB","verse_5_formatB.wav","=HYPERLINK(""audio/verse_5_formatB.wav"", ""Play Audio"")","738.79","15.76","success","Read this Sanskrit text following the inline syllable-level brackets. A bracket '[G:1]' indicates a Guru (heavy) syllable, while '[L:1]' indicates a Laghu (light) syllable. Do not read the brackets or symbols out loud. Read ONLY the Sanskrit syllables:
+
+नै[G:1]मि[L:1]षे[G:1]नि[L:1]मि[L:1]ष[G:1]क्षे[G:1]त्रे[G:1]ऋ[L:1]ष[L:1]यः[G:1]शौ[G:1]न[L:1]का[G:1]द[L:1]यः[G:1]स[G:1]त्रं[G:1]स्व[G:1]र्गा[G:1]य[L:1]लो[G:1]का[G:1]य[L:1]स[L:1]ह[G:1]स्र[L:1]स[L:1]म[L:1]मा[G:1]स[L:1]त[L:1]",,,,,
+"5","Anuṣṭubh","नैमिषेऽनिमिषक्षेत्रे ऋषयः शौनकादयः। सत्रं स्वर्गाय लोकाय सहस्रसममासत॥","formatC","verse_5_formatC.wav","=HYPERLINK(""audio/verse_5_formatC.wav"", ""Play Audio"")","611.29","13.04","success","Read this Sanskrit text in a steady traditional monotone Anuṣṭubh chanting style. Strict Performance Directives:
+- Tempo: 86 BPM
+- Duration: Guru is 2x, Laghu is 1x
+- Breaks: Under no circumstances pause or breathe inside compound bounds (marked by hyphens). Take clean breaths only at punctuation.
+
+Recite ONLY this text:
+
+नैमिषेऽनिमिषक्षेत्रे-ऋषयः-शौनकादयः।--सत्रं-स्वर्गाय-लोकाय-सहस्रसममासत॥-",,,,,
+"6","Vasantatilakā","नारायणाय परिपूर्णगुणार्णवाय विश्वोदयस्थितिलयोन्नियतिप्रदाय। ज्ञानप्रदाय विबुधासुरसौख्यदुःखसत्कारणाय वितताय नमोनमस्ते॥","baseline","verse_6_baseline.wav","=HYPERLINK(""audio/verse_6_baseline.wav"", ""Play Audio"")","748.17","15.96","success","Read this Sanskrit text out loud:
+
+नारायणाय परिपूर्णगुणार्णवाय विश्वोदयस्थितिलयोन्नियतिप्रदाय। ज्ञानप्रदाय विबुधासुरसौख्यदुःखसत्कारणाय वितताय नमोनमस्ते॥",,,,,
+"6","Vasantatilakā","नारायणाय परिपूर्णगुणार्णवाय विश्वोदयस्थितिलयोन्नियतिप्रदाय। ज्ञानप्रदाय विबुधासुरसौख्यदुःखसत्कारणाय वितताय नमोनमस्ते॥","formatA","verse_6_formatA.wav","=HYPERLINK(""audio/verse_6_formatA.wav"", ""Play Audio"")","1318.17","28.12","success","Read this Sanskrit text in a traditional, monotone Vasantatilakā chanting style. Maintain a steady tempo of 86 BPM. Hold all heavy (guru) syllables roughly twice as long as light (laghu) syllables. Observe natural pauses (yati) exactly at the following syllable indexes: [8]. Pronounce visargas with a gentle echo. Speak ONLY the Sanskrit text below:
+
+नारायणाय परिपूर्णगुणार्णवाय विश्वोदयस्थितिलयोन्नियतिप्रदाय। ज्ञानप्रदाय विबुधासुरसौख्यदुःखसत्कारणाय वितताय नमोनमस्ते॥",,,,,
+"6","Vasantatilakā","नारायणाय परिपूर्णगुणार्णवाय विश्वोदयस्थितिलयोन्नियतिप्रदाय। ज्ञानप्रदाय विबुधासुरसौख्यदुःखसत्कारणाय वितताय नमोनमस्ते॥","formatB","verse_6_formatB.wav","=HYPERLINK(""audio/verse_6_formatB.wav"", ""Play Audio"")","1743.79","37.20","success","Read this Sanskrit text following the inline syllable-level brackets. A bracket '[G:1]' indicates a Guru (heavy) syllable, while '[L:1]' indicates a Laghu (light) syllable. Do not read the brackets or symbols out loud. Read ONLY the Sanskrit syllables:
+
+ना[G:1]रा[G:1]य[L:1]णा[G:1]य[L:1]प[L:1]रि[L:1]पू[G:1]र्ण[L:1]गु[L:1]णा[G:1]र्ण[L:1]वा[G:1]य[L:1]वि[G:1]श्वो[G:1]द[L:1]य[G:1]स्थि[L:1]ति[L:1]ल[L:1]यो[G:1]न्नि[L:1]य[L:1]ति[G:1]प्र[L:1]दा[G:1]य[G:1]ज्ञा[G:1]न[G:1]प्र[L:1]दा[G:1]य[L:1]वि[L:1]बु[L:1]धा[G:1]सु[L:1]र[L:1]सौ[G:1]ख्य[L:1]दुः[G:1]ख[L:1]स[G:1]त्का[G:1]र[L:1]णा[G:1]य[L:1]वि[L:1]त[L:1]ता[G:1]य[L:1]न[L:1]मो[G:1]न[L:1]म[G:1]स्ते[G:1]",,,,,
+"6","Vasantatilakā","नारायणाय परिपूर्णगुणार्णवाय विश्वोदयस्थितिलयोन्नियतिप्रदाय। ज्ञानप्रदाय विबुधासुरसौख्यदुःखसत्कारणाय वितताय नमोनमस्ते॥","formatC","verse_6_formatC.wav","=HYPERLINK(""audio/verse_6_formatC.wav"", ""Play Audio"")","1070.67","22.84","success","Read this Sanskrit text in a steady traditional monotone Vasantatilakā chanting style. Strict Performance Directives:
+- Tempo: 86 BPM
+- Duration: Guru is 2x, Laghu is 1x
+- Breaks: Under no circumstances pause or breathe inside compound bounds (marked by hyphens). Take clean breaths only at punctuation.
+
+Recite ONLY this text:
+
+नारायणाय-परिपूर्णगुणार्णवाय-विश्वोदयस्थितिलयोन्नियतिप्रदाय।--ज्ञानप्रदाय-विबुधासुरसौख्यदुःखसत्कारणाय-वितताय-नमोनमस्ते॥-",,,,,
+"7","Vasantatilakā","अङ्गं हरेः पुलकभूषणमाश्रयन्ती भृङ्गाङ्गनेव मुकुलाभरणं तमालम्। अङ्गीकृताखिलविभूतिरपाङ्गलीला माङ्गल्यदास्तु मम मङ्गलदेवतायाः॥","baseline","verse_7_baseline.wav","=HYPERLINK(""audio/verse_7_baseline.wav"", ""Play Audio"")","802.54","17.12","success","Read this Sanskrit text out loud:
+
+अङ्गं हरेः पुलकभूषणमाश्रयन्ती भृङ्गाङ्गनेव मुकुलाभरणं तमालम्। अङ्गीकृताखिलविभूतिरपाङ्गलीला माङ्गल्यदास्तु मम मङ्गलदेवतायाः॥",,,,,
+"7","Vasantatilakā","अङ्गं हरेः पुलकभूषणमाश्रयन्ती भृङ्गाङ्गनेव मुकुलाभरणं तमालम्। अङ्गीकृताखिलविभूतिरपाङ्गलीला माङ्गल्यदास्तु मम मङ्गलदेवतायाः॥","formatA","verse_7_formatA.wav","=HYPERLINK(""audio/verse_7_formatA.wav"", ""Play Audio"")","1160.67","24.76","success","Read this Sanskrit text in a traditional, monotone Vasantatilakā chanting style. Maintain a steady tempo of 86 BPM. Hold all heavy (guru) syllables roughly twice as long as light (laghu) syllables. Observe natural pauses (yati) exactly at the following syllable indexes: [8]. Pronounce visargas with a gentle echo. Speak ONLY the Sanskrit text below:
+
+अङ्गं हरेः पुलकभूषणमाश्रयन्ती भृङ्गाङ्गनेव मुकुलाभरणं तमालम्। अङ्गीकृताखिलविभूतिरपाङ्गलीला माङ्गल्यदास्तु मम मङ्गलदेवतायाः॥",,,,,
+"7","Vasantatilakā","अङ्गं हरेः पुलकभूषणमाश्रयन्ती भृङ्गाङ्गनेव मुकुलाभरणं तमालम्। अङ्गीकृताखिलविभूतिरपाङ्गलीला माङ्गल्यदास्तु मम मङ्गलदेवतायाः॥","formatB","verse_7_formatB.wav","=HYPERLINK(""audio/verse_7_formatB.wav"", ""Play Audio"")","1586.29","33.84","success","Read this Sanskrit text following the inline syllable-level brackets. A bracket '[G:1]' indicates a Guru (heavy) syllable, while '[L:1]' indicates a Laghu (light) syllable. Do not read the brackets or symbols out loud. Read ONLY the Sanskrit syllables:
+
+अ[G:1]ङ्गं[G:1]ह[L:1]रेः[G:1]पु[L:1]ल[L:1]क[L:1]भू[G:1]ष[L:1]ण[L:1]मा[G:1]श्र[L:1]य[G:1]न्ती[G:1]भृ[G:1]ङ्गा[G:1]ङ्ग[L:1]ने[G:1]व[L:1]मु[L:1]कु[L:1]ला[G:1]भ[L:1]र[L:1]णं[G:1]त[L:1]मा[G:1]लम्[G:1]अ[G:1]ङ्गी[G:1]कृ[L:1]ता[G:1]खि[L:1]ल[L:1]वि[L:1]भू[G:1]ति[L:1]र[L:1]पा[G:1]ङ्ग[L:1]ली[G:1]ला[G:1]मा[G:1]ङ्ग[G:1]ल्य[L:1]दा[G:1]स्तु[L:1]म[L:1]म[L:1]म[G:1]ङ्ग[L:1]ल[L:1]दे[G:1]व[L:1]ता[G:1]याः[G:1]",,,,,
+"7","Vasantatilakā","अङ्गं हरेः पुलकभूषणमाश्रयन्ती भृङ्गाङ्गनेव मुकुलाभरणं तमालम्। अङ्गीकृताखिलविभूतिरपाङ्गलीला माङ्गल्यदास्तु मम मङ्गलदेवतायाः॥","formatC","verse_7_formatC.wav","=HYPERLINK(""audio/verse_7_formatC.wav"", ""Play Audio"")","1111.92","23.72","success","Read this Sanskrit text in a steady traditional monotone Vasantatilakā chanting style. Strict Performance Directives:
+- Tempo: 86 BPM
+- Duration: Guru is 2x, Laghu is 1x
+- Breaks: Under no circumstances pause or breathe inside compound bounds (marked by hyphens). Take clean breaths only at punctuation.
+
+Recite ONLY this text:
+
+अङ्गं-हरेः-पुलकभूषणमाश्रयन्ती-भृङ्गाङ्गनेव-मुकुलाभरणं-तमालम्।--अङ्गीकृताखिलविभूतिरपाङ्गलीला-माङ्गल्यदास्तु-मम-मङ्गलदेवतायाः॥-",,,,,
+"8","Vasantatilakā","मुग्धा मुहुर्विदधती वदने मुरारेः प्रेमत्रपाप्रणिहितानि गतागतानि। माला दृशोर्मधुकरीव महोत्पले या सा मे श्रियं दिशतु सागरसंभवायाः॥","baseline","verse_8_baseline.wav","=HYPERLINK(""audio/verse_8_baseline.wav"", ""Play Audio"")","776.29","16.56","success","Read this Sanskrit text out loud:
+
+मुग्धा मुहुर्विदधती वदने मुरारेः प्रेमत्रपाप्रणिहितानि गतागतानि। माला दृशोर्मधुकरीव महोत्पले या सा मे श्रियं दिशतु सागरसंभवायाः॥",,,,,
+"8","Vasantatilakā","मुग्धा मुहुर्विदधती वदने मुरारेः प्रेमत्रपाप्रणिहितानि गतागतानि। माला दृशोर्मधुकरीव महोत्पले या सा मे श्रियं दिशतु सागरसंभवायाः॥","formatA","verse_8_formatA.wav","=HYPERLINK(""audio/verse_8_formatA.wav"", ""Play Audio"")","1275.04","27.20","success","Read this Sanskrit text in a traditional, monotone Vasantatilakā chanting style. Maintain a steady tempo of 86 BPM. Hold all heavy (guru) syllables roughly twice as long as light (laghu) syllables. Observe natural pauses (yati) exactly at the following syllable indexes: [8]. Pronounce visargas with a gentle echo. Speak ONLY the Sanskrit text below:
+
+मुग्धा मुहुर्विदधती वदने मुरारेः प्रेमत्रपाप्रणिहितानि गतागतानि। माला दृशोर्मधुकरीव महोत्पले या सा मे श्रियं दिशतु सागरसंभवायाः॥",,,,,
+"8","Vasantatilakā","मुग्धा मुहुर्विदधती वदने मुरारेः प्रेमत्रपाप्रणिहितानि गतागतानि। माला दृशोर्मधुकरीव महोत्पले या सा मे श्रियं दिशतु सागरसंभवायाः॥","formatB","verse_8_formatB.wav","=HYPERLINK(""audio/verse_8_formatB.wav"", ""Play Audio"")","1093.17","23.32","success","Read this Sanskrit text following the inline syllable-level brackets. A bracket '[G:1]' indicates a Guru (heavy) syllable, while '[L:1]' indicates a Laghu (light) syllable. Do not read the brackets or symbols out loud. Read ONLY the Sanskrit syllables:
+
+मु[G:1]ग्धा[G:1]मु[L:1]हु[G:1]र्वि[L:1]द[L:1]ध[L:1]ती[G:1]व[L:1]द[L:1]ने[G:1]मु[L:1]रा[G:1]रेः[G:1]प्रे[G:1]म[G:1]त्र[L:1]पा[G:1]प्र[L:1]णि[L:1]हि[L:1]ता[G:1]नि[L:1]ग[L:1]ता[G:1]ग[L:1]ता[G:1]नि[L:1]मा[G:1]ला[G:1]दृ[L:1]शो[G:1]र्म[L:1]धु[L:1]क[L:1]री[G:1]व[L:1]म[L:1]हो[G:1]त्प[L:1]ले[G:1]या[G:1]सा[G:1]मे[G:1]श्रि[L:1]यं[G:1]दि[L:1]श[L:1]तु[L:1]सा[G:1]ग[L:1]र[L:1]सं[G:1]भ[L:1]वा[G:1]याः[G:1]",,,,,
+"8","Vasantatilakā","मुग्धा मुहुर्विदधती वदने मुरारेः प्रेमत्रपाप्रणिहितानि गतागतानि। माला दृशोर्मधुकरीव महोत्पले या सा मे श्रियं दिशतु सागरसंभवायाः॥","formatC","verse_8_formatC.wav","=HYPERLINK(""audio/verse_8_formatC.wav"", ""Play Audio"")","1001.29","21.36","success","Read this Sanskrit text in a steady traditional monotone Vasantatilakā chanting style. Strict Performance Directives:
+- Tempo: 86 BPM
+- Duration: Guru is 2x, Laghu is 1x
+- Breaks: Under no circumstances pause or breathe inside compound bounds (marked by hyphens). Take clean breaths only at punctuation.
+
+Recite ONLY this text:
+
+मुग्धा-मुहुर्विदधती-वदने-मुरारेः-प्रेमत्रपाप्रणिहितानि-गतागतानि।--माला-दृशोर्मधुकरीव-महोत्पले-या-सा-मे-श्रियं-दिशतु-सागरसंभवायाः॥-",,,,,
+"9","Vasantatilakā","आहुश्च ते नलिननाभ पदारविन्दं योगेश्वरैर्हृदि विचिन्त्यमगाधबोधैः। संसारकूपपतितोत्तरणावलम्बं गेहजुषामपि मनस्युदियात्सदा नः॥","baseline","verse_9_baseline.wav","=HYPERLINK(""audio/verse_9_baseline.wav"", ""Play Audio"")","903.79","19.28","success","Read this Sanskrit text out loud:
+
+आहुश्च ते नलिननाभ पदारविन्दं योगेश्वरैर्हृदि विचिन्त्यमगाधबोधैः। संसारकूपपतितोत्तरणावलम्बं गेहजुषामपि मनस्युदियात्सदा नः॥",,,,,
+"9","Vasantatilakā","आहुश्च ते नलिननाभ पदारविन्दं योगेश्वरैर्हृदि विचिन्त्यमगाधबोधैः। संसारकूपपतितोत्तरणावलम्बं गेहजुषामपि मनस्युदियात्सदा नः॥","formatA","verse_9_formatA.wav","=HYPERLINK(""audio/verse_9_formatA.wav"", ""Play Audio"")","1192.54","25.44","success","Read this Sanskrit text in a traditional, monotone Vasantatilakā chanting style. Maintain a steady tempo of 86 BPM. Hold all heavy (guru) syllables roughly twice as long as light (laghu) syllables. Observe natural pauses (yati) exactly at the following syllable indexes: [8]. Pronounce visargas with a gentle echo. Speak ONLY the Sanskrit text below:
+
+आहुश्च ते नलिननाभ पदारविन्दं योगेश्वरैर्हृदि विचिन्त्यमगाधबोधैः। संसारकूपपतितोत्तरणावलम्बं गेहजुषामपि मनस्युदियात्सदा नः॥",,,,,
+"9","Vasantatilakā","आहुश्च ते नलिननाभ पदारविन्दं योगेश्वरैर्हृदि विचिन्त्यमगाधबोधैः। संसारकूपपतितोत्तरणावलम्बं गेहजुषामपि मनस्युदियात्सदा नः॥","formatB","verse_9_formatB.wav","=HYPERLINK(""audio/verse_9_formatB.wav"", ""Play Audio"")","1623.79","34.64","success","Read this Sanskrit text following the inline syllable-level brackets. A bracket '[G:1]' indicates a Guru (heavy) syllable, while '[L:1]' indicates a Laghu (light) syllable. Do not read the brackets or symbols out loud. Read ONLY the Sanskrit syllables:
+
+आ[G:1]हु[G:1]श्च[L:1]ते[G:1]न[L:1]लि[L:1]न[L:1]ना[G:1]भ[L:1]प[L:1]दा[G:1]र[L:1]वि[G:1]न्दं[G:1]यो[G:1]गे[G:1]श्व[L:1]रै[G:1]र्हृ[L:1]दि[L:1]वि[L:1]चि[G:1]न्त्य[L:1]म[L:1]गा[G:1]ध[L:1]बो[G:1]धैः[G:1]सं[G:1]सा[G:1]र[L:1]कू[G:1]प[L:1]प[L:1]ति[L:1]तो[G:1]त्त[L:1]र[L:1]णा[G:1]व[L:1]ल[G:1]म्बं[G:1]गे[G:1]ह[L:1]जु[L:1]षा[G:1]म[L:1]पि[L:1]म[L:1]न[G:1]स्यु[L:1]दि[L:1]या[G:1]त्स[L:1]दा[G:1]नः[G:1]",,,,,
+"9","Vasantatilakā","आहुश्च ते नलिननाभ पदारविन्दं योगेश्वरैर्हृदि विचिन्त्यमगाधबोधैः। संसारकूपपतितोत्तरणावलम्बं गेहजुषामपि मनस्युदियात्सदा नः॥","formatC","verse_9_formatC.wav","=HYPERLINK(""audio/verse_9_formatC.wav"", ""Play Audio"")","1241.29","26.48","success","Read this Sanskrit text in a steady traditional monotone Vasantatilakā chanting style. Strict Performance Directives:
+- Tempo: 86 BPM
+- Duration: Guru is 2x, Laghu is 1x
+- Breaks: Under no circumstances pause or breathe inside compound bounds (marked by hyphens). Take clean breaths only at punctuation.
+
+Recite ONLY this text:
+
+आहुश्च-ते-नलिननाभ-पदारविन्दं-योगेश्वरैर्हृदि-विचिन्त्यमगाधबोधैः।--संसारकूपपतितोत्तरणावलम्बं-गेहजुषामपि-मनस्युदियात्सदा-नः॥-",,,,,
+"10","Śārdūlavikrīḍita","जन्माद्यस्य यतोऽन्वयादितरतश्चार्थेष्वभिज्ञः स्वराट् तेने ब्रह्म हृदा य आदिकवये मुह्यन्ति यत्सूरयः। तेजोवारिमृदां यथा विनिमयो यत्र त्रिसर्गोऽमृषा धाम्ना स्वेन सदा निरस्तकुहकं सत्यं परं धीमहि॥","baseline","verse_10_baseline.wav","=HYPERLINK(""audio/verse_10_baseline.wav"", ""Play Audio"")","1066.92","22.76","success","Read this Sanskrit text out loud:
+
+जन्माद्यस्य यतोऽन्वयादितरतश्चार्थेष्वभिज्ञः स्वराट् तेने ब्रह्म हृदा य आदिकवये मुह्यन्ति यत्सूरयः। तेजोवारिमृदां यथा विनिमयो यत्र त्रिसर्गोऽमृषा धाम्ना स्वेन सदा निरस्तकुहकं सत्यं परं धीमहि॥",,,,,
+"10","Śārdūlavikrīḍita","जन्माद्यस्य यतोऽन्वयादितरतश्चार्थेष्वभिज्ञः स्वराट् तेने ब्रह्म हृदा य आदिकवये मुह्यन्ति यत्सूरयः। तेजोवारिमृदां यथा विनिमयो यत्र त्रिसर्गोऽमृषा धाम्ना स्वेन सदा निरस्तकुहकं सत्यं परं धीमहि॥","formatA","verse_10_formatA.wav","=HYPERLINK(""audio/verse_10_formatA.wav"", ""Play Audio"")","1578.79","33.68","success","Read this Sanskrit text in a traditional, monotone Śārdūlavikrīḍita chanting style. Maintain a steady tempo of 86 BPM. Hold all heavy (guru) syllables roughly twice as long as light (laghu) syllables. Observe natural pauses (yati) exactly at the following syllable indexes: [12]. Pronounce visargas with a gentle echo. Speak ONLY the Sanskrit text below:
+
+जन्माद्यस्य यतोऽन्वयादितरतश्चार्थेष्वभिज्ञः स्वराट् तेने ब्रह्म हृदा य आदिकवये मुह्यन्ति यत्सूरयः। तेजोवारिमृदां यथा विनिमयो यत्र त्रिसर्गोऽमृषा धाम्ना स्वेन सदा निरस्तकुहकं सत्यं परं धीमहि॥",,,,,
+"10","Śārdūlavikrīḍita","जन्माद्यस्य यतोऽन्वयादितरतश्चार्थेष्वभिज्ञः स्वराट् तेने ब्रह्म हृदा य आदिकवये मुह्यन्ति यत्सूरयः। तेजोवारिमृदां यथा विनिमयो यत्र त्रिसर्गोऽमृषा धाम्ना स्वेन सदा निरस्तकुहकं सत्यं परं धीमहि॥","formatB","verse_10_formatB.wav","=HYPERLINK(""audio/verse_10_formatB.wav"", ""Play Audio"")","1850.67","39.48","success","Read this Sanskrit text following the inline syllable-level brackets. A bracket '[G:1]' indicates a Guru (heavy) syllable, while '[L:1]' indicates a Laghu (light) syllable. Do not read the brackets or symbols out loud. Read ONLY the Sanskrit syllables:
+
+ज[G:1]न्मा[G:1]द्य[G:1]स्य[L:1]य[L:1]तो[G:1]न्व[L:1]या[G:1]दि[L:1]त[L:1]र[L:1]त[G:1]श्चा[G:1]र्थे[G:1]ष्व[L:1]भि[G:1]ज्ञः[G:1]स्व[L:1]राट्[G:1]ते[G:1]ने[G:1]ब्र[G:1]ह्म[L:1]हृ[L:1]दा[G:1]य[L:1]आ[G:1]दि[L:1]क[L:1]व[L:1]ये[G:1]मु[G:1]ह्य[G:1]न्ति[L:1]य[G:1]त्सू[G:1]र[L:1]यः[G:1]ते[G:1]जो[G:1]वा[G:1]रि[L:1]मृ[L:1]दां[G:1]य[L:1]था[G:1]वि[L:1]नि[L:1]म[L:1]यो[G:1]य[G:1]त्र[G:1]त्रि[L:1]स[G:1]र्गो[G:1]मृ[L:1]षा[G:1]धा[G:1]म्ना[G:1]स्वे[G:1]न[L:1]स[L:1]दा[G:1]नि[L:1]र[G:1]स्त[L:1]कु[L:1]ह[L:1]कं[G:1]स[G:1]त्यं[G:1]प[L:1]रं[G:1]धी[G:1]म[L:1]हि[L:1]",,,,,
+"10","Śārdūlavikrīḍita","जन्माद्यस्य यतोऽन्वयादितरतश्चार्थेष्वभिज्ञः स्वराट् तेने ब्रह्म हृदा य आदिकवये मुह्यन्ति यत्सूरयः। तेजोवारिमृदां यथा विनिमयो यत्र त्रिसर्गोऽमृषा धाम्ना स्वेन सदा निरस्तकुहकं सत्यं परं धीमहि॥","formatC","verse_10_formatC.wav","=HYPERLINK(""audio/verse_10_formatC.wav"", ""Play Audio"")","1661.29","35.44","success","Read this Sanskrit text in a steady traditional monotone Śārdūlavikrīḍita chanting style. Strict Performance Directives:
+- Tempo: 86 BPM
+- Duration: Guru is 2x, Laghu is 1x
+- Breaks: Under no circumstances pause or breathe inside compound bounds (marked by hyphens). Take clean breaths only at punctuation.
+
+Recite ONLY this text:
+
+जन्माद्यस्य-यतोऽन्वयादितरतश्चार्थेष्वभिज्ञः-स्वराट्-तेने-ब्रह्म-हृदा-य-आदिकवये-मुह्यन्ति-यत्सूरयः।--तेजोवारिमृदां-यथा-विनिमयो-यत्र-त्रिसर्गोऽमृषा-धाम्ना-स्वेन-सदा-निरस्तकुहकं-सत्यं-परं-धीमहि॥-",,,,,
+"11","Śārdūlavikrīḍita","यं ब्रह्मा वरुणेन्द्ररुद्रमरुतः स्तुन्वन्ति दिव्यैः स्तवैर्वेदैः साङ्गपदक्रमोपनिषदैर्गायन्ति यं सामगाः। ध्यानावस्थिततद्गतेन मनसा पश्यन्ति यं योगिनो यस्यान्तं न विदुः सुरासुरगणा देवाय तस्मै नमः॥","baseline","verse_11_baseline.wav","=HYPERLINK(""audio/verse_11_baseline.wav"", ""Play Audio"")","1201.92","25.64","success","Read this Sanskrit text out loud:
+
+यं ब्रह्मा वरुणेन्द्ररुद्रमरुतः स्तुन्वन्ति दिव्यैः स्तवैर्वेदैः साङ्गपदक्रमोपनिषदैर्गायन्ति यं सामगाः। ध्यानावस्थिततद्गतेन मनसा पश्यन्ति यं योगिनो यस्यान्तं न विदुः सुरासुरगणा देवाय तस्मै नमः॥",,,,,
+"11","Śārdūlavikrīḍita","यं ब्रह्मा वरुणेन्द्ररुद्रमरुतः स्तुन्वन्ति दिव्यैः स्तवैर्वेदैः साङ्गपदक्रमोपनिषदैर्गायन्ति यं सामगाः। ध्यानावस्थिततद्गतेन मनसा पश्यन्ति यं योगिनो यस्यान्तं न विदुः सुरासुरगणा देवाय तस्मै नमः॥","formatA","verse_11_formatA.wav","=HYPERLINK(""audio/verse_11_formatA.wav"", ""Play Audio"")","1713.79","36.56","success","Read this Sanskrit text in a traditional, monotone Śārdūlavikrīḍita chanting style. Maintain a steady tempo of 86 BPM. Hold all heavy (guru) syllables roughly twice as long as light (laghu) syllables. Observe natural pauses (yati) exactly at the following syllable indexes: [12]. Pronounce visargas with a gentle echo. Speak ONLY the Sanskrit text below:
+
+यं ब्रह्मा वरुणेन्द्ररुद्रमरुतः स्तुन्वन्ति दिव्यैः स्तवैर्वेदैः साङ्गपदक्रमोपनिषदैर्गायन्ति यं सामगाः। ध्यानावस्थिततद्गतेन मनसा पश्यन्ति यं योगिनो यस्यान्तं न विदुः सुरासुरगणा देवाय तस्मै नमः॥",,,,,
+"11","Śārdūlavikrīḍita","यं ब्रह्मा वरुणेन्द्ररुद्रमरुतः स्तुन्वन्ति दिव्यैः स्तवैर्वेदैः साङ्गपदक्रमोपनिषदैर्गायन्ति यं सामगाः। ध्यानावस्थिततद्गतेन मनसा पश्यन्ति यं योगिनो यस्यान्तं न विदुः सुरासुरगणा देवाय तस्मै नमः॥","formatB","verse_11_formatB.wav","=HYPERLINK(""audio/verse_11_formatB.wav"", ""Play Audio"")","1950.04","41.60","success","Read this Sanskrit text following the inline syllable-level brackets. A bracket '[G:1]' indicates a Guru (heavy) syllable, while '[L:1]' indicates a Laghu (light) syllable. Do not read the brackets or symbols out loud. Read ONLY the Sanskrit syllables:
+
+यं[G:1]ब्र[G:1]ह्मा[G:1]व[L:1]रु[L:1]णे[G:1]न्द्र[L:1]रु[G:1]द्र[L:1]म[L:1]रु[L:1]तः[G:1]स्तु[G:1]न्व[G:1]न्ति[L:1]दि[G:1]व्यैः[G:1]स्त[L:1]वै[G:1]र्वे[G:1]दैः[G:1]सा[G:1]ङ्ग[L:1]प[L:1]द[G:1]क्र[L:1]मो[G:1]प[L:1]नि[L:1]ष[L:1]दै[G:1]र्गा[G:1]य[G:1]न्ति[L:1]यं[G:1]सा[G:1]म[L:1]गाः[G:1]ध्या[G:1]ना[G:1]व[G:1]स्थि[L:1]त[L:1]त[G:1]द्ग[L:1]ते[G:1]न[L:1]म[L:1]न[L:1]सा[G:1]प[G:1]श्य[G:1]न्ति[L:1]यं[G:1]यो[G:1]गि[L:1]नो[G:1]य[G:1]स्या[G:1]न्तं[G:1]न[L:1]वि[L:1]दुः[G:1]सु[L:1]रा[G:1]सु[L:1]र[L:1]ग[L:1]णा[G:1]दे[G:1]वा[G:1]य[L:1]त[G:1]स्मै[G:1]न[L:1]मः[G:1]",,,,,
+"11","Śārdūlavikrīḍita","यं ब्रह्मा वरुणेन्द्ररुद्रमरुतः स्तुन्वन्ति दिव्यैः स्तवैर्वेदैः साङ्गपदक्रमोपनिषदैर्गायन्ति यं सामगाः। ध्यानावस्थिततद्गतेन मनसा पश्यन्ति यं योगिनो यस्यान्तं न विदुः सुरासुरगणा देवाय तस्मै नमः॥","formatC","verse_11_formatC.wav","=HYPERLINK(""audio/verse_11_formatC.wav"", ""Play Audio"")","1575.04","33.60","success","Read this Sanskrit text in a steady traditional monotone Śārdūlavikrīḍita chanting style. Strict Performance Directives:
+- Tempo: 86 BPM
+- Duration: Guru is 2x, Laghu is 1x
+- Breaks: Under no circumstances pause or breathe inside compound bounds (marked by hyphens). Take clean breaths only at punctuation.
+
+Recite ONLY this text:
+
+यं-ब्रह्मा-वरुणेन्द्ररुद्रमरुतः-स्तुन्वन्ति-दिव्यैः-स्तवैर्वेदैः-साङ्गपदक्रमोपनिषदैर्गायन्ति-यं-सामगाः।--ध्यानावस्थिततद्गतेन-मनसा-पश्यन्ति-यं-योगिनो-यस्यान्तं-न-विदुः-सुरासुरगणा-देवाय-तस्मै-नमः॥-",,,,,
+"12","Śārdūlavikrīḍita","कस्तूरीतिलकं ललाटफलके वक्षःस्थले कौस्तुभं नासाग्रे नवमौक्तिकं करतले वेणुं करे कङ्कणम्। सर्वाङ्गे हरिचन्दनं सुललितं कण्ठे च मुक्तावली गोपस्त्रीपरिवेष्टितो विजयते गोपालचूडामणिः॥","baseline","verse_12_baseline.wav","=HYPERLINK(""audio/verse_12_baseline.wav"", ""Play Audio"")","995.67","21.24","success","Read this Sanskrit text out loud:
+
+कस्तूरीतिलकं ललाटफलके वक्षःस्थले कौस्तुभं नासाग्रे नवमौक्तिकं करतले वेणुं करे कङ्कणम्। सर्वाङ्गे हरिचन्दनं सुललितं कण्ठे च मुक्तावली गोपस्त्रीपरिवेष्टितो विजयते गोपालचूडामणिः॥",,,,,
+"12","Śārdūlavikrīḍita","कस्तूरीतिलकं ललाटफलके वक्षःस्थले कौस्तुभं नासाग्रे नवमौक्तिकं करतले वेणुं करे कङ्कणम्। सर्वाङ्गे हरिचन्दनं सुललितं कण्ठे च मुक्तावली गोपस्त्रीपरिवेष्टितो विजयते गोपालचूडामणिः॥","formatA","verse_12_formatA.wav","=HYPERLINK(""audio/verse_12_formatA.wav"", ""Play Audio"")","1886.29","40.24","success","Read this Sanskrit text in a traditional, monotone Śārdūlavikrīḍita chanting style. Maintain a steady tempo of 86 BPM. Hold all heavy (guru) syllables roughly twice as long as light (laghu) syllables. Observe natural pauses (yati) exactly at the following syllable indexes: [12]. Pronounce visargas with a gentle echo. Speak ONLY the Sanskrit text below:
+
+कस्तूरीतिलकं ललाटफलके वक्षःस्थले कौस्तुभं नासाग्रे नवमौक्तिकं करतले वेणुं करे कङ्कणम्। सर्वाङ्गे हरिचन्दनं सुललितं कण्ठे च मुक्तावली गोपस्त्रीपरिवेष्टितो विजयते गोपालचूडामणिः॥",,,,,
+"12","Śārdūlavikrīḍita","कस्तूरीतिलकं ललाटफलके वक्षःस्थले कौस्तुभं नासाग्रे नवमौक्तिकं करतले वेणुं करे कङ्कणम्। सर्वाङ्गे हरिचन्दनं सुललितं कण्ठे च मुक्तावली गोपस्त्रीपरिवेष्टितो विजयते गोपालचूडामणिः॥","formatB","verse_12_formatB.wav","=HYPERLINK(""audio/verse_12_formatB.wav"", ""Play Audio"")","2100.04","44.80","success","Read this Sanskrit text following the inline syllable-level brackets. A bracket '[G:1]' indicates a Guru (heavy) syllable, while '[L:1]' indicates a Laghu (light) syllable. Do not read the brackets or symbols out loud. Read ONLY the Sanskrit syllables:
+
+क[G:1]स्तू[G:1]री[G:1]ति[L:1]ल[L:1]कं[G:1]ल[L:1]ला[G:1]ट[L:1]फ[L:1]ल[L:1]के[G:1]व[G:1]क्षः[G:1]स्थ[L:1]ले[G:1]कौ[G:1]स्तु[L:1]भं[G:1]ना[G:1]सा[G:1]ग्रे[G:1]न[L:1]व[L:1]मौ[G:1]क्ति[L:1]कं[G:1]क[L:1]र[L:1]त[L:1]ले[G:1]वे[G:1]णुं[G:1]क[L:1]रे[G:1]क[G:1]ङ्क[L:1]णम्[G:1]स[G:1]र्वा[G:1]ङ्गे[G:1]ह[L:1]रि[L:1]च[G:1]न्द[L:1]नं[G:1]सु[L:1]ल[L:1]लि[L:1]तं[G:1]क[G:1]ण्ठे[G:1]च[L:1]मु[G:1]क्ता[G:1]व[L:1]ली[G:1]गो[G:1]प[G:1]स्त्री[G:1]प[L:1]रि[L:1]वे[G:1]ष्टि[L:1]तो[G:1]वि[L:1]ज[L:1]य[L:1]ते[G:1]गो[G:1]पा[G:1]ल[L:1]चू[G:1]डा[G:1]म[L:1]णिः[G:1]",,,,,
+"12","Śārdūlavikrīḍita","कस्तूरीतिलकं ललाटफलके वक्षःस्थले कौस्तुभं नासाग्रे नवमौक्तिकं करतले वेणुं करे कङ्कणम्। सर्वाङ्गे हरिचन्दनं सुललितं कण्ठे च मुक्तावली गोपस्त्रीपरिवेष्टितो विजयते गोपालचूडामणिः॥","formatC","verse_12_formatC.wav","=HYPERLINK(""audio/verse_12_formatC.wav"", ""Play Audio"")","1351.92","28.84","success","Read this Sanskrit text in a steady traditional monotone Śārdūlavikrīḍita chanting style. Strict Performance Directives:
+- Tempo: 86 BPM
+- Duration: Guru is 2x, Laghu is 1x
+- Breaks: Under no circumstances pause or breathe inside compound bounds (marked by hyphens). Take clean breaths only at punctuation.
+
+Recite ONLY this text:
+
+कस्तूरीतिलकं-ललाटफलके-वक्षःस्थले-कौस्तुभं-नासाग्रे-नवमौक्तिकं-करतले-वेणुं-करे-कङ्कणम्।--सर्वाङ्गे-हरिचन्दनं-सुललितं-कण्ठे-च-मुक्तावली-गोपस्त्रीपरिवेष्टितो-विजयते-गोपालचूडामणिः॥-",,,,,
+"13","Mālinī","भगवति तव तीरे नीरमात्राशनोऽहं विगतविषयतृष्णः कृष्णमाराधयामि। सकलकलुषभङ्गे स्वर्गसोपानसङ्गे तरलतरतरङ्गे देवि गङ्गे प्रसीद॥","baseline","verse_13_baseline.wav","=HYPERLINK(""audio/verse_13_baseline.wav"", ""Play Audio"")","796.92","17.00","success","Read this Sanskrit text out loud:
+
+भगवति तव तीरे नीरमात्राशनोऽहं विगतविषयतृष्णः कृष्णमाराधयामि। सकलकलुषभङ्गे स्वर्गसोपानसङ्गे तरलतरतरङ्गे देवि गङ्गे प्रसीद॥",,,,,
+"13","Mālinī","भगवति तव तीरे नीरमात्राशनोऽहं विगतविषयतृष्णः कृष्णमाराधयामि। सकलकलुषभङ्गे स्वर्गसोपानसङ्गे तरलतरतरङ्गे देवि गङ्गे प्रसीद॥","formatA","verse_13_formatA.wav","=HYPERLINK(""audio/verse_13_formatA.wav"", ""Play Audio"")","1612.54","34.40","success","Read this Sanskrit text in a traditional, monotone Mālinī chanting style. Maintain a steady tempo of 86 BPM. Hold all heavy (guru) syllables roughly twice as long as light (laghu) syllables. Observe natural pauses (yati) exactly at the following syllable indexes: [8]. Pronounce visargas with a gentle echo. Speak ONLY the Sanskrit text below:
+
+भगवति तव तीरे नीरमात्राशनोऽहं विगतविषयतृष्णः कृष्णमाराधयामि। सकलकलुषभङ्गे स्वर्गसोपानसङ्गे तरलतरतरङ्गे देवि गङ्गे प्रसीद॥",,,,,
+"13","Mālinī","भगवति तव तीरे नीरमात्राशनोऽहं विगतविषयतृष्णः कृष्णमाराधयामि। सकलकलुषभङ्गे स्वर्गसोपानसङ्गे तरलतरतरङ्गे देवि गङ्गे प्रसीद॥","formatB","verse_13_formatB.wav","=HYPERLINK(""audio/verse_13_formatB.wav"", ""Play Audio"")","1147.54","24.48","success","Read this Sanskrit text following the inline syllable-level brackets. A bracket '[G:1]' indicates a Guru (heavy) syllable, while '[L:1]' indicates a Laghu (light) syllable. Do not read the brackets or symbols out loud. Read ONLY the Sanskrit syllables:
+
+भ[L:1]ग[L:1]व[L:1]ति[L:1]त[L:1]व[L:1]ती[G:1]रे[G:1]नी[G:1]र[L:1]मा[G:1]त्रा[G:1]श[L:1]नो[G:1]हं[G:1]वि[L:1]ग[L:1]त[L:1]वि[L:1]ष[L:1]य[L:1]तृ[G:1]ष्णः[G:1]कृ[G:1]ष्ण[L:1]मा[G:1]रा[G:1]ध[L:1]या[G:1]मि[L:1]स[L:1]क[L:1]ल[L:1]क[L:1]लु[L:1]ष[L:1]भ[G:1]ङ्गे[G:1]स्व[G:1]र्ग[L:1]सो[G:1]पा[G:1]न[L:1]स[G:1]ङ्गे[G:1]त[L:1]र[L:1]ल[L:1]त[L:1]र[L:1]त[L:1]र[G:1]ङ्गे[G:1]दे[G:1]वि[L:1]ग[G:1]ङ्गे[G:1]प्र[L:1]सी[G:1]द[L:1]",,,,,
+"13","Mālinī","भगवति तव तीरे नीरमात्राशनोऽहं विगतविषयतृष्णः कृष्णमाराधयामि। सकलकलुषभङ्गे स्वर्गसोपानसङ्गे तरलतरतरङ्गे देवि गङ्गे प्रसीद॥","formatC","verse_13_formatC.wav","=HYPERLINK(""audio/verse_13_formatC.wav"", ""Play Audio"")","1179.42","25.16","success","Read this Sanskrit text in a steady traditional monotone Mālinī chanting style. Strict Performance Directives:
+- Tempo: 86 BPM
+- Duration: Guru is 2x, Laghu is 1x
+- Breaks: Under no circumstances pause or breathe inside compound bounds (marked by hyphens). Take clean breaths only at punctuation.
+
+Recite ONLY this text:
+
+भगवति-तव-तीरे-नीरमात्राशनोऽहं-विगतविषयतृष्णः-कृष्णमाराधयामि।--सकलकलुषभङ्गे-स्वर्गसोपानसङ्गे-तरलतरतरङ्गे-देवि-गङ्गे-प्रसीद॥-",,,,,
+"14","Drutavilambita","निगमकल्पतरोर्गलितं फलं शुकमुखादमृतद्रवसंयुतम्। पिबत भागवतं रसमालयं मुहुरहो रसिका भुवि भावुकाः॥","baseline","verse_14_baseline.wav","=HYPERLINK(""audio/verse_14_baseline.wav"", ""Play Audio"")","598.17","12.76","success","Read this Sanskrit text out loud:
+
+निगमकल्पतरोर्गलितं फलं शुकमुखादमृतद्रवसंयुतम्। पिबत भागवतं रसमालयं मुहुरहो रसिका भुवि भावुकाः॥",,,,,
+"14","Drutavilambita","निगमकल्पतरोर्गलितं फलं शुकमुखादमृतद्रवसंयुतम्। पिबत भागवतं रसमालयं मुहुरहो रसिका भुवि भावुकाः॥","formatA","verse_14_formatA.wav","=HYPERLINK(""audio/verse_14_formatA.wav"", ""Play Audio"")","735.04","15.68","success","Read this Sanskrit text in a traditional, monotone Drutavilambita chanting style. Maintain a steady tempo of 86 BPM. Hold all heavy (guru) syllables roughly twice as long as light (laghu) syllables.  Pronounce visargas with a gentle echo. Speak ONLY the Sanskrit text below:
+
+निगमकल्पतरोर्गलितं फलं शुकमुखादमृतद्रवसंयुतम्। पिबत भागवतं रसमालयं मुहुरहो रसिका भुवि भावुकाः॥",,,,,
+"14","Drutavilambita","निगमकल्पतरोर्गलितं फलं शुकमुखादमृतद्रवसंयुतम्। पिबत भागवतं रसमालयं मुहुरहो रसिका भुवि भावुकाः॥","formatB","verse_14_formatB.wav","=HYPERLINK(""audio/verse_14_formatB.wav"", ""Play Audio"")","832.54","17.76","success","Read this Sanskrit text following the inline syllable-level brackets. A bracket '[G:1]' indicates a Guru (heavy) syllable, while '[L:1]' indicates a Laghu (light) syllable. Do not read the brackets or symbols out loud. Read ONLY the Sanskrit syllables:
+
+नि[L:1]ग[L:1]म[L:1]क[G:1]ल्प[L:1]त[L:1]रो[G:1]र्ग[L:1]लि[L:1]तं[G:1]फ[L:1]लं[G:1]शु[L:1]क[L:1]मु[L:1]खा[G:1]द[L:1]मृ[L:1]त[G:1]द्र[L:1]व[L:1]सं[G:1]यु[L:1]तम्[G:1]पि[L:1]ब[L:1]त[L:1]भा[G:1]ग[L:1]व[L:1]तं[G:1]र[L:1]स[L:1]मा[G:1]ल[L:1]यं[G:1]मु[L:1]हु[L:1]र[L:1]हो[G:1]र[L:1]सि[L:1]का[G:1]भु[L:1]वि[L:1]भा[G:1]वु[L:1]काः[G:1]",,,,,
+"14","Drutavilambita","निगमकल्पतरोर्गलितं फलं शुकमुखादमृतद्रवसंयुतम्। पिबत भागवतं रसमालयं मुहुरहो रसिका भुवि भावुकाः॥","formatC","verse_14_formatC.wav","=HYPERLINK(""audio/verse_14_formatC.wav"", ""Play Audio"")","834.42","17.80","success","Read this Sanskrit text in a steady traditional monotone Drutavilambita chanting style. Strict Performance Directives:
+- Tempo: 86 BPM
+- Duration: Guru is 2x, Laghu is 1x
+- Breaks: Under no circumstances pause or breathe inside compound bounds (marked by hyphens). Take clean breaths only at punctuation.
+
+Recite ONLY this text:
+
+निगमकल्पतरोर्गलितं-फलं-शुकमुखादमृतद्रवसंयुतम्।--पिबत-भागवतं-रसमालयं-मुहुरहो-रसिका-भुवि-भावुकाः॥-",,,,,
+"15","Vaṃśastha","पश्यन्त्यदो रूपमदभ्रचक्षुषः सहस्रपादोरुभुजाननाद्भुतम्। सहस्रमूर्ध्नश्रवणाक्षिनासिकं सहस्रमौल्यम्बरकुण्डलोल्लसत्॥","baseline","verse_15_baseline.wav","=HYPERLINK(""audio/verse_15_baseline.wav"", ""Play Audio"")","703.17","15.00","success","Read this Sanskrit text out loud:
+
+पश्यन्त्यदो रूपमदभ्रचक्षुषः सहस्रपादोरुभुजाननाद्भुतम्। सहस्रमूर्ध्नश्रवणाक्षिनासिकं सहस्रमौल्यम्बरकुण्डलोल्लसत्॥",,,,,
+"15","Vaṃśastha","पश्यन्त्यदो रूपमदभ्रचक्षुषः सहस्रपादोरुभुजाननाद्भुतम्। सहस्रमूर्ध्नश्रवणाक्षिनासिकं सहस्रमौल्यम्बरकुण्डलोल्लसत्॥","formatA","verse_15_formatA.wav","=HYPERLINK(""audio/verse_15_formatA.wav"", ""Play Audio"")","892.54","19.04","success","Read this Sanskrit text in a traditional, monotone Vaṃśastha chanting style. Maintain a steady tempo of 86 BPM. Hold all heavy (guru) syllables roughly twice as long as light (laghu) syllables.  Pronounce visargas with a gentle echo. Speak ONLY the Sanskrit text below:
+
+पश्यन्त्यदो रूपमदभ्रचक्षुषः सहस्रपादोरुभुजाननाद्भुतम्। सहस्रमूर्ध्नश्रवणाक्षिनासिकं सहस्रमौल्यम्बरकुण्डलोल्लसत्॥",,,,,
+"15","Vaṃśastha","पश्यन्त्यदो रूपमदभ्रचक्षुषः सहस्रपादोरुभुजाननाद्भुतम्। सहस्रमूर्ध्नश्रवणाक्षिनासिकं सहस्रमौल्यम्बरकुण्डलोल्लसत्॥","formatB","verse_15_formatB.wav","=HYPERLINK(""audio/verse_15_formatB.wav"", ""Play Audio"")","813.79","17.36","success","Read this Sanskrit text following the inline syllable-level brackets. A bracket '[G:1]' indicates a Guru (heavy) syllable, while '[L:1]' indicates a Laghu (light) syllable. Do not read the brackets or symbols out loud. Read ONLY the Sanskrit syllables:
+
+प[G:1]श्य[G:1]न्त्य[L:1]दो[G:1]रू[G:1]प[L:1]म[L:1]द[G:1]भ्र[L:1]च[G:1]क्षु[L:1]षः[G:1]स[L:1]ह[G:1]स्र[L:1]पा[G:1]दो[G:1]रु[L:1]भु[L:1]जा[G:1]न[L:1]ना[G:1]द्भु[L:1]तम्[G:1]स[L:1]ह[G:1]स्र[L:1]मू[G:1]र्ध्न[G:1]श्र[L:1]व[L:1]णा[G:1]क्षि[L:1]ना[G:1]सि[L:1]कं[G:1]स[L:1]ह[G:1]स्र[L:1]मौ[G:1]ल्य[G:1]म्ब[L:1]र[L:1]कु[G:1]ण्ड[L:1]लो[G:1]ल्ल[L:1]सत्[G:1]",,,,,
+"15","Vaṃśastha","पश्यन्त्यदो रूपमदभ्रचक्षुषः सहस्रपादोरुभुजाननाद्भुतम्। सहस्रमूर्ध्नश्रवणाक्षिनासिकं सहस्रमौल्यम्बरकुण्डलोल्लसत्॥","formatC","verse_15_formatC.wav","=HYPERLINK(""audio/verse_15_formatC.wav"", ""Play Audio"")","873.79","18.64","success","Read this Sanskrit text in a steady traditional monotone Vaṃśastha chanting style. Strict Performance Directives:
+- Tempo: 86 BPM
+- Duration: Guru is 2x, Laghu is 1x
+- Breaks: Under no circumstances pause or breathe inside compound bounds (marked by hyphens). Take clean breaths only at punctuation.
+
+Recite ONLY this text:
+
+पश्यन्त्यदो-रूपमदभ्रचक्षुषः-सहस्रपादोरुभुजाननाद्भुतम्।--सहस्रमूर्ध्नश्रवणाक्षिनासिकं-सहस्रमौल्यम्बरकुण्डलोल्लसत्॥-",,,,,
